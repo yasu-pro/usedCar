@@ -77,34 +77,34 @@ header img {
   display: inline-block;
 }
 
-/*------ header終わり ------ */
-
 /* ------ home始まり ----- */
-.home {
+header .home {
   position: absolute;
   width: calc(100vw - 20vw);
   text-align: right;
-  top: 10vw;
+  top: 20%;
+  margin: 0 10vw;
 }
 
-.home .home_main {
+header .home .home_main {
   display: inline-block;
   text-align: left;
 }
 
-.home .home_main h2 {
+header .home .home_main h2 {
   font-size: 5rem;
 }
 
-.home .home_main .home_details p {
+header .home .home_main .home_details p {
   font-size: 2rem;
 }
 /* ------ home終了 ------ */
 
 /* ------ home_footer領域 ------ */
-.home_footer {
+header .home_footer {
   width: calc(100vw - 20vw);
-  padding: 5vw 0;
+  /* padding: 5vw 0; */
+  margin: 0 10vw;
   position: absolute;
   bottom: 0;
   display: flex;
@@ -112,15 +112,18 @@ header img {
   justify-items: center;
 }
 
-.home_footer p {
+header .home_footer p {
   font-size: 1.5rem;
+  padding: 0;
   display: inline-block;
 }
 
-.home_footer span {
+header .home_footer span {
   font-size: 3rem;
 }
 /* ------ home_footer終了 ------ */
+
+/*------ header終わり ------ */
 
 /* ------ cotainer領域(used_car) ------ */
 .container .used_car {
@@ -150,7 +153,6 @@ header img {
   display: flex;
   justify-content: space-around;
   justify-items: center;
-  vertical-align: top;
 }
 
 .container .used_car ul li {
