@@ -1,1 +1,163 @@
 @import url(./reset.css);
+
+/*------ 全体 ------*/
+html {
+  font-size: 10px;
+}
+
+body {
+  color: #e4e5df;
+  background-color: #1a1a1a;
+}
+
+li {
+  list-style: none;
+  border-bottom: none;
+}
+
+li :visited {
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*------ 全体終わり ------*/
+
+/*------ header ------*/
+header {
+  position: relative;
+  height: 100vh;
+  background-image: url(../img/main_1.jpg);
+  /* background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1),
+    rgba(26, 26, 26, 1)
+  ),
+  url(../img/main_1.jpg); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header .header_inner {
+  width: calc(100vw - 20vw);
+  margin: 0 10vw;
+  padding: 3vw 0 0 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  z-index: 1000;
+}
+
+header .header_inner h1 {
+  display: inline-block;
+  font-size: 3rem;
+  margin: 0;
+}
+
+header .header_inner .gnav {
+  display: inline-block;
+}
+
+header .header_inner .gnav ul {
+  display: inline-block;
+}
+
+header .header_inner .gnav ul li {
+  font-size: 1.4rem;
+  display: inline-block;
+  text-align: center;
+  padding: 0.2rem 1rem;
+}
+
+header img {
+  display: inline-block;
+}
+
+/*------ header終わり ------ */
+
+/* ------ home始まり ----- */
+.home {
+  position: absolute;
+  width: calc(100vw - 20vw);
+  text-align: right;
+  top: 10vw;
+}
+
+.home .home_main {
+  display: inline-block;
+  text-align: left;
+}
+
+.home .home_main h2 {
+  font-size: 5rem;
+}
+
+.home .home_main .home_details p {
+  font-size: 2rem;
+}
+/* ------ home終了 ------ */
+
+/* ------ home_footer領域 ------ */
+.home_footer {
+  width: calc(100vw - 20vw);
+  padding: 5vw 0;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+.home_footer p {
+  font-size: 1.5rem;
+  display: inline-block;
+}
+
+.home_footer span {
+  font-size: 3rem;
+}
+/* ------ home_footer終了 ------ */
+
+/* ------ cotainer領域(used_car) ------ */
+.container .used_car {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-image: url(img/used_car_main_1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container .used_car .used_car_choose_img {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.container .used_car .used_car_choose_img img {
+  height: 15vh;
+  width: auto;
+}
+
+.container .used_car ul {
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  vertical-align: top;
+}
+
+.container .used_car ul li {
+  margin-right: 50px;
+}
+
+.container .used_car ul li img {
+  height: 70vh;
+  width: auto;
+}
