@@ -25,17 +25,17 @@ a {
 
 /*------ 全体終わり ------*/
 
-/*------ header ------*/
+/*--------------------------- header -------------------------- */
 header {
   position: relative;
   height: 100vh;
   background-image: url(../img/main_1.jpg);
-  /* background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.1),
-    rgba(26, 26, 26, 1)
-  ),
-  url(../img/main_1.jpg); */
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1),
+      rgba(26, 26, 26, 1)
+    ),
+    url(../img/main_1.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -122,17 +122,15 @@ header .home_footer span {
   font-size: 3rem;
 }
 /* ------ home_footer終了 ------ */
+/*--------------------------- header終わり -------------------------- */
 
-/*------ header終わり ------ */
-
+/* -------------------------- cotainer領域 -------------------------- */
 /* ------ cotainer領域(used_car) ------ */
 .container .used_car {
   height: 100vh;
   width: 100vw;
   position: relative;
-  background-image: url(img/used_car_main_1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .container .used_car .used_car_choose_img {
@@ -140,6 +138,7 @@ header .home_footer span {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
+  margin: 0 5vw;
 }
 
 .container .used_car .used_car_choose_img img {
@@ -149,6 +148,7 @@ header .home_footer span {
 
 .container .used_car ul {
   height: 100vh;
+  left: 20vw;
   position: absolute;
   display: flex;
   justify-content: space-around;
@@ -156,6 +156,7 @@ header .home_footer span {
 }
 
 .container .used_car ul li {
+  margin: auto 0;
   margin-right: 50px;
 }
 
@@ -163,3 +164,156 @@ header .home_footer span {
   height: 70vh;
   width: auto;
 }
+
+.container .used_car .background_img {
+  width: 30vw;
+  height: 100vh;
+  /* background-image: url(../img/used_car_main_1.jpg); */
+  background: -moz-linear-gradient(rgba(47, 2, 5, 0.8), rgba(26, 26, 26, 0.8)),
+    url(../img/used_car_main_1.jpg);
+
+  background: -webkit-linear-gradient(
+      rgba(47, 2, 5, 0.8),
+      rgba(26, 26, 26, 0.8)
+    ),
+    url(../img/used_car_main_1.jpg);
+
+  background: -ms-linear-gradient(rgba(47, 2, 5, 0.8), rgba(26, 26, 26, 0.8)),
+    url(../img/used_car_main_1.jpg);
+
+  background: radial-gradient(rgba(47, 2, 5, 0.1), rgba(26, 26, 26, 1)),
+    url(../img/used_car_main_1.jpg);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+/* ------ cotainer領域(used_car 終了) ------ */
+
+/* ------ cotainer領域(company) ------ */
+.container .company {
+  width: calc(100vw - 20vw);
+  height: 100vh;
+  margin: 0 10vw;
+  padding: 3vw 0 0 0;
+  position: relative;
+}
+
+.container .company .company_main {
+  position: absolute;
+  top: 20%;
+}
+
+.container .company .company_main h2 {
+  font-size: 3rem;
+}
+
+.container .company .company_main .company_details {
+  width: calc(100vw - 20vw);
+  position: absolute;
+}
+
+.container .company .company_main .company_details h3 {
+  font-size: 5rem;
+}
+
+.container .company .company_main .company_details h3 span {
+  font-size: 3rem;
+}
+
+.container .company .company_main .company_details p {
+  font-size: 2rem;
+}
+
+.container .company .company_main .company_details .company_link {
+  font-size: 1.3rem;
+}
+
+.container .company .company_main .company_details .company_link a {
+  color: #e4e5df;
+}
+
+.container .company .company_main .company_details .company_link a:hover span {
+  font-size: 2.3rem;
+  transition: 0.8s;
+}
+
+/* .container .company_link a span:hover {
+  font-size: 2.3rem;
+  transition: 0.8s;
+} */
+/* ------ cotainer領域(company 終了) ------ */
+.container .access {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  position: relative;
+}
+
+.container .access .access_main {
+  width: 100vw;
+  position: absolute;
+  top: 25%;
+}
+
+.container .access .access_main .tokyo {
+  display: flex;
+  flex-direction: row;
+  padding: 0 15% 0 15%;
+}
+
+.container .access .access_main .tokyo .tokyo_office {
+  width: 47%;
+  margin: 0 3% 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .access .access_main .tokyo .tokyo_office h2 {
+  border: solid thin #e4e5df;
+  text-align: center;
+}
+
+.container .access .access_main .tokyo .tokyo_office img {
+}
+
+.container .access .access_main .tokyo iframe {
+  width: 50%;
+}
+
+.container .access .access_main .okayama {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 3%;
+  padding: 0 15% 0 15%;
+}
+
+.container .access .access_main .okayama .okayama_office {
+  width: 47%;
+  margin: 0 0 0 3%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .access .access_main .okayama .okayama_office h2 {
+  border: solid thin #e4e5df;
+  text-align: center;
+}
+
+.container .access .access_main .okayama .okayama_office img {
+}
+
+.container .access .access_main .okayama iframe {
+  width: 50%;
+}
+/* ------ cotainer領域(access) ------ */
+
+/* ------ cotainer領域(access 終了) ------ */
+
+/* ------ cotainer領域(recruit_contact) ------ */
+
+/* ------ cotainer領域(recruit_contact 終了) ------ */
+
+/* -------------------------- cotainer領域終了 -------------------------- */
