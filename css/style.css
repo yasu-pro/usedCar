@@ -21,6 +21,7 @@ li :visited {
 
 a {
   text-decoration: none;
+  color: #e4e5df;
 }
 
 /*------ 全体終わり ------*/
@@ -103,7 +104,6 @@ header .home .home_main .home_details p {
 /* ------ home_footer領域 ------ */
 header .home_footer {
   width: calc(100vw - 20vw);
-  /* padding: 5vw 0; */
   margin: 0 10vw;
   position: absolute;
   bottom: 0;
@@ -126,14 +126,15 @@ header .home_footer span {
 
 /* -------------------------- cotainer領域 -------------------------- */
 /* ------ cotainer領域(used_car) ------ */
-.container .used_car {
+.container .used_car_main {
   height: 100vh;
   width: 100vw;
   position: relative;
   overflow: hidden;
 }
 
-.container .used_car .used_car_choose_img {
+.container .used_car_main .used_car_main_h2 {
+  writing-mode: vertical-rl;
   position: absolute;
   top: 50%;
   left: 0;
@@ -141,12 +142,11 @@ header .home_footer span {
   margin: 0 5vw;
 }
 
-.container .used_car .used_car_choose_img img {
-  height: 15vh;
-  width: auto;
+.container .used_car_main .used_car_main_h2 h2 {
+  transform: rotate(180deg);
 }
 
-.container .used_car ul {
+.container .used_car_main ul {
   height: 100vh;
   left: 20vw;
   position: absolute;
@@ -155,17 +155,17 @@ header .home_footer span {
   justify-items: center;
 }
 
-.container .used_car ul li {
+.container .used_car_main ul li {
   margin: auto 0;
   margin-right: 50px;
 }
 
-.container .used_car ul li img {
+.container .used_car_main ul li img {
   height: 70vh;
   width: auto;
 }
 
-.container .used_car .background_img {
+.container .used_car_main .background_img {
   width: 30vw;
   height: 100vh;
   /* background-image: url(../img/used_car_main_1.jpg); */
@@ -194,13 +194,12 @@ header .home_footer span {
   width: calc(100vw - 20vw);
   height: 100vh;
   margin: 0 10vw;
-  padding: 3vw 0 0 0;
   position: relative;
 }
 
 .container .company .company_main {
   position: absolute;
-  top: 20%;
+  top: 20vh;
 }
 
 .container .company .company_main h2 {
@@ -229,7 +228,7 @@ header .home_footer span {
 }
 
 .container .company .company_main .company_details .company_link a {
-  color: #e4e5df;
+  /* color: #e4e5df; */
 }
 
 .container .company .company_main .company_details .company_link a:hover span {
@@ -257,7 +256,7 @@ header .home_footer span {
 .container .access .access_main {
   width: 100vw;
   position: absolute;
-  top: 20%;
+  top: 18%;
 }
 
 .container .access .access_main .tokyo {
@@ -269,7 +268,7 @@ header .home_footer span {
 
 .container .access .access_main .tokyo .tokyo_office {
   width: 47%;
-  margin: 0 3% 0 0;
+  margin-right: 3%;
   display: flex;
   flex-direction: column;
 }
@@ -296,8 +295,7 @@ header .home_footer span {
 }
 
 .container .access .access_main .okayama .okayama_office {
-  width: 47%;
-  margin: 0 0 0 3%;
+  width: 50%;
   display: flex;
   flex-direction: column;
 }
@@ -305,26 +303,94 @@ header .home_footer span {
 .container .access .access_main .okayama .okayama_office h2 {
   border: solid thin #e4e5df;
   text-align: center;
-  margin: 0 0 2% 0;
+  margin: 0 0 1% 0;
 }
 
 .container .access .access_main .okayama .okayama_office img {
 }
 
 .container .access .access_main .okayama iframe {
-  width: 50%;
+  width: 47%;
+  margin-right: 3%;
   height: auto;
 }
 /* ------ cotainer領域(access 終了) ------ */
 
 /* ------ cotainer領域(recruit_contact) ------ */
 .container .recruit_contact {
-  width: 100vw;
+  width: calc(100vw - 20vw);
   height: 100vh;
+  margin: 0 10vw;
+  position: relative;
 }
 
-.container .recruit_contact {
+.container .recruit_contact h2 {
+  position: absolute;
+  top: 20vh;
+  font-size: 3rem;
 }
+
+.container .recruit_contact .recruit_contact_img {
+  width: 100%;
+  position: absolute;
+  top: 40vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.container .recruit_contact .recruit_contact_img img:hover {
+  opacity: 0.6;
+  width: 520px;
+  height: 400px;
+  transition: 0.8s;
+}
+
+.container .recruit_contact .recruit_contact_img .recruit,
+.container .recruit_contact .recruit_contact_img .contact {
+  text-align: right;
+}
+
+.container .recruit_contact .recruit_contact_img .recruit p,
+.container .recruit_contact .recruit_contact_img .contact p {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
 /* ------ cotainer領域(recruit_contact 終了) ------ */
 
 /* -------------------------- cotainer領域終了 -------------------------- */
+
+/* -------------------------- footer領域 -------------------------- */
+.wrapper footer {
+  width: 100vw;
+  height: 50vh;
+  position: relative;
+}
+
+.wrapper footer .footer_gnav {
+  position: absolute;
+  top: 10%;
+  right: 0;
+  text-align: right;
+}
+
+.wrapper footer .footer_gnav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-items: center;
+}
+
+.wrapper footer .footer_gnav ul li {
+  font-size: 1.5rem;
+  color: #e4e5df;
+  border-left: solid thin #e4e5df;
+  padding: 1rem 1.5rem;
+}
+
+.wrapper footer .footer_gnav ul #border_del {
+  border-left: none;
+}
+
+/* -------------------------- footer領域終了 -------------------------- */
