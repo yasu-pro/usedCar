@@ -242,6 +242,8 @@ header .home_footer span {
   transition: 0.8s;
 } */
 /* ------ cotainer領域(company 終了) ------ */
+
+/* ------ cotainer領域(access) ------ */
 .container .access {
   width: 100vw;
   height: 100vh;
@@ -255,13 +257,14 @@ header .home_footer span {
 .container .access .access_main {
   width: 100vw;
   position: absolute;
-  top: 25%;
+  top: 20%;
 }
 
 .container .access .access_main .tokyo {
+  height: 100%;
   display: flex;
   flex-direction: row;
-  padding: 0 15% 0 15%;
+  padding: 0 18% 0 18%;
 }
 
 .container .access .access_main .tokyo .tokyo_office {
@@ -274,6 +277,7 @@ header .home_footer span {
 .container .access .access_main .tokyo .tokyo_office h2 {
   border: solid thin #e4e5df;
   text-align: center;
+  margin: 0 0 2% 0;
 }
 
 .container .access .access_main .tokyo .tokyo_office img {
@@ -281,13 +285,14 @@ header .home_footer span {
 
 .container .access .access_main .tokyo iframe {
   width: 50%;
+  height: auto;
 }
 
 .container .access .access_main .okayama {
   display: flex;
   flex-direction: row-reverse;
-  margin-top: 3%;
-  padding: 0 15% 0 15%;
+  margin-top: 2%;
+  padding: 0 18% 0 18%;
 }
 
 .container .access .access_main .okayama .okayama_office {
@@ -300,6 +305,7 @@ header .home_footer span {
 .container .access .access_main .okayama .okayama_office h2 {
   border: solid thin #e4e5df;
   text-align: center;
+  margin: 0 0 2% 0;
 }
 
 .container .access .access_main .okayama .okayama_office img {
@@ -307,13 +313,18 @@ header .home_footer span {
 
 .container .access .access_main .okayama iframe {
   width: 50%;
+  height: auto;
 }
-/* ------ cotainer領域(access) ------ */
-
 /* ------ cotainer領域(access 終了) ------ */
 
 /* ------ cotainer領域(recruit_contact) ------ */
+.container .recruit_contact {
+  width: 100vw;
+  height: 100vh;
+}
 
+.container .recruit_contact {
+}
 /* ------ cotainer領域(recruit_contact 終了) ------ */
 
 /* -------------------------- cotainer領域終了 -------------------------- */
