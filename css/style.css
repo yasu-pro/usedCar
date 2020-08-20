@@ -74,6 +74,10 @@ header .header_inner .gnav ul li {
   padding: 0.2rem 1rem;
 }
 
+header .header_inner .gnav ul li span {
+  font-size: 1rem;
+}
+
 header img {
   display: inline-block;
 }
@@ -89,15 +93,23 @@ header .home {
 
 header .home .home_main {
   display: inline-block;
-  text-align: left;
 }
 
 header .home .home_main h2 {
   font-size: 5rem;
 }
 
-header .home .home_main .home_details p {
+header .home .home_main .home_details {
   font-size: 2rem;
+  padding-left: 2rem;
+}
+
+header .home .home_main .home_details #details_top {
+  text-align: left;
+}
+
+header .home .home_main .home_details #details_bottom {
+  text-align: right;
 }
 /* ------ home終了 ------ */
 
@@ -106,7 +118,7 @@ header .home_footer {
   width: calc(100vw - 20vw);
   margin: 0 10vw;
   position: absolute;
-  bottom: 0;
+  bottom: 8%;
   display: flex;
   justify-content: space-between;
   justify-items: center;
@@ -200,6 +212,7 @@ header .home_footer span {
 .container .company .company_main {
   position: absolute;
   top: 20vh;
+  z-index: 10;
 }
 
 .container .company .company_main h2 {
@@ -227,19 +240,28 @@ header .home_footer span {
   font-size: 1.3rem;
 }
 
-.container .company .company_main .company_details .company_link a {
-  /* color: #e4e5df; */
-}
-
 .container .company .company_main .company_details .company_link a:hover span {
   font-size: 2.3rem;
   transition: 0.8s;
 }
 
-/* .container .company_link a span:hover {
-  font-size: 2.3rem;
-  transition: 0.8s;
-} */
+.container .company .company_img {
+  width: calc(100vw - 20vw);
+  height: 100vh;
+}
+
+.container .company .company_img p {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  background: radial-gradient(rgba(47, 2, 5, 0.1), rgba(26, 26, 26, 1));
+}
+
+.container .company .company_img p img {
+  text-align: center;
+}
+
 /* ------ cotainer領域(company 終了) ------ */
 
 /* ------ cotainer領域(access) ------ */
@@ -363,9 +385,10 @@ header .home_footer span {
 
 /* -------------------------- footer領域 -------------------------- */
 .wrapper footer {
-  width: 100vw;
-  height: 50vh;
+  width: calc(100vw - 20vw);
+  height: 40vh;
   position: relative;
+  margin: 0 10vw;
 }
 
 .wrapper footer .footer_gnav {
@@ -389,8 +412,29 @@ header .home_footer span {
   padding: 1rem 1.5rem;
 }
 
+.wrapper footer .footer_gnav ul li span {
+  font-size: 1rem;
+}
+
 .wrapper footer .footer_gnav ul #border_del {
   border-left: none;
 }
 
+.wrapper footer .sns {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.wrapper footer .sns a:nth-child(3) img {
+  background-color: #e4e5df;
+  border-radius: 50%;
+}
+
+.wrapper footer small {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
 /* -------------------------- footer領域終了 -------------------------- */
