@@ -11,16 +11,22 @@
       <!-- header領域 -->
       <header>
         <div class="header_inner">
-          <h1><i>NEEDsTY</i><br /><span> of used car garage</span></h1>
+          <h1>
+            <a href="#"><i>NEEDsTY</i><br /><span> of used car garage</span></a>
+          </h1>
           <!-- gnav領域 -->
           <div class="gnav">
             <ul>
-              <li><a href="#">used car</a></li>
+              <li><a href="#used_car_page">used car</a></li>
               <li><a href="#">home</a></li>
-              <li><a href="#">company</a></li>
-              <li><a href="#">access</a></li>
-              <li><a href="#">recruit</a></li>
-              <li><a href="#">contact</a></li>
+              <li><a href="#company_page">company</a></li>
+              <li><a href="#access_page">access</a></li>
+              <li>
+                <a href="#recruit_contact_page"
+                  >recruit<span> & </span>contact</a
+                >
+              </li>
+              <li><a href="#sns_page">sns</a></li>
             </ul>
             <img src="" alt="ハンバーガーメニュー" />
           </div>
@@ -30,10 +36,10 @@
           <div class="home_main">
             <h2><b>WITH LIFE</b></h2>
             <div class="home_details">
-              <p>
-                What kind of car<br />
-                do you want to spend
+              <p id="details_top">
+                What kind of car
               </p>
+              <p id="details_bottom">do you want to spend</p>
             </div>
           </div>
         </div>
@@ -48,7 +54,7 @@
       <main>
         <!-- container領域 -->
         <div class="container">
-          <div class="used_car_main">
+          <div class="used_car_main" id="used_car_page">
             <div class="used_car_main_h2">
               <h2>Used Car</h2>
             </div>
@@ -63,7 +69,7 @@
             <div class="background_img"></div>
           </div>
 
-          <div class="company">
+          <div class="company" id="company_page">
             <div class="company_main">
               <h2>company</h2>
               <div class="company_details">
@@ -77,12 +83,18 @@
               </div>
             </div>
             <div class="company_img">
-              <img src="" alt="" />
-              <img src="" alt="" />
+              <p>
+                <img
+                  src="./img/company_1.jpg"
+                  alt="マセラティロゴ"
+                  width="500"
+                  height="800"
+                />
+              </p>
             </div>
           </div>
 
-          <div class="access">
+          <div class="access" id="access_page">
             <div class="access_main">
               <div class="tokyo">
                 <div class="tokyo_office">
@@ -130,7 +142,7 @@
             </div>
           </div>
 
-          <div class="recruit_contact">
+          <div class="recruit_contact" id="recruit_contact_page">
             <h2>recruit <span>&</span> contact</h2>
             <div class="recruit_contact_img">
               <a href="#"
@@ -160,27 +172,60 @@
         </div>
         <!-- container終了 -->
 
+        <!-- footer領域 -->
         <footer>
-          <div class="footer_gnav">
+          <div class="footer_gnav" id="sns_page">
             <ul>
-              <li id="border_del"><a href="#">used car</a></li>
+              <li id="border_del">
+                <a href="#used_car_page">used car</a>
+              </li>
               <li><a href="#">home</a></li>
-              <li><a href="#">company</a></li>
-              <li><a href="#">access</a></li>
-              <li><a href="#">recruit</a></li>
-              <li><a href="#">contact</a></li>
+              <li><a href="#company_page">company</a></li>
+              <li><a href="#access_page">access</a></li>
+              <li>
+                <a href="#recruit_contact_page"
+                  >recruit<span> & </span>contact</a
+                >
+              </li>
+              <li><a href="#sns_page">sns</a></li>
             </ul>
           </div>
           <div class="sns">
-            <img src="" alt="ツイッター" />
-            <img src="" alt="フェイスブック" />
-            <img src="" alt="インスタグラム" />
+            <a href="#"
+              ><img
+                src="./img/Twitter_Social_Icon_Circle_Color.png"
+                alt="ツイッターロゴ"
+                width="50"
+                height="50"
+            /></a>
+            <a href="#"
+              ><img
+                src="./img/f_logo_RGB-Blue_250.png"
+                alt="フェイスブックロゴ"
+                width="50"
+                height="50"
+            /></a>
+            <a href="#"
+              ><img
+                src="./img/glyph-logo_May2016.png"
+                alt="インスタグラムロゴ"
+                width="50"
+                height="50"
+            /></a>
+            <a href="#"
+              ><img
+                src="./img/icons8-gmail-480.png"
+                alt="グーグルメールロゴ"
+                width="50"
+                height="50"
+            /></a>
           </div>
           <small
             >Copyright ＆copy; 2010-2020 NEEDsTY Co.,Ltd. All Rights
             Reserved.</small
           >
         </footer>
+        <!-- footer終了 -->
       </main>
       <!-- main終了 -->
     </div>
