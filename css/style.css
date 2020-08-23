@@ -46,7 +46,7 @@ header {
 
 header .header {
   width: 80vw;
-  height: 13vh;
+  height: 10vh;
   background-color: #1a1a1a;
   /* opacity: 0.9; */
   opacity: 0.5;
@@ -107,8 +107,8 @@ header .header .gnav img {
 /* ------ used_car_main始まり ----- */
 .used_car {
   width: 100vw;
-  height: 83vh;
-  margin-top: 17vh;
+  height: 86vh;
+  margin-top: 14vh;
   position: relative;
   /* overflow: hidden; */
   background: -moz-linear-gradient(rgba(47, 2, 5, 0.8), rgba(26, 26, 26, 0.8)),
@@ -132,7 +132,7 @@ header .header .gnav img {
 }
 
 .used_car .used_car_main {
-  height: 83vh;
+  height: 86vh;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -140,19 +140,23 @@ header .header .gnav img {
 }
 
 .used_car .used_car_main .used_car_h2 {
+  font-size: 1.5rem;
   writing-mode: vertical-rl;
+  position: relative;
   top: 50%;
+  text-align: center;
   transform: translateY(-50%);
   /* margin-left: 2vw; */
 }
 
 .used_car .used_car_main .used_car_h2 h2 {
-  transform: rotate(180deg);
+  /* transform: rotate(90deg); */
 }
 
 .used_car .used_car_main .used_car_img {
   position: relative;
-  top: 10%;
+  top: 50%;
+  transform: translateY(-40%);
 }
 
 .used_car .used_car_main .used_car_img ul {
@@ -223,7 +227,7 @@ header .header .gnav img {
 
 /* -------------------------- cotainer領域 -------------------------- */
 /* ------ cotainer領域(home) ------ */
-.home {
+.search {
   position: relative;
   width: 100vw;
   height: 100vh;
@@ -239,7 +243,7 @@ header .header .gnav img {
   background-repeat: no-repeat;
 }
 
-.home .home_main {
+.search .search_main {
   width: 80vw;
   margin: 0 10vw;
   position: relative;
@@ -249,23 +253,23 @@ header .header .gnav img {
   flex-direction: column;
 }
 
-.home .home_main span {
+.search .search_main span {
   font-size: 5rem;
   margin: 4rem 0;
 }
 
-.home .home_main .home_details {
+.search .search_main .search_details {
   position: relative;
   font-size: 2rem;
   top: 80%;
   right: 0;
 }
 
-.home .home_main .home_details #details_top {
+.search .search_main .search_details #details_top {
   text-align: left;
 }
 
-.home .home_main .home_details #details_bottom {
+.search .search_main .search_details #details_bottom {
   text-indent: 2rem;
 }
 /* ------ cotainer領域終了(home) ------ */
@@ -483,6 +487,10 @@ footer .footer_wrapper .footer_gnav ul li {
   border-left: solid thin #e4e5df;
 }
 
+footer .footer_wrapper .footer_gnav ul li:first-of-type {
+  border-left: none;
+}
+
 footer .footer_wrapper .footer_gnav ul li a {
   padding: 1rem 1rem;
 }
@@ -494,9 +502,6 @@ footer .footer_wrapper .footer_gnav ul li span {
 footer .footer_wrapper .footer_gnav ul #border_del {
   border-left: none;
 }
-
-/* footer .footer_wrapper .sns {
-} */
 
 footer .footer_wrapper .sns a:nth-child(3) img {
   background-color: #e4e5df;
