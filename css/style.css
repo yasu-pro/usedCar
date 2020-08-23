@@ -1,13 +1,26 @@
-@import url(./reset.css);
+/* 
+
 
 /*------ 全体 ------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html {
-  font-size: 10px;
+  font-size: 15px;
 }
 
 body {
+  width: 100%;
   color: #e4e5df;
   background-color: #1a1a1a;
+  vertical-align: top;
+}
+
+.container {
+  width: 80vw;
+  margin: 0 10vw;
 }
 
 li {
@@ -28,245 +41,298 @@ a {
 
 /*--------------------------- header -------------------------- */
 header {
-  position: relative;
-  height: 100vh;
-  background-image: url(../img/main_1.jpg);
-  background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.1),
-      rgba(26, 26, 26, 1)
-    ),
-    url(../img/main_1.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  width: 100vw;
 }
 
-header .header_inner {
-  width: calc(100vw - 20vw);
-  margin: 0 10vw;
-  padding: 3vw 0 0 0;
+header .header {
+  width: 80vw;
+  height: 13vh;
+  background-color: #1a1a1a;
+  /* opacity: 0.9; */
+  opacity: 0.5;
   position: fixed;
+  top: 0;
   display: flex;
   justify-content: space-between;
   justify-items: center;
   z-index: 1000;
+  padding: 2vh 10vw;
 }
 
-header .header_inner h1 {
+header .header h1 {
   display: inline-block;
-  font-size: 3rem;
-  margin: 0;
+  font-size: 2.5rem;
+  width: 23vw;
 }
 
-header .header_inner .gnav {
-  display: inline-block;
-}
-
-header .header_inner .gnav ul {
-  display: inline-block;
-}
-
-header .header_inner .gnav ul li {
-  font-size: 1.4rem;
-  display: inline-block;
-  text-align: center;
-  padding: 0.2rem 1rem;
-}
-
-header .header_inner .gnav ul li span {
-  font-size: 1rem;
-}
-
-header img {
-  display: inline-block;
-}
-
-/* ------ home始まり ----- */
-header .home {
-  position: absolute;
-  width: calc(100vw - 20vw);
-  text-align: right;
-  top: 20%;
-  margin: 0 10vw;
-}
-
-header .home .home_main {
-  display: inline-block;
-}
-
-header .home .home_main h2 {
-  font-size: 5rem;
-}
-
-header .home .home_main .home_details {
-  font-size: 2rem;
-  padding-left: 2rem;
-}
-
-header .home .home_main .home_details #details_top {
-  text-align: left;
-}
-
-header .home .home_main .home_details #details_bottom {
+header .header h1 a p {
+  font-size: 2.3rem;
   text-align: right;
 }
-/* ------ home終了 ------ */
 
-/* ------ home_footer領域 ------ */
-header .home_footer {
-  width: calc(100vw - 20vw);
-  margin: 0 10vw;
-  position: absolute;
-  bottom: 8%;
-  display: flex;
-  justify-content: space-between;
-  justify-items: center;
-}
-
-header .home_footer p {
+header .header h1 a p span {
   font-size: 1.5rem;
-  padding: 0;
+}
+
+header .header .gnav {
   display: inline-block;
+  margin: auto 0;
 }
 
-header .home_footer span {
-  font-size: 3rem;
-}
-/* ------ home_footer終了 ------ */
-/*--------------------------- header終わり -------------------------- */
-
-/* -------------------------- cotainer領域 -------------------------- */
-/* ------ cotainer領域(used_car) ------ */
-.container .used_car_main {
-  height: 100vh;
-  width: 100vw;
-  position: relative;
-  overflow: hidden;
-}
-
-.container .used_car_main .used_car_main_h2 {
-  writing-mode: vertical-rl;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  margin: 0 5vw;
-}
-
-.container .used_car_main .used_car_main_h2 h2 {
-  transform: rotate(180deg);
-}
-
-.container .used_car_main ul {
-  height: 100vh;
-  left: 20vw;
-  position: absolute;
+header .header .gnav ul {
   display: flex;
   justify-content: space-around;
   justify-items: center;
-}
-
-.container .used_car_main ul li {
   margin: auto 0;
-  margin-right: 50px;
 }
 
-.container .used_car_main ul li img {
-  height: 70vh;
-  width: auto;
+header .header .gnav ul li {
+  font-size: 1.2rem;
+  display: inline-block;
 }
 
-.container .used_car_main .background_img {
-  width: 30vw;
-  height: 100vh;
-  /* background-image: url(../img/used_car_main_1.jpg); */
+header .header .gnav ul li a {
+  padding: 0.2rem 1rem;
+}
+
+header .header .gnav ul li span {
+  font-size: 1rem;
+}
+
+header .header .gnav img {
+  display: none;
+}
+/* ------ header領域終了 ------ */
+
+/* ------ used_car_main始まり ----- */
+.used_car {
+  width: 100vw;
+  height: 83vh;
+  margin-top: 17vh;
+  position: relative;
+  /* overflow: hidden; */
   background: -moz-linear-gradient(rgba(47, 2, 5, 0.8), rgba(26, 26, 26, 0.8)),
-    url(../img/used_car_main_1.jpg);
+    url(../img/used_car/used_car_1.jpg);
 
   background: -webkit-linear-gradient(
       rgba(47, 2, 5, 0.8),
       rgba(26, 26, 26, 0.8)
     ),
-    url(../img/used_car_main_1.jpg);
+    url(../img/used_car/used_car_1.jpg);
 
   background: -ms-linear-gradient(rgba(47, 2, 5, 0.8), rgba(26, 26, 26, 0.8)),
-    url(../img/used_car_main_1.jpg);
+    url(../img/used_car/used_car_1.jpg);
 
   background: radial-gradient(rgba(47, 2, 5, 0.1), rgba(26, 26, 26, 1)),
-    url(../img/used_car_main_1.jpg);
+    url(../img/used_car/used_car_1.jpg);
+  /* background-color: ivory; */
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
 }
-/* ------ cotainer領域(used_car 終了) ------ */
 
-/* ------ cotainer領域(company) ------ */
-.container .company {
-  width: calc(100vw - 20vw);
-  height: 100vh;
-  margin: 0 10vw;
+.used_car .used_car_main {
+  height: 83vh;
   position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-.container .company .company_main {
-  position: absolute;
-  top: 20vh;
-  z-index: 10;
-}
-
-.container .company .company_main h2 {
-  font-size: 3rem;
-}
-
-.container .company .company_main .company_details {
-  width: calc(100vw - 20vw);
-  position: absolute;
-}
-
-.container .company .company_main .company_details h3 {
-  font-size: 5rem;
-}
-
-.container .company .company_main .company_details h3 span {
-  font-size: 3rem;
-}
-
-.container .company .company_main .company_details p {
-  font-size: 2rem;
-}
-
-.container .company .company_main .company_details .company_link {
-  font-size: 1.3rem;
-}
-
-.container .company .company_main .company_details .company_link a:hover span {
-  font-size: 2.3rem;
-  transition: 0.8s;
-}
-
-.container .company .company_img {
-  width: calc(100vw - 20vw);
-  height: 100vh;
-}
-
-.container .company .company_img p {
-  position: absolute;
+.used_car .used_car_main .used_car_h2 {
+  writing-mode: vertical-rl;
   top: 50%;
   transform: translateY(-50%);
-  right: 0;
-  background: radial-gradient(rgba(47, 2, 5, 0.1), rgba(26, 26, 26, 1));
+  /* margin-left: 2vw; */
 }
 
-.container .company .company_img p img {
+.used_car .used_car_main .used_car_h2 h2 {
+  transform: rotate(180deg);
+}
+
+.used_car .used_car_main .used_car_img {
+  position: relative;
+  top: 10%;
+}
+
+.used_car .used_car_main .used_car_img ul {
+  display: grid;
+  grid-template-columns: 30vw 20vw 30vw;
+  grid-template-rows: 30vh 30vh;
+  gap: 1rem;
+}
+
+.used_car .used_car_main .used_car_img ul #gray_benz {
+  position: relative;
+  grid-row: 1/3;
+  grid-column: 1/2;
+}
+
+.used_car .used_car_main .used_car_img ul #orange_audi {
+  position: relative;
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+
+.used_car .used_car_main .used_car_img ul #red_car {
+  position: relative;
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+.used_car .used_car_main .used_car_img ul #black_benz {
+  position: relative;
+  grid-row: 1/3;
+  grid-column: 3/4;
+}
+
+.used_car .used_car_main .used_car_img ul li img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* object-fit: contain; */
+}
+/* ------ home終了 ------ */
+
+/* ------ home_footer領域 ------ */
+.used_car_footer {
+  width: 80vw;
+  position: absolute;
+  margin: 0 10vw;
+  bottom: 6%;
   text-align: center;
+  /* display: flex;
+  justify-content: space-between;
+  justify-items: center; */
+}
+
+.used_car_footer #scroll {
+  font-size: 1.5rem;
+}
+
+/* .used_car_footer #slide_view {
+  font-size: 1.5rem;
+  display: inline-block;
+} */
+/* ------ home_footer終了 ------ */
+
+/*--------------------------- header終わり -------------------------- */
+
+/* -------------------------- cotainer領域 -------------------------- */
+/* ------ cotainer領域(home) ------ */
+.home {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1),
+      rgba(26, 26, 26, 1)
+    ),
+    url(../img//main/main_1.jpg);
+  /* background-color: khaki; */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.home .home_main {
+  width: 80vw;
+  margin: 0 10vw;
+  position: relative;
+  top: 25%;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.home .home_main span {
+  font-size: 5rem;
+  margin: 4rem 0;
+}
+
+.home .home_main .home_details {
+  position: relative;
+  font-size: 2rem;
+  top: 80%;
+  right: 0;
+}
+
+.home .home_main .home_details #details_top {
+  text-align: left;
+}
+
+.home .home_main .home_details #details_bottom {
+  text-indent: 2rem;
+}
+/* ------ cotainer領域終了(home) ------ */
+
+/* ------ cotainer領域(company) ------ */
+.company {
+  height: 100vh;
+  position: relative;
+  background-image: url(../img/company/company_1.jpg);
+  background-size: 500px 800px;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.company .company_main {
+  position: absolute;
+  width: 80vw;
+  top: 20vh;
+}
+
+.company .company_main h2 {
+  font-size: 3rem;
+}
+
+.company .company_main .company_details {
+  width: 80vw;
+  position: absolute;
+  margin: 3% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  justify-items: center;
+}
+
+.company .company_main .company_details #corporate_slogan {
+  display: inline-block;
+  font-size: 4rem;
+}
+
+.company .company_main .company_details #corporate_slogan span {
+  font-size: 2.6rem;
+}
+
+.company .company_main .company_details #corporate_top {
+  display: inline-block;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  margin: 3% 0;
+}
+
+.company .company_main .company_details #corporate_link a {
+  display: inline-block;
+  font-size: 1.3rem;
+  padding: 0 1vw 0 0;
+  margin-top: 3rem;
+}
+
+.company .company_main .company_details #corporate_link a:hover span {
+  display: inline-block;
+  font-size: 1.8rem;
+  transition: 0.8s;
 }
 
 /* ------ cotainer領域(company 終了) ------ */
 
 /* ------ cotainer領域(access) ------ */
-.container .access {
-  width: 100vw;
+.access {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -275,108 +341,110 @@ header .home_footer span {
   position: relative;
 }
 
-.container .access .access_main {
-  width: 100vw;
+.access .access_main {
   position: absolute;
-  top: 18%;
+  top: 20vh;
 }
 
-.container .access .access_main .tokyo {
-  height: 100%;
+.access .access_main h2 {
+  font-size: 3rem;
+}
+
+.access .access_main .tokyo {
   display: flex;
   flex-direction: row;
-  padding: 0 18% 0 18%;
+  padding: 0 15%;
 }
 
-.container .access .access_main .tokyo .tokyo_office {
-  width: 47%;
-  margin-right: 3%;
+.access .access_main .tokyo .tokyo_office {
+  width: 48.5%;
+  margin-right: 1.5%;
   display: flex;
   flex-direction: column;
 }
 
-.container .access .access_main .tokyo .tokyo_office h2 {
+.access .access_main .tokyo .tokyo_office h3 {
+  font-size: 2rem;
   border: solid thin #e4e5df;
   text-align: center;
   margin: 0 0 2% 0;
 }
 
-.container .access .access_main .tokyo .tokyo_office img {
+.access .access_main .tokyo .tokyo_office img {
 }
 
-.container .access .access_main .tokyo iframe {
-  width: 50%;
+.access .access_main .tokyo iframe {
+  width: 48.5%;
   height: auto;
+  margin-left: 1.5%;
 }
 
-.container .access .access_main .okayama {
+.access .access_main .okayama {
   display: flex;
   flex-direction: row-reverse;
   margin-top: 2%;
-  padding: 0 18% 0 18%;
+  padding: 0 15%;
 }
 
-.container .access .access_main .okayama .okayama_office {
-  width: 50%;
+.access .access_main .okayama .okayama_office {
+  width: 48.5%;
+  margin-left: 1.5%;
   display: flex;
   flex-direction: column;
 }
 
-.container .access .access_main .okayama .okayama_office h2 {
+.access .access_main .okayama .okayama_office h3 {
+  font-size: 2rem;
   border: solid thin #e4e5df;
   text-align: center;
-  margin: 0 0 1% 0;
+  margin: 0 0 2% 0;
 }
 
-.container .access .access_main .okayama .okayama_office img {
+.access .access_main .okayama .okayama_office img {
 }
 
-.container .access .access_main .okayama iframe {
-  width: 47%;
-  margin-right: 3%;
+.access .access_main .okayama iframe {
+  width: 48.5%;
   height: auto;
+  margin-right: 1.5%;
 }
 /* ------ cotainer領域(access 終了) ------ */
 
 /* ------ cotainer領域(recruit_contact) ------ */
-.container .recruit_contact {
-  width: calc(100vw - 20vw);
+.recruit_contact {
   height: 100vh;
-  margin: 0 10vw;
   position: relative;
 }
 
-.container .recruit_contact h2 {
+.recruit_contact h2 {
   position: absolute;
   top: 20vh;
   font-size: 3rem;
 }
 
-.container .recruit_contact .recruit_contact_img {
-  width: 100%;
-  position: absolute;
+.recruit_contact .recruit_contact_img {
+  position: relative;
   top: 40vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-.container .recruit_contact .recruit_contact_img img:hover {
+.recruit_contact .recruit_contact_img img:hover {
   opacity: 0.6;
   width: 520px;
   height: 400px;
   transition: 0.8s;
 }
 
-.container .recruit_contact .recruit_contact_img .recruit,
-.container .recruit_contact .recruit_contact_img .contact {
+.recruit_contact .recruit_contact_img .recruit,
+.recruit_contact .recruit_contact_img .contact {
   text-align: right;
 }
 
-.container .recruit_contact .recruit_contact_img .recruit p,
-.container .recruit_contact .recruit_contact_img .contact p {
+.recruit_contact .recruit_contact_img .recruit p,
+.recruit_contact .recruit_contact_img .contact p {
   font-size: 1.5rem;
-  margin-bottom: 0;
 }
 
 /* ------ cotainer領域(recruit_contact 終了) ------ */
@@ -384,55 +452,58 @@ header .home_footer span {
 /* -------------------------- cotainer領域終了 -------------------------- */
 
 /* -------------------------- footer領域 -------------------------- */
-.wrapper footer {
-  width: calc(100vw - 20vw);
+footer {
+  width: 100vw;
   height: 40vh;
   position: relative;
-  margin: 0 10vw;
 }
 
-.wrapper footer .footer_gnav {
-  position: absolute;
-  top: 10%;
-  right: 0;
-  text-align: right;
+footer .footer_wrapper {
+  width: 80vw;
+  padding: 0 10vw;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  justify-items: center;
 }
 
-.wrapper footer .footer_gnav ul {
+footer .footer_wrapper .footer_gnav {
+}
+
+footer .footer_wrapper .footer_gnav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   justify-items: center;
 }
 
-.wrapper footer .footer_gnav ul li {
-  font-size: 1.5rem;
+footer .footer_wrapper .footer_gnav ul li {
+  font-size: 1.2rem;
   color: #e4e5df;
   border-left: solid thin #e4e5df;
-  padding: 1rem 1.5rem;
 }
 
-.wrapper footer .footer_gnav ul li span {
+footer .footer_wrapper .footer_gnav ul li a {
+  padding: 1rem 1rem;
+}
+
+footer .footer_wrapper .footer_gnav ul li span {
   font-size: 1rem;
 }
 
-.wrapper footer .footer_gnav ul #border_del {
+footer .footer_wrapper .footer_gnav ul #border_del {
   border-left: none;
 }
 
-.wrapper footer .sns {
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translateX(-50%);
-}
+/* footer .footer_wrapper .sns {
+} */
 
-.wrapper footer .sns a:nth-child(3) img {
+footer .footer_wrapper .sns a:nth-child(3) img {
   background-color: #e4e5df;
   border-radius: 50%;
 }
 
-.wrapper footer small {
+footer small {
   position: absolute;
   right: 0;
   bottom: 0;
