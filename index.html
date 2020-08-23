@@ -7,227 +7,241 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="wrapper">
-      <!-- header領域 -->
-      <header>
-        <div class="header_inner">
-          <h1>
-            <a href="#"><i>NEEDsTY</i><br /><span> of used car garage</span></a>
-          </h1>
-          <!-- gnav領域 -->
-          <div class="gnav">
-            <ul>
-              <li><a href="#used_car_page">used car</a></li>
-              <li><a href="#">home</a></li>
-              <li><a href="#company_page">company</a></li>
-              <li><a href="#access_page">access</a></li>
-              <li>
-                <a href="#recruit_contact_page"
-                  >recruit<span> & </span>contact</a
-                >
-              </li>
-              <li><a href="#sns_page">sns</a></li>
-            </ul>
-            <img src="" alt="ハンバーガーメニュー" />
-          </div>
-          <!-- gnav終了 -->
+    <!-- header領域 -->
+    <header>
+      <div class="header">
+        <h1>
+          <a href="#"
+            ><i>NEEDsTY</i>
+            <p><span>of</span> used car garage</p>
+          </a>
+        </h1>
+        <!-- gnav領域 -->
+        <div class="gnav">
+          <ul>
+            <li><a href="#used_car_page">used car</a></li>
+            <li><a href="#home_page">home</a></li>
+            <li><a href="#company_page">company</a></li>
+            <li><a href="#access_page">access</a></li>
+            <li>
+              <a href="#recruit_contact_page">recruit<span> & </span>contact</a>
+            </li>
+            <li><a href="#sns_page">sns</a></li>
+          </ul>
+          <img src="" alt="ハンバーガーメニュー" />
         </div>
-        <div class="home">
-          <div class="home_main">
-            <h2><b>WITH LIFE</b></h2>
-            <div class="home_details">
-              <p id="details_top">
-                What kind of car
-              </p>
-              <p id="details_bottom">do you want to spend</p>
-            </div>
-          </div>
-        </div>
-        <div class="home_footer">
-          <p>scroll</p>
-          <span>・・・</span>
-        </div>
-      </header>
-      <!-- header終了 -->
+        <!-- gnav終了 -->
+      </div>
+    </header>
+    <!-- header終了 -->
 
-      <!-- main領域 -->
-      <main>
-        <!-- container領域 -->
-        <div class="container">
-          <div class="used_car_main" id="used_car_page">
-            <div class="used_car_main_h2">
-              <h2>Used Car</h2>
-            </div>
-
+    <!-- main領域 -->
+    <main>
+      <div class="used_car" id="used_car_page">
+        <div class="used_car_main">
+          <div class="used_car_h2">
+            <h2>Used Car</h2>
+          </div>
+          <div class="used_car_img">
             <ul id="ul">
-              <li><img src="img/used_car_1.jpg" alt="グレー/ベンツ" /></li>
-              <li><img src="img/used_car_2.jpg" alt="赤い車" /></li>
-              <li><img src="img/used_car_3.jpg" alt="ブラック/ベンツ" /></li>
-              <!-- <li><img src="img/used_car_4.jpg" alt="オレンジ/アウディ" /></li> -->
-            </ul>
-
-            <div class="background_img"></div>
-          </div>
-
-          <div class="company" id="company_page">
-            <div class="company_main">
-              <h2>company</h2>
-              <div class="company_details">
-                <h3>The meaning of<br />Needs <span>&</span> Safty</h3>
-                <p>
-                  会社の由来にもなっている<br />NeedsとSafty<br />中古車であろうと<br />お客様のニーズと安全を一番に考えている会社です。<br />NEEDsTYの良さをご覧ください…
-                </p>
-                <p class="company_link">
-                  <a href="#">Read more <span>→</span></a>
-                </p>
-              </div>
-            </div>
-            <div class="company_img">
-              <p>
+              <li id="gray_benz">
+                <img src="img//used_car/used_car_4.jpg" alt="グレー/ベンツ" />
+              </li>
+              <li id="orange_audi">
                 <img
-                  src="./img/company_1.jpg"
-                  alt="マセラティロゴ"
-                  width="500"
-                  height="800"
+                  src="img/used_car/used_car_1.jpg"
+                  alt="オレンジ/アウディ"
+                  width="20vw"
+                  height="30vh"
                 />
+              </li>
+              <li id="red_car">
+                <img
+                  src="img//used_car/used_car_2.jpg"
+                  alt="赤い車"
+                  width="20vw"
+                  height="30vh"
+                />
+              </li>
+              <li id="black_benz">
+                <img
+                  src="img//used_car/used_car_3.jpg"
+                  alt="ブラック/ベンツ"
+                  width="20vw"
+                  height="30vh"
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="used_car_footer">
+            <span id="scroll">scroll</span>
+            <!-- <span id="slide_view">・・・</span> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="home" id="home_page">
+        <div class="home_main">
+          <span><b>WITH LIFE</b></span>
+          <div class="home_details">
+            <p id="details_top">What kind of car</p>
+            <p id="details_bottom">do you want to spend</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="company" id="company_page">
+          <div class="company_main">
+            <h2>company</h2>
+            <div class="company_details">
+              <p id="corporate_slogan">
+                The meaning of<br />Needs <span>&</span> Safty
+              </p>
+              <p id="corporate_top">
+                会社の由来にもなっている<br />NeedsとSafty<br />中古車であろうと<br />お客様のニーズと安全を一番に考えている会社です。<br />NEEDsTYの良さをご覧ください…
+              </p>
+              <p id="corporate_link">
+                <a href="#">Read more <span>→</span></a>
               </p>
             </div>
           </div>
+        </div>
 
-          <div class="access" id="access_page">
-            <div class="access_main">
-              <div class="tokyo">
-                <div class="tokyo_office">
-                  <h2>Tokyo office</h2>
-                  <img
-                    src="./img/access_Tokyo.jpg"
-                    alt="東京ビル画像"
-                    width="100%"
-                    height="350px"
-                  />
-                </div>
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8278533985717!2d139.76493611568276!3d35.68124053757805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1597827749766!5m2!1sja!2sjp"
-                  width="600"
-                  height="450"
-                  frameborder="0"
-                  style="border: 0;"
-                  allowfullscreen=""
-                  aria-hidden="false"
-                  tabindex="0"
-                ></iframe>
+        <div class="access" id="access_page">
+          <div class="access_main">
+            <h2>access</h2>
+            <div class="tokyo">
+              <div class="tokyo_office">
+                <h3>Tokyo office</h3>
+                <img
+                  src="./img//access/access_Tokyo.jpg"
+                  alt="東京ビル画像"
+                  width="100%"
+                  height="280"
+                />
               </div>
-
-              <div class="okayama">
-                <div class="okayama_office">
-                  <h2>Okayama office</h2>
-                  <img
-                    src="./img/access_Okayama.jpg"
-                    alt="倉敷美観地区"
-                    width="100%"
-                    height="350px"
-                  />
-                </div>
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.5476342887655!2d133.91554481566507!3d34.666125592576094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3554064c3de389d3%3A0xa2d703aa2239cf57!2z5bKh5bGx6aeF!5e0!3m2!1sja!2sjp!4v1597756512941!5m2!1sja!2sjp"
-                  width="600"
-                  height="450"
-                  frameborder="0"
-                  style="border: 0;"
-                  allowfullscreen=""
-                  aria-hidden="false"
-                  tabindex="0"
-                ></iframe>
-              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8278533985717!2d139.76493611568276!3d35.68124053757805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1597827749766!5m2!1sja!2sjp"
+                width="400"
+                height="280"
+                frameborder="0"
+                style="border: 0;"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
             </div>
-          </div>
 
-          <div class="recruit_contact" id="recruit_contact_page">
-            <h2>recruit <span>&</span> contact</h2>
-            <div class="recruit_contact_img">
-              <a href="#"
-                ><div class="recruit">
-                  <img
-                    src="./img/recruit_1.jpg"
-                    alt="採用画像"
-                    width="500px"
-                    height="380px"
-                  />
-                  <p>採用情報</p>
-                </div></a
-              >
-              <a href="#"
-                ><div class="contact">
-                  <img
-                    src="./img/contact.jpg"
-                    alt="問合せ画像"
-                    width="500px"
-                    height="380px"
-                  />
-                  <p>お問い合わせ</p>
-                </div></a
-              >
+            <div class="okayama">
+              <div class="okayama_office">
+                <h3>Okayama office</h3>
+                <img
+                  src="./img//access/access_Okayama.jpg"
+                  alt="倉敷美観地区"
+                  width="100%"
+                  height="280"
+                />
+              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.5476342887655!2d133.91554481566507!3d34.666125592576094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3554064c3de389d3%3A0xa2d703aa2239cf57!2z5bKh5bGx6aeF!5e0!3m2!1sja!2sjp!4v1597756512941!5m2!1sja!2sjp"
+                width="400"
+                height="280"
+                frameborder="0"
+                style="border: 0;"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
             </div>
           </div>
         </div>
-        <!-- container終了 -->
 
-        <!-- footer領域 -->
-        <footer>
-          <div class="footer_gnav" id="sns_page">
-            <ul>
-              <li id="border_del">
-                <a href="#used_car_page">used car</a>
-              </li>
-              <li><a href="#">home</a></li>
-              <li><a href="#company_page">company</a></li>
-              <li><a href="#access_page">access</a></li>
-              <li>
-                <a href="#recruit_contact_page"
-                  >recruit<span> & </span>contact</a
-                >
-              </li>
-              <li><a href="#sns_page">sns</a></li>
-            </ul>
+        <div class="recruit_contact" id="recruit_contact_page">
+          <h2>recruit <span>&</span> contact</h2>
+          <div class="recruit_contact_img">
+            <a href="#"
+              ><div class="recruit">
+                <img
+                  src="./img//recruit/recruit_1.jpg"
+                  alt="採用画像"
+                  width="500px"
+                  height="380px"
+                />
+                <p>採用情報</p>
+              </div></a
+            >
+            <a href="#"
+              ><div class="contact">
+                <img
+                  src="./img//contact/contact_1.jpg"
+                  alt="問合せ画像"
+                  width="500px"
+                  height="380px"
+                />
+                <p>お問い合わせ</p>
+              </div></a
+            >
           </div>
-          <div class="sns">
-            <a href="#"
-              ><img
-                src="./img/Twitter_Social_Icon_Circle_Color.png"
-                alt="ツイッターロゴ"
-                width="50"
-                height="50"
-            /></a>
-            <a href="#"
-              ><img
-                src="./img/f_logo_RGB-Blue_250.png"
-                alt="フェイスブックロゴ"
-                width="50"
-                height="50"
-            /></a>
-            <a href="#"
-              ><img
-                src="./img/glyph-logo_May2016.png"
-                alt="インスタグラムロゴ"
-                width="50"
-                height="50"
-            /></a>
-            <a href="#"
-              ><img
-                src="./img/icons8-gmail-480.png"
-                alt="グーグルメールロゴ"
-                width="50"
-                height="50"
-            /></a>
-          </div>
-          <small
-            >Copyright ＆copy; 2010-2020 NEEDsTY Co.,Ltd. All Rights
-            Reserved.</small
-          >
-        </footer>
-        <!-- footer終了 -->
-      </main>
-      <!-- main終了 -->
-    </div>
+        </div>
+      </div>
+    </main>
+    <!-- main終了 -->
+
+    <!-- footer領域 -->
+    <footer>
+      <div class="footer_wrapper" id="sns_page">
+        <div class="footer_gnav">
+          <ul>
+            <li id="border_del">
+              <a href="#used_car_page">used car</a>
+            </li>
+            <li><a href="#home_page">home</a></li>
+            <li><a href="#company_page">company</a></li>
+            <li><a href="#access_page">access</a></li>
+            <li>
+              <a href="#recruit_contact_page">recruit<span> & </span>contact</a>
+            </li>
+            <li><a href="#sns_page">sns</a></li>
+          </ul>
+        </div>
+
+        <div class="sns">
+          <a href="#"
+            ><img
+              src="./img//sns/Twitter_Social_Icon_Circle_Color.png"
+              alt="ツイッターロゴ"
+              width="40"
+              height="40"
+          /></a>
+          <a href="#"
+            ><img
+              src="./img//sns/f_logo_RGB-Blue_250.png"
+              alt="フェイスブックロゴ"
+              width="40"
+              height="40"
+          /></a>
+          <a href="#"
+            ><img
+              src="./img//sns/glyph-logo_May2016.png"
+              alt="インスタグラムロゴ"
+              width="40"
+              height="40"
+          /></a>
+          <a href="#"
+            ><img
+              src="./img//sns/icons8-gmail-480.png"
+              alt="グーグルメールロゴ"
+              width="40"
+              height="40"
+          /></a>
+        </div>
+      </div>
+      <small
+        >Copyright ＆copy; 2010-2020 NEEDsTY Co.,Ltd. All Rights
+        Reserved.</small
+      >
+    </footer>
+    <!-- footer終了 -->
   </body>
 </html>
