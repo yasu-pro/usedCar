@@ -39,7 +39,8 @@
     <!-- main領域 -->
     <main>
       <div class="search" id="search_page">
-        <div class="search_details">
+        <div class="manufacture">
+          <h3>メーカーから探す</h3>
           <ul>
             <a href="#"><span>全て</span></a>
             <a href="#"
@@ -134,8 +135,101 @@
             >
           </ul>
         </div>
-      </div>
+        <div class="serch_details">
+          <div class="price">
+            <h3>価格から探す</h3>
+            <div class="price_details">
+              <select name="low_price" id="first_p">
+                <option value="200">200万</option>
+                <option value="250">250万</option>
+                <option value="300">300万</option>
+                <option value="350">350万</option>
+                <option value="400">400万</option>
+                <option value="450">450万</option>
+                <option value="500">500万</option>
+                <option value="550">550万</option>
+                <option value="600">600万</option>
+                <option value="650">650万</option>
+                <option value="700">700万</option>
+                <option value="750">750万</option>
+                <option value="800">800万</option>
+                <option value="850">850万</option>
+                <option value="900">900万</option>
+                <option value="950">950万</option>
+                <option value="1000">1000万</option>
+              </select>
+              <span>~</span>
+              <select name="upper_price" id="first_p">
+                <option value="infinite">上限なし</option>
+                <option value="200">200万</option>
+                <option value="250">250万</option>
+                <option value="300">300万</option>
+                <option value="350">350万</option>
+                <option value="400">400万</option>
+                <option value="450">450万</option>
+                <option value="500">500万</option>
+                <option value="550">550万</option>
+                <option value="600">600万</option>
+                <option value="650">650万</option>
+                <option value="700">700万</option>
+                <option value="750">750万</option>
+                <option value="800">800万</option>
+                <option value="850">850万</option>
+                <option value="900">900万</option>
+                <option value="950">950万</option>
+                <option value="1000">1000万</option>
+              </select>
+            </div>
+          </div>
+            <div class="mileage">
+              <h3>走行距離から探す</h3>
+              <div class="mileage_details">
+                <div>
+                <input id="mileage_1" type="radio" name="mile" value="1" />
+                <label for="mileage_1">1万km以下</label></div>
+                <div>
+                <input id="mileage_2" type="radio" name="mile" value="1~3" />
+                <label for="mileage_2">1~3万km以下</label></div>
+                <div>
+                <input id="mileage_3" type="radio" name="mile" value="3~5" />
+                <label for="mileage_3">3~5万km以下</label></div>
+                <div>
+                <input id="mileage_4" type="radio" name="mile" value="5~10" />
+                <label for="mileage_4">5~10万km以下</label></div>
+                <div>
+                <input id="mileage_5" type="radio" name="mile" value="10~15" />
+                <label for="mileage_5">10~15万km以下</label></div>
+                <div>
+                <input id="mileage_6" type="radio" name="mile" value="15" />
+                <label for="mileage_6">15万km以上</label></div>
+              </div>
+            </div>
 
+            <div class="years">
+              <h3>経過年数から探す</h3>
+              <div class="years_details">
+                <div><input id="years_1" type="radio" name="year" value="1" />
+                <label for="years_1">1年落ち以下</label></div>
+                <div>
+                <input id="years_2" type="radio" name="year" value="1~3" />
+                <label for="years_2">1~3年落ち</label></div>
+                <div>
+                <input id="years_3" type="radio" name="year" value="4~5" />
+                <label for="years_3">4~5年落ち以下</label></div>
+                <div>
+                <input id="years_4" type="radio" name="year" value="6~8" />
+                <label for="years_4">6~8年落ち以下</label></div>
+                <div>
+                <input id="years_5" type="radio" name="year" value="9~12" />
+                <label for="years_5">9~12年落ち以下</label></div>
+                <div>
+                <input id="years_6" type="radio" name="year" value="13" />
+                <label for="years_6">13年落ち以上</label></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="container">
         <div class="company" id="company_page">
           <div class="company_main">

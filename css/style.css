@@ -120,38 +120,41 @@ header .header .gnav img {
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
 }
 
-.search .search_details {
+.search .manufacture {
   width: 100vw;
   position: relative;
-  top: 20%;
+  top: 5%;
   right: 0;
   display: flex;
   flex-direction: column;
 }
 
-.search .search_details h2 {
-  font-size: 3rem;
-  margin: 4rem 0;
+.search .manufacture h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 1em 0;
 }
 
-.search .search_details ul {
+.search .manufacture ul {
   background-color: rgba(26, 26, 26, 0.5);
   width: 70vw;
   margin: 0 10vw;
-  padding: 3rem 5rem;
+  padding: 1rem 5rem;
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 1rem;
 }
 
-.search .search_details ul a {
+.search .manufacture ul a {
   border: solid thin #e4e5df;
 }
 
-.search .search_details ul a:first-of-type {
+.search .manufacture ul a:first-of-type {
   width: 100%;
   height: 100%;
   font-size: 1.7rem;
@@ -160,21 +163,59 @@ header .header .gnav img {
   justify-items: center;
 }
 
-.search .search_details ul a span {
+.search .manufacture ul a span {
   margin: auto 0;
 }
 
-.search .search_details ul a li {
+.search .manufacture ul a li {
   font-size: 1.3em;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
-.search .search_details ul a li img {
+.search .manufacture ul a li img {
   width: 100%;
   object-fit: cover;
   border-bottom: solid thin #e4e5df;
+}
+
+.search .serch_details {
+  position: relative;
+  top: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-items: center;
+}
+
+.search .serch_details .price,
+.search .serch_details .mileage,
+.search .serch_details .years {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+}
+
+.search .serch_details .price h3,
+.search .serch_details .mileage h3,
+.search .serch_details .years h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0.5em 0;
+}
+
+.search .serch_details .mileage .mileage_details,
+.search .serch_details .years .years_details {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.search .serch_details .price select {
+  height: 4vh;
+  width: 10vw;
 }
 
 /* ------ cotainer領域(company) ------ */
@@ -427,3 +468,11 @@ footer small {
   bottom: 0;
 }
 /* -------------------------- footer領域終了 -------------------------- */
+
+/* レスポンシブ */
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 896px) {
+}
+@media screen and (max-width: 480px) {
+}
