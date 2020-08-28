@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /*------ 全体 ------*/
 * {
   margin: 0;
@@ -183,10 +185,9 @@ header .header .gnav img {
 .search .serch_details {
   position: relative;
   top: 10%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
 }
 
 .search .serch_details .price,
@@ -211,11 +212,16 @@ header .header .gnav img {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
 }
 
 .search .serch_details .price select {
   height: 4vh;
   width: 10vw;
+}
+
+.search .serch_details .price .price_details {
+  text-align: center;
 }
 
 /* ------ cotainer領域(company) ------ */
@@ -318,9 +324,6 @@ header .header .gnav img {
   margin: 0 0 2% 0;
 }
 
-.access .access_main .tokyo .tokyo_office img {
-}
-
 .access .access_main .tokyo iframe {
   width: 48.5%;
   height: auto;
@@ -346,9 +349,6 @@ header .header .gnav img {
   border: solid thin #e4e5df;
   text-align: center;
   margin: 0 0 2% 0;
-}
-
-.access .access_main .okayama .okayama_office img {
 }
 
 .access .access_main .okayama iframe {
@@ -470,9 +470,12 @@ footer small {
 /* -------------------------- footer領域終了 -------------------------- */
 
 /* レスポンシブ */
+/* タブレット縦 */
 @media screen and (max-width: 1024px) {
 }
-@media screen and (max-width: 896px) {
+/* iphone 8/7/6s/6 横 */
+@media screen and (max-width: 667px) {
 }
-@media screen and (max-width: 480px) {
+/* iphone 8/7/6s/6 縦 */
+@media screen and (max-width: 375px) {
 }
