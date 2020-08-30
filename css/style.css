@@ -15,6 +15,8 @@ body {
   color: #e4e5df;
   background-color: #1a1a1a;
   vertical-align: top;
+  font-family: "Roboto Slab", serif;
+  font-family: "Noto Serif JP", serif;
 }
 
 .container {
@@ -474,7 +476,7 @@ footer small {
 }
 /* -------------------------- footer領域終了 -------------------------- */
 
-/* レスポンシブ */
+/* --------------------------- レスポンシブ -----------------------------*/
 /* タブレット縦 */
 @media screen and (max-width: 1024px) {
   header {
@@ -623,6 +625,7 @@ footer small {
     height: 30vh;
     opacity: 1;
   }
+  /* -------------------------- main領域 -------------------------- */
 
   footer {
     width: 100vw;
@@ -639,3 +642,4 @@ footer small {
 /* iphone 8/7/6s/6 縦 */
 @media screen and (max-width: 375px) {
 }
+/* --------------------------- レスポンシブ -----------------------------*/
