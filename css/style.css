@@ -106,8 +106,8 @@ aside {
   margin-top: 11vh;
   position: relative;
   /* overflow: hidden; */
-  background: -moz-linear-gradient(rgba(47, 2, 5, 0.8), rgba(26, 26, 26, 0.8)),
-    url(../img/used_car/used_car_1.jpg);
+  background: -moz-linear-grad(rgba(47, 2, 5, 0.8), rgba(26, 26, 26, 0.8)),
+    url(../used_car/used_car_1.jpg);
 
   background: -webkit-linear-gradient(
       rgba(47, 2, 5, 0.8),
@@ -152,6 +152,12 @@ aside {
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 1rem;
+}
+
+.search .manufacture ul a li #benz_2,
+.search .manufacture ul a li #vw_2,
+.search .manufacture ul a li #lr_2 {
+  display: none;
 }
 
 .search .manufacture ul a {
@@ -306,7 +312,7 @@ aside {
 
 .access .access_main {
   position: relative;
-  top: 25vh;
+  top: 23vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 365px 365px;
@@ -469,9 +475,6 @@ footer .footer_wrapper {
   flex-direction: row-reverse;
   justify-content: space-between;
   justify-items: center;
-}
-
-footer .footer_wrapper .footer_gnav {
 }
 
 footer .footer_wrapper .footer_gnav ul {
@@ -650,7 +653,7 @@ footer small {
   }
 
   .company .company_main .company_details {
-    top: 10vh;
+    top: 15vh;
   }
 
   .company .company_main .company_details > p {
@@ -716,6 +719,7 @@ footer small {
     height: 40vh;
     opacity: 1;
   }
+
   /* -------------------------- main領域 -------------------------- */
 
   footer {
@@ -731,6 +735,83 @@ footer small {
   }
 }
 
+@media screen and (max-width: 768px) {
+  aside {
+    height: 10vh;
+  }
+
+  .search {
+    height: 90vh;
+  }
+
+  .search .manufacture ul a li #benz_1,
+  .search .manufacture ul a li #vw_1,
+  .search .manufacture ul a li #lr_1 {
+    display: none;
+  }
+
+  .search .manufacture ul a li #benz_2,
+  .search .manufacture ul a li #vw_2,
+  .search .manufacture ul a li #lr_2 {
+    display: inline-block;
+  }
+
+  .search .serch_details {
+    position: relative;
+    top: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .search .serch_details .mileage .mileage_details,
+  .search .serch_details .years .years_details {
+    font-size: 1.2rem;
+  }
+
+  .company {
+    height: 90vh;
+  }
+
+  .access {
+    height: 90vh;
+    background-size: 500px 80%;
+  }
+
+  .access .access_main {
+    top: 25%;
+    grid-template-rows: 260px 260px;
+  }
+
+  .access .access_main .okayama_office h3,
+  .access .access_main .tokyo_office h3 {
+    font-size: 1.5rem;
+  }
+
+  .recruit_contact .recruit_contact_img {
+    top: 40%;
+  }
+
+  .recruit_contact .recruit_contact_img img {
+    height: 30vh;
+  }
+
+  footer {
+    margin-bottom: 10vh;
+  }
+
+  footer .footer_wrapper .sns a img {
+    width: 21px;
+    height: 21px;
+  }
+
+  footer .footer_wrapper .footer_gnav ul li {
+    font-size: 1rem;
+  }
+
+  footer .footer_wrapper .footer_gnav ul li span {
+    font-size: 0.8rem;
+  }
+}
 /* iphone 8/7/6s/6 横 */
 @media screen and (max-width: 667px) {
   header {
@@ -791,6 +872,14 @@ footer small {
     gap: 0.5rem;
   }
 
+  .search .manufacture .ul a li #lr_1 {
+    display: none;
+  }
+
+  .search .manufacture .ul a li #lr_2 {
+    display: inline-block;
+  }
+
   .search .manufacture ul a:first-of-type {
     font-size: 1rem;
   }
@@ -799,11 +888,20 @@ footer small {
     font-size: 0.5rem;
   }
 
+  .search .serch_details {
+    position: relative;
+    top: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    gap: 0;
+  }
+
   .search .serch_details .price h3,
   .search .serch_details .mileage h3,
   .search .serch_details .years h3 {
     font-size: 1rem;
-    margin: 0.3rem 0;
+    margin-top: 0;
   }
 
   .search .serch_details .price .price_details select {
@@ -863,8 +961,188 @@ footer small {
     margin-top: 10vh;
     font-size: 0.8rem;
   }
+
+  .access {
+    height: 86vh;
+  }
+
+  .access h2 {
+    top: 8%;
+    font-size: 1.5rem;
+  }
+
+  .access .access_main {
+    top: 18%;
+    grid-template-rows: 120px 120px;
+    gap: 0.5rem;
+  }
+
+  .access .access_main .tokyo_office h3,
+  .access .access_main .okayama_office h3 {
+    font-size: 0.8rem;
+  }
+
+  .recruit_contact h2 {
+    font-size: 1.5rem;
+  }
+
+  .recruit_contact .recruit_contact_img .recruit p,
+  .recruit_contact .recruit_contact_img .contact p {
+    font-size: 1rem;
+  }
+
+  footer {
+    width: 100vw;
+    height: 30vh;
+    margin-bottom: 12vh;
+    position: relative;
+    background-color: rgb(61, 61, 61);
+  }
+
+  footer small {
+    font-size: 0.5rem;
+    bottom: 5%;
+  }
+
+  footer .footer_wrapper .footer_gnav ul li {
+    font-size: 0.8rem;
+  }
+
+  footer .footer_wrapper .footer_gnav ul li span {
+    font-size: 0.5rem;
+  }
+  footer .footer_wrapper .sns a img {
+    width: 21px;
+    height: 21px;
+  }
 }
 /* iphone 8/7/6s/6 縦 */
 @media screen and (max-width: 375px) {
+  aside {
+    height: 9vh;
+  }
+
+  .search {
+    height: 91vh;
+  }
+
+  .search .manufacture ul a li img {
+    height: 6vh;
+  }
+  .search .manufacture ul a li #benz_1,
+  .search .manufacture ul a li #vw_1 {
+    display: none;
+  }
+
+  .search .manufacture ul a li #benz_2,
+  .search .manufacture ul a li #vw_2 {
+    display: inline-block;
+  }
+
+  .search .serch_details {
+    position: relative;
+    top: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .search .serch_details .price,
+  .search .serch_details .mileage,
+  .search .serch_details .years {
+    margin: 2vh 0;
+  }
+
+  .search .serch_details .price .price_details select {
+    font-size: 0.5rem;
+    width: 20vw;
+    height: 4vh;
+  }
+
+  .company {
+    height: 91vh;
+  }
+
+  .company .company_main .company_details #corporate_top {
+    display: inline-block;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    margin: 3% 0;
+  }
+
+  .access {
+    height: 91vh;
+  }
+
+  .access .access_main {
+    left: 0;
+    top: 20vh;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0rem;
+    padding: 0;
+  }
+
+  .access .access_main .tokyo_office {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .access .access_main .tokyo_iframe {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .access .access_main .okayama_office {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  .access .access_main .okayama_iframe {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+
+  .recruit_contact {
+    height: 91vh;
+  }
+
+  .recruit_contact .recruit_contact_img {
+    top: 15%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 2rem;
+  }
+
+  footer {
+    height: 20vh;
+    margin-bottom: 9vh;
+  }
+
+  footer .footer_wrapper {
+    width: 90vw;
+    padding: 0 5vw;
+  }
+
+  footer .footer_gnav {
+  }
+
+  footer .footer_gnav ul {
+    margin: 15px 0;
+  }
+
+  footer .footer_wrapper .footer_gnav ul li {
+    font-size: 0.5rem;
+  }
+
+  footer .footer_wrapper .footer_gnav ul li a {
+    padding: 0 0.2rem;
+  }
+
+  footer .footer_wrapper .sns {
+    width: 55px;
+  }
 }
 /* --------------------------- レスポンシブ -----------------------------*/
