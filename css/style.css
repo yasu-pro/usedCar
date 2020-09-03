@@ -105,7 +105,6 @@ aside {
   height: 89vh;
   margin-top: 11vh;
   position: relative;
-  /* overflow: hidden; */
   background: -moz-linear-grad(rgba(47, 2, 5, 0.8), rgba(26, 26, 26, 0.8)),
     url(../used_car/used_car_1.jpg);
 
@@ -120,7 +119,6 @@ aside {
 
   background: radial-gradient(rgba(47, 2, 5, 0.1), rgba(26, 26, 26, 1)),
     url(../img/used_car/used_car_1.jpg);
-  /* background-color: ivory; */
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
@@ -171,6 +169,12 @@ aside {
   display: flex;
   justify-content: center;
   justify-items: center;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .search .manufacture ul a:first-of-type {
+    height: auto;
+  }
 }
 
 .search .manufacture ul a:first-of-type span {
@@ -290,10 +294,12 @@ aside {
   margin-top: 3rem;
 }
 
-.company .company_main .company_details #corporate_link a:hover span {
-  display: inline-block;
-  font-size: 1.8rem;
-  transition: 0.2s;
+@media screen and (min-width: 1024px) {
+  .company .company_main .company_details #corporate_link a:hover span {
+    display: inline-block;
+    font-size: 1.8rem;
+    transition: 0.2s;
+  }
 }
 
 /* ------ cotainer領域(company 終了) ------ */
@@ -433,14 +439,20 @@ aside {
 .recruit_contact .recruit_contact_img img {
   width: 30vw;
   height: 45vh;
-  opacity: 0.6;
+  opacity: 1;
 }
 
-.recruit_contact .recruit_contact_img img:hover {
-  width: 32vw;
-  height: 47vh;
-  transition: 0.8s;
-  opacity: 1;
+@media screen and (min-width: 1444px) {
+  .recruit_contact .recruit_contact_img img {
+    opacity: 0.6;
+  }
+
+  .recruit_contact .recruit_contact_img img:hover {
+    width: 32vw;
+    height: 47vh;
+    transition: 0.8s;
+    opacity: 1;
+  }
 }
 
 .recruit_contact .recruit_contact_img .recruit,
@@ -520,7 +532,7 @@ footer small {
 
 /* --------------------------- レスポンシブ -----------------------------*/
 /* タブレット縦 */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1444px) {
   header {
     display: none;
   }
@@ -1026,6 +1038,10 @@ footer small {
     height: 91vh;
   }
 
+  .search .manufacture {
+    top: 8%;
+    right: 0;
+  }
   .search .manufacture ul a li img {
     height: 6vh;
   }
@@ -1041,7 +1057,7 @@ footer small {
 
   .search .serch_details {
     position: relative;
-    top: 5%;
+    top: 12%;
     display: flex;
     flex-direction: column;
   }
@@ -1124,9 +1140,6 @@ footer small {
   footer .footer_wrapper {
     width: 90vw;
     padding: 0 5vw;
-  }
-
-  footer .footer_gnav {
   }
 
   footer .footer_gnav ul {
