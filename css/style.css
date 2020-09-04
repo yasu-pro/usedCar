@@ -183,6 +183,7 @@ aside {
 
 .search .manufacture ul a li {
   font-size: 1.3em;
+  height: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -192,6 +193,10 @@ aside {
   width: 100%;
   object-fit: cover;
   border-bottom: solid thin #e4e5df;
+}
+
+.search .manufacture ul a li span {
+  margin: auto 0;
 }
 
 .search .serch_details {
@@ -246,7 +251,7 @@ aside {
   height: 100vh;
   position: relative;
   background-image: url(../img/company/company_1.jpg);
-  background-size: 500px auto;
+  background-size: 40% auto;
   background-position: right center;
   background-repeat: no-repeat;
 }
@@ -531,8 +536,12 @@ footer small {
 /* -------------------------- footer領域終了 -------------------------- */
 
 /* --------------------------- レスポンシブ -----------------------------*/
+@media screen and (min-height: 876px) {
+  body {
+  }
+}
 /* タブレット縦 */
-@media screen and (max-width: 1444px) {
+@media screen and (max-width: 1460px) {
   header {
     display: none;
   }
@@ -873,14 +882,12 @@ footer small {
   }
 
   .search .manufacture h3 {
-    text-align: center;
-    font-size: 1rem;
-    margin: 0.3em 0;
+    display: none;
   }
 
   .search .manufacture ul {
     width: 74vw;
-    margin: 0 10vw;
+    margin: 5vh 10vw 0 10vw;
     gap: 0.5rem;
   }
 
@@ -949,7 +956,7 @@ footer small {
   }
 
   .company .company_main .company_details {
-    top: 10vh;
+    top: 18vh;
   }
 
   .company .company_main .company_details > p {
@@ -1002,7 +1009,9 @@ footer small {
   .recruit_contact .recruit_contact_img .contact p {
     font-size: 1rem;
   }
-
+  .recruit_contact .recruit_contact_img img {
+    height: 40vh;
+  }
   footer {
     width: 100vw;
     height: 30vh;
@@ -1042,6 +1051,20 @@ footer small {
     top: 8%;
     right: 0;
   }
+
+  .search .manufacture h3 {
+    display: inline;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0.3em 0;
+  }
+
+  .search .manufacture ul {
+    width: 74vw;
+    margin: 0 10vw;
+    gap: 0.5rem;
+  }
+
   .search .manufacture ul a li img {
     height: 6vh;
   }
@@ -1074,15 +1097,29 @@ footer small {
     height: 4vh;
   }
 
+  .search .serch_details .mileage .mileage_details,
+  .search .serch_details .years .years_details {
+    column-gap: 4vw;
+    row-gap: 1.8vh;
+  }
+
   .company {
     height: 91vh;
   }
 
+  .company .company_main .company_details {
+    top: 13vh;
+  }
   .company .company_main .company_details #corporate_top {
     display: inline-block;
     font-size: 1.2rem;
     line-height: 2.5rem;
-    margin: 3% 0;
+    margin-top: 15%;
+  }
+
+  .company .company_main .company_details #corporate_link a {
+    margin-top: 5vh;
+    font-size: 0.8rem;
   }
 
   .access {
@@ -1130,6 +1167,10 @@ footer small {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     gap: 2rem;
+  }
+
+  .recruit_contact .recruit_contact_img img {
+    height: 30vh;
   }
 
   footer {
