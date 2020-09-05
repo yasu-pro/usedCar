@@ -11,6 +11,7 @@ html {
 }
 
 body {
+  height: 100%;
   width: 100%;
   color: #e4e5df;
   background-color: #1a1a1a;
@@ -536,8 +537,44 @@ footer small {
 /* -------------------------- footer領域終了 -------------------------- */
 
 /* --------------------------- レスポンシブ -----------------------------*/
-@media screen and (min-height: 876px) {
-  body {
+@media screen and (max-height: 875px) {
+  header .header {
+    height: 111px;
+  }
+
+  .search {
+    height: 877px;
+  }
+
+  .company {
+    height: 986px;
+  }
+
+  .access {
+    height: 986px;
+  }
+
+  .recruit_contact {
+    height: 986px;
+  }
+
+  .recruit_contact .recruit_contact_img img {
+    width: 529px;
+    height: 386px;
+    opacity: 1;
+  }
+
+  @media screen and (max-height: 875px) {
+    .recruit_contact .recruit_contact_img img:hover {
+      width: 529px;
+      height: 386px;
+      transition: 0.8s;
+      opacity: 1;
+    }
+  }
+
+  footer {
+    height: 286px;
   }
 }
 /* タブレット縦 */
