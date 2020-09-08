@@ -2,41 +2,56 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-    <title>
-      中古外車を探すならNEEDsTY
-    </title>
-    <meta name="description" content="中古外車を安心して購入するなら保証が充実しているNEEDsTY">
-    <meta name="keywords" content="NEEDsTY/中古車/外車/販売/岡山/東京/20代後半/30代前半/ベンツ/BMW/フォルクスワーゲン/ミニ/ポルシェ/ボルボ/プジョー/ランドローバー/メーカーから探す/価格から探す/走行距離から探す/経過年数から探す/
-    ">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>中古外車を探すならNEEDsTY</title>
+    <meta
+      name="description"
+      content="中古外車を安心して購入するなら保証が充実しているNEEDsTY"
+    />
+    <meta
+      name="keywords"
+      content="NEEDsTY/中古車/外車/販売/岡山/東京/20代後半/30代前半/ベンツ/BMW/フォルクスワーゲン/ミニ/ポルシェ/ボルボ/プジョー/ランドローバー/メーカーから探す/価格から探す/走行距離から探す/経過年数から探す/
+    "
+    />
     <!-- <meta property=”og:url” content=” ページの URL” /> -->
-    <meta property=”og:type” content=”website” />
-    <meta property=”og:title” content=”中古外車を探すなら…” />
-    <meta property=”og:description” content=”ページのディスクリプション” />
-    <meta property=”og:site_name” content=”NEEDsTY” />
+    <meta property="”og:type”" content="”website”" />
+    <meta property="”og:title”" content="”中古外車を探すなら…”" />
+    <meta property="”og:description”" content="”ページのディスクリプション”" />
+    <meta property="”og:site_name”" content="”NEEDsTY”" />
     <!-- <meta property=”og:image” content=” サムネイル画像のURL” /> -->
     <link rel="stylesheet" href="css/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <div class="header">
-        <h1>
-          <a href="#"><i>NEEDsTY</i> </a>
-        </h1>
+        <div class="header__heading">
+          <h1 class="header__logo">
+            <a href="#"><i>NEEDsTY</i></a>
+          </h1>
+        </div>
         <div class="gnav">
           <nav>
-            <ul>
-              <li><a href="#search_page">検索</a></li>
-              <li><a href="#company_page">会社概要</a></li>
-              <li><a href="#access_page">アクセス</a></li>
-              <li>
+            <ul class="gnav__list">
+              <li class="gnav__item"><a href="#search_page">検索</a></li>
+              <li class="gnav__item"><a href="#company_page">会社概要</a></li>
+              <li class="gnav__item"><a href="#access_page">アクセス</a></li>
+              <li class="gnav__item">
                 <a href="#recruit_contact_page"
                   >リクルート<span> & </span>お問い合わせ</a
                 >
               </li>
-              <li><a href="#sns_page">sns</a></li>
+              <li class="gnav__item"><a href="#sns_page">sns</a></li>
             </ul>
           </nav>
         </div>
@@ -44,29 +59,50 @@
     </header>
 
     <aside>
-        <div class="bottom_nav">
-          <ul>
-            <a href="#">
-              <li><img src="./img/bottom_nav/search_img.png" alt="虫眼鏡アイコン" width="45px" height="45px">検索</li>
-            </a>
-            <a href="#">
-              <li><img src="./img/bottom_nav/tel_img.png" alt="電話アイコン" width="45px" height="45px">電話</li>
-            </a>
-            <a href="#">
-              <li><img src="./img/bottom_nav/mail_img.png" alt="メールアイコン" width="45px" height="45px">メール</li>
-            </a>
-          </ul>
-        </div>
+      <div class="bottomNav">
+        <ul class="bottomNav__list">
+          <a href="#">
+            <li class="bottomNav__item">
+              <img
+                src="./img/bottom_nav/search_img.png"
+                alt="虫眼鏡アイコン"
+                width="45px"
+                height="45px"
+              /><span>検索</span>
+            </li>
+          </a>
+          <a href="#">
+            <li class="bottomNav__item">
+              <img
+                src="./img/bottom_nav/tel_img.png"
+                alt="電話アイコン"
+                width="45px"
+                height="45px"
+              /><span>電話</span>
+            </li>
+          </a>
+          <a href="#">
+            <li class="bottomNav__item">
+              <img
+                src="./img/bottom_nav/mail_img.png"
+                alt="メールアイコン"
+                width="45px"
+                height="45px"
+              /><span>メール</span>
+            </li>
+          </a>
+        </ul>
+      </div>
     </aside>
 
     <main>
       <div class="search" id="search_page">
-        <div class="manufacture">
-          <h3>メーカーから探す</h3>
-          <ul>
+        <div class="searchMain__wrapper">
+          <h3 class="search__ttl">メーカーから探す</h3>
+          <ul class="searchMain__list">
             <a href="#"><span>全て</span></a>
             <a href="#"
-              ><li>
+              ><li class="searchMain__item">
                 <img
                   src="./img/logo/benz.jpg"
                   alt="ベンツロゴ"
@@ -77,7 +113,7 @@
               </li></a
             >
             <a href="#"
-              ><li>
+              ><li class="searchMain__item">
                 <img
                   src="./img/logo/bmw.jpg"
                   alt="bmwロゴ"
@@ -87,7 +123,7 @@
               </li></a
             >
             <a href="#"
-              ><li>
+              ><li class="searchMain__item">
                 <img
                   src="./img/logo/vw.jpg"
                   alt="フォルクスワーゲンロゴ"
@@ -98,7 +134,7 @@
               </li></a
             >
             <a href="#"
-              ><li>
+              ><li class="searchMain__item">
                 <img
                   src="./img/logo/audi.jpg"
                   alt="アウディロゴ"
@@ -108,7 +144,7 @@
               </li></a
             >
             <a href="#"
-              ><li>
+              ><li class="searchMain__item">
                 <img
                   src="./img/logo/mini.jpg"
                   alt="ミニロゴ"
@@ -118,7 +154,7 @@
               </li></a
             >
             <a href="#"
-              ><li>
+              ><li class="searchMain__item">
                 <img
                   src="./img/logo/porshe.jpg"
                   alt="ポルシェロゴ"
@@ -128,7 +164,7 @@
               </li></a
             >
             <a href="#"
-              ><li>
+              ><li class="searchMain__item">
                 <img
                   src="./img/logo/volvo.jpg"
                   alt="ボルボロゴ"
@@ -138,7 +174,7 @@
               </li></a
             >
             <a href="#"
-              ><li>
+              ><li class="searchMain__item">
                 <img
                   src="./img/logo/peugeot.jpg"
                   alt="プジョーロゴ"
@@ -148,22 +184,22 @@
               </li></a
             >
             <a href="#"
-              ><li>
+              ><li class="searchMain__item">
                 <img
                   src="./img/logo/land-rover.jpg"
                   alt="ランドローバーロゴ"
                   width="150px"
                   height="150px"
                 /><span id="lr_1">ランドローバー</span>
-                <span id="lr_2">ランド<br/>ローバー</span>
+                <span id="lr_2">ランド<br />ローバー</span>
               </li></a
             >
           </ul>
         </div>
-        <div class="serch_details">
-          <div class="price">
-            <h3>価格から探す</h3>
-            <div class="price_details">
+        <div class="searchSub__wrapper">
+          <div class="searchSub__flex searchSub__price">
+            <h3 class="searchSub__ttl">価格から探す</h3>
+            <div class="price">
               <select name="low_price" id="first_p">
                 <option value="200">200万</option>
                 <option value="250">250万</option>
@@ -206,50 +242,62 @@
               </select>
             </div>
           </div>
+          <div class="searchSub__flex searchSub__mileage">
+            <h3 class="searchSub__ttl">走行距離から探す</h3>
             <div class="mileage">
-              <h3>走行距離から探す</h3>
-              <div class="mileage_details">
-                <div>
+              <div class="mileage__radio">
                 <input id="mileage_1" type="radio" name="mile" value="1" />
-                <label for="mileage_1">1万km以下</label></div>
-                <div>
+                <label for="mileage_1">1万km以下</label>
+              </div>
+              <div class="mileage__radio">
                 <input id="mileage_2" type="radio" name="mile" value="1~3" />
-                <label for="mileage_2">1~3万km以下</label></div>
-                <div>
+                <label for="mileage_2">1~3万km以下</label>
+              </div>
+              <div class="mileage__radio">
                 <input id="mileage_3" type="radio" name="mile" value="3~5" />
-                <label for="mileage_3">3~5万km以下</label></div>
-                <div>
+                <label for="mileage_3">3~5万km以下</label>
+              </div>
+              <div class="mileage__radio">
                 <input id="mileage_4" type="radio" name="mile" value="5~10" />
-                <label for="mileage_4">5~10万km以下</label></div>
-                <div>
+                <label for="mileage_4">5~10万km以下</label>
+              </div>
+              <div class="mileage__radio">
                 <input id="mileage_5" type="radio" name="mile" value="10~15" />
-                <label for="mileage_5">10~15万km以下</label></div>
-                <div>
+                <label for="mileage_5">10~15万km以下</label>
+              </div>
+              <div class="mileage__radio">
                 <input id="mileage_6" type="radio" name="mile" value="15" />
-                <label for="mileage_6">15万km以上</label></div>
+                <label for="mileage_6">15万km以上</label>
               </div>
             </div>
+          </div>
 
+          <div class="searchSub__flex searchSub__years">
+            <h3 class="searchSub__ttl">経過年数から探す</h3>
             <div class="years">
-              <h3>経過年数から探す</h3>
-              <div class="years_details">
-                <div><input id="years_1" type="radio" name="year" value="1" />
-                <label for="years_1">1年落ち以下</label></div>
-                <div>
+              <div class="years__raido">
+                <input id="years_1" type="radio" name="year" value="1" />
+                <label for="years_1">1年落ち以下</label>
+              </div>
+              <div class="years__raido">
                 <input id="years_2" type="radio" name="year" value="1~3" />
-                <label for="years_2">1~3年落ち</label></div>
-                <div>
+                <label for="years_2">1~3年落ち</label>
+              </div>
+              <div class="years__raido">
                 <input id="years_3" type="radio" name="year" value="4~5" />
-                <label for="years_3">4~5年落ち以下</label></div>
-                <div>
+                <label for="years_3">4~5年落ち以下</label>
+              </div>
+              <div class="years__raido">
                 <input id="years_4" type="radio" name="year" value="6~8" />
-                <label for="years_4">6~8年落ち以下</label></div>
-                <div>
+                <label for="years_4">6~8年落ち以下</label>
+              </div>
+              <div class="years__raido">
                 <input id="years_5" type="radio" name="year" value="9~12" />
-                <label for="years_5">9~12年落ち以下</label></div>
-                <div>
+                <label for="years_5">9~12年落ち以下</label>
+              </div>
+              <div class="years__raido">
                 <input id="years_6" type="radio" name="year" value="13" />
-                <label for="years_6">13年落ち以上</label></div>
+                <label for="years_6">13年落ち以上</label>
               </div>
             </div>
           </div>
@@ -257,16 +305,16 @@
       </div>
       <div class="container">
         <div class="company" id="company_page">
-          <div class="company_main">
-            <h2>会社概要</h2>
-            <div class="company_details">
-              <p id="corporate_slogan">
+          <div class="company__wrapper">
+            <h2 class="company__heading">会社概要</h2>
+            <div class="company__main">
+              <p class="company__slogan">
                 <b>The meaning of<br />Needs <span>&</span> Safty</b>
               </p>
-              <p id="corporate_top">
+              <p class="company__top">
                 会社の由来にもなっている<br />NeedsとSafty<br />中古車であろうと<br />お客様のニーズと安全を一番に考えている会社です。<br />NEEDsTYの良さをご覧ください…
               </p>
-              <p id="corporate_link">
+              <p class="company__link">
                 <a href="#">Read more <span>→</span></a>
               </p>
             </div>
@@ -274,60 +322,62 @@
         </div>
 
         <div class="access" id="access_page">
-           <h2>アクセス</h2>
-           <div class="access_main">
-              <div class="tokyo_office">
-                <h3>Tokyo office</h3>
-                <div class="tokyo_img">
+          <h2 class="access__heading">アクセス</h2>
+          <div class="access__main">
+            <div class="tokyo">
+              <h3 class="tokyo__heading">Tokyo office</h3>
+              <div class="tokyo__img">
                 <img
                   src="./img//access/access_Tokyo.jpg"
                   alt="東京ビル画像"
                   width="100%"
                   height="300"
                 />
-                </div>
               </div>
-              <div class="tokyo_iframe">
+            </div>
+            <div class="tokyo__iframe">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8278533985717!2d139.76493611568276!3d35.68124053757805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1597827749766!5m2!1sja!2sjp"
                 width="400"
                 height="300"
                 frameborder="0"
-                style="border: 0;"
+                style="border: 0"
                 allowfullscreen=""
                 aria-hidden="false"
                 tabindex="0"
               ></iframe>
-              </div>
-              <div class="okayama_office">
-                <h3>Okayama office</h3>
-                <div class="okayama_img">
+            </div>
+            <div class="okayama">
+              <h3 class="okayama__heading">Okayama office</h3>
+              <div class="okayama__img">
                 <img
                   src="./img//access/access_Okayama.jpg"
                   alt="倉敷美観地区"
                   width="100%"
                   height="300"
                 />
-                </div>
               </div>
-              <div class="okayama_iframe">
+            </div>
+            <div class="okayama__iframe">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.5476342887655!2d133.91554481566507!3d34.666125592576094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3554064c3de389d3%3A0xa2d703aa2239cf57!2z5bKh5bGx6aeF!5e0!3m2!1sja!2sjp!4v1597756512941!5m2!1sja!2sjp"
                 width="400"
                 height="300"
                 frameborder="0"
-                style="border: 0;"
+                style="border: 0"
                 allowfullscreen=""
                 aria-hidden="false"
                 tabindex="0"
               ></iframe>
-              </div>
+            </div>
           </div>
         </div>
 
-        <div class="recruit_contact" id="recruit_contact_page">
-          <h2>リクルート <span>&</span> お問い合わせ</h2>
-          <div class="recruit_contact_img">
+        <div class="recruitContact" id="recruit_contact_page">
+          <h2 class="recruitContact__heading">
+            リクルート <span>&</span> お問い合わせ
+          </h2>
+          <div class="recruitContact__img">
             <a href="#"
               ><div class="recruit">
                 <img
@@ -336,7 +386,7 @@
                   width="500"
                   height="380px"
                 />
-                <p>採用情報</p>
+                <p class="recruit__ttl">採用情報</p>
               </div></a
             >
             <a href="#"
@@ -347,7 +397,7 @@
                   width="500px"
                   height="380px"
                 />
-                <p>お問い合わせ</p>
+                <p class="contact__ttl">お問い合わせ</p>
               </div></a
             >
           </div>
@@ -356,18 +406,22 @@
     </main>
 
     <footer>
-      <div class="footer_wrapper" id="sns_page">
-        <div class="footer_gnav">
-          <ul>
-            <li><a href="#search_page">検索</a></li>
-            <li><a href="#company_page">会社概要</a></li>
-            <li><a href="#access_page">アクセス</a></li>
-            <li>
+      <div class="footer__wrapper" id="sns_page">
+        <div class="breadcrumb">
+          <ul class="breadcrumb__list">
+            <li class="breadcrumb__item"><a href="#search_page">検索</a></li>
+            <li class="breadcrumb__item">
+              <a href="#company_page">会社概要</a>
+            </li>
+            <li class="breadcrumb__item">
+              <a href="#access_page">アクセス</a>
+            </li>
+            <li class="breadcrumb__item">
               <a href="#recruit_contact_page"
                 >リクルート<span> & </span>お問い合わせ</a
               >
             </li>
-            <li><a href="#sns_page">sns</a></li>
+            <li class="breadcrumb__item"><a href="#sns_page">sns</a></li>
           </ul>
         </div>
 
