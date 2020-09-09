@@ -30,7 +30,7 @@ li {
   border-bottom: none;
 }
 
-li :visited {
+li:visited {
   color: inherit;
 }
 
