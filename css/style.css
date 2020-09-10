@@ -1075,13 +1075,13 @@ small {
   }
 
   .searchMain__list {
-    width: 74vw;
-    margin: 0 10vw;
+    width: 84vw;
+    margin: 0 5vw;
     gap: 0.5rem;
   }
 
   .searchMain__item img {
-    height: 6vh;
+    height: 9vh;
   }
   .searchMain__item #benz_1,
   .searchMain__item #vw_1 {
