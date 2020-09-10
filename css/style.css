@@ -703,10 +703,6 @@ small {
     top: 15vh;
   }
 
-  .company__main > p {
-    margin: 0;
-  }
-
   .company__slogan {
     display: inline-block;
     font-size: 2.5rem;
@@ -922,7 +918,7 @@ small {
   }
 
   .searchMain__item span {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
   }
 
   .searchSub__wrapper {
@@ -973,10 +969,6 @@ small {
 
   .company__main {
     top: 18vh;
-  }
-
-  .company__main > p {
-    margin: 0;
   }
 
   .company__slogan {
@@ -1154,6 +1146,7 @@ small {
   .company__main {
     top: 13vh;
   }
+
   .company__top {
     display: inline-block;
     font-size: 1.2rem;
