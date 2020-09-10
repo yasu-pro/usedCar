@@ -428,6 +428,10 @@ aside {
   font-size: 3rem;
 }
 
+.recruitContact__heading span {
+  font-size: 2rem;
+}
+
 .recruitContact__img {
   position: relative;
   top: 35vh;
@@ -699,10 +703,6 @@ small {
     top: 15vh;
   }
 
-  .company__main > p {
-    margin: 0;
-  }
-
   .company__slogan {
     display: inline-block;
     font-size: 2.5rem;
@@ -918,7 +918,7 @@ small {
   }
 
   .searchMain__item span {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
   }
 
   .searchSub__wrapper {
@@ -971,10 +971,6 @@ small {
     top: 18vh;
   }
 
-  .company__main > p {
-    margin: 0;
-  }
-
   .company__slogan {
     display: inline-block;
     font-size: 2rem;
@@ -1015,6 +1011,10 @@ small {
 
   .recruitContact__heading {
     font-size: 1.5rem;
+  }
+
+  .recruitContact__heading span {
+    font-size: 1rem;
   }
 
   .recruit__ttl,
@@ -1150,6 +1150,7 @@ small {
   .company__main {
     top: 13vh;
   }
+
   .company__top {
     display: inline-block;
     font-size: 1.2rem;
@@ -1238,10 +1239,6 @@ small {
 
   .breadcrumb__item a {
     padding: 0 0.2rem;
-  }
-
-  .sns {
-    width: 55px;
   }
 }
 /* --------------------------- レスポンシブ -----------------------------*/
