@@ -428,6 +428,10 @@ aside {
   font-size: 3rem;
 }
 
+.recruitContact__heading span {
+  font-size: 2rem;
+}
+
 .recruitContact__img {
   position: relative;
   top: 35vh;
@@ -1238,10 +1242,6 @@ small {
 
   .breadcrumb__item a {
     padding: 0 0.2rem;
-  }
-
-  .sns {
-    width: 55px;
   }
 }
 /* --------------------------- レスポンシブ -----------------------------*/
