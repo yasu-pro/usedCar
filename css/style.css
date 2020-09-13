@@ -251,7 +251,7 @@ aside {
   background-repeat: no-repeat;
 }
 
-.company__content {
+.company__wrapper {
   position: absolute;
   width: 80vw;
   top: 15vh;
@@ -693,7 +693,7 @@ small {
     font-size: 3rem;
   }
 
-  .company__content {
+  .company__wrapper {
     position: absolute;
     width: 80vw;
     top: 8%;
@@ -957,7 +957,7 @@ small {
     background-size: 250px 80%;
   }
 
-  .company__content {
+  .company__wrapper {
     position: absolute;
     width: 80vw;
     top: 8%;
