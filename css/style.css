@@ -170,7 +170,7 @@ aside {
   }
 }
 
-.searchMain__list a:first-of-type span {
+.searchMain__list a:first-of-type p {
   margin: auto 0;
 }
 
@@ -188,13 +188,13 @@ aside {
   border-bottom: solid thin #e4e5df;
 }
 
-.searchMain__item span {
+.searchMain__item p {
   margin: auto 0;
 }
 
-.searchMain__item #benz_2,
-.searchMain__item #vw_2,
-.searchMain__item #lr_2 {
+.searchMain__item .benz_2,
+.searchMain__item .vw_2,
+.searchMain__item .lr_2 {
   display: none;
 }
 
@@ -642,7 +642,7 @@ small {
     border-bottom: solid thin #e4e5df;
   }
 
-  .searchMain__item span {
+  .searchMain__item p {
     font-size: 1.2rem;
   }
 
@@ -779,16 +779,16 @@ small {
     height: 90vh;
   }
 
-  .searchMain__item #benz_1,
-  .searchMain__item #vw_1,
-  .searchMain__item #lr_1 {
+  .searchMain__item .benz_1,
+  .searchMain__item .vw_1,
+  .searchMain__item .lr_1 {
     display: none;
   }
 
-  .searchMain__item #benz_2,
-  .searchMain__item #vw_2,
-  .searchMain__item #lr_2 {
-    display: inline-block;
+  .searchMain__item .benz_2,
+  .searchMain__item .vw_2,
+  .searchMain__item .lr_2 {
+    display: inline;
   }
 
   .searchSub__wrapper {
@@ -905,11 +905,11 @@ small {
     gap: 0.5rem;
   }
 
-  .searchMain__item #lr_1 {
+  .searchMain__item .lr_1 {
     display: none;
   }
 
-  .searchMain__item #lr_2 {
+  .searchMain__item .lr_2 {
     display: inline-block;
   }
 
@@ -917,7 +917,7 @@ small {
     font-size: 1rem;
   }
 
-  .searchMain__item span {
+  .searchMain__item p {
     font-size: 0.8rem;
   }
 
@@ -1110,13 +1110,13 @@ small {
   .searchMain__item img {
     height: 9vh;
   }
-  .searchMain__item #benz_1,
-  .searchMain__item #vw_1 {
+  .searchMain__item .benz_1,
+  .searchMain__item .vw_1 {
     display: none;
   }
 
-  .searchMain__item #benz_2,
-  .searchMain__item #vw_2 {
+  .searchMain__item .benz_2,
+  .searchMain__item .vw_2 {
     display: inline-block;
   }
 
