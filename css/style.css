@@ -310,15 +310,16 @@ aside {
   position: relative;
 }
 
-.access__heading {
-  position: absolute;
+.access__wrapper {
   top: 15vh;
+}
+
+.access__heading {
   font-size: 3rem;
 }
 
 .access__main {
   position: relative;
-  top: 23vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 365px 365px;
