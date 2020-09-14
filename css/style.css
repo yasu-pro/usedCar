@@ -103,7 +103,6 @@ aside {
   width: 100vw;
   height: 89vh;
   margin-top: 11vh;
-  position: relative;
   background: -moz-linear-grad(rgba(47, 2, 5, 0.8), rgba(26, 26, 26, 0.8)),
     url(../used_car/used_car_1.jpg);
 
@@ -244,17 +243,17 @@ aside {
 /* ------ cotainer領域(company) ------ */
 .company {
   height: 100vh;
-  position: relative;
-  background-image: url(../img/company/company_1.jpg);
-  background-size: 40% auto;
-  background-position: right center;
-  background-repeat: no-repeat;
 }
 
 .company__wrapper {
-  position: absolute;
-  width: 80vw;
+  position: relative;
   top: 15vh;
+  width: 80vw;
+  height: 85vh;
+  background-image: url(../img/company/company_1.jpg);
+  background-size: 40% auto;
+  background-position: right top;
+  background-repeat: no-repeat;
 }
 
 .company__heading {
@@ -263,8 +262,8 @@ aside {
 
 .company__main {
   width: 80vw;
-  position: absolute;
-  margin: 3% 0;
+  position: relative;
+  top: 5vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -307,10 +306,11 @@ aside {
 /* ------ cotainer領域(access) ------ */
 .access {
   height: 100vh;
-  position: relative;
 }
 
 .access__wrapper {
+  height: 85vh;
+  position: relative;
   top: 15vh;
 }
 
@@ -321,8 +321,9 @@ aside {
 .access__main {
   position: relative;
   display: grid;
+  top: 5vh;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 365px 365px;
+  grid-template-rows: 360px 360px;
   gap: 1rem;
   padding: 0 10vw;
 }
@@ -420,12 +421,15 @@ aside {
 /* ------ cotainer領域(recruit_contact) ------ */
 .recruitContact {
   height: 100vh;
+}
+
+.recruitContact__wrapper {
   position: relative;
+  top: 15vh;
+  height: 85vh;
 }
 
 .recruitContact__heading {
-  position: absolute;
-  top: 15vh;
   font-size: 3rem;
 }
 
@@ -435,7 +439,7 @@ aside {
 
 .recruitContact__img {
   position: relative;
-  top: 35vh;
+  top: 5vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -484,7 +488,7 @@ footer {
 }
 
 .footer__content {
-  position: absolute;
+  position: relative;
   top: 50%;
   width: 80vw;
   padding: 0 10vw;
