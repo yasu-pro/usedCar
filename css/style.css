@@ -575,7 +575,39 @@ small {
     height: 286px;
   }
 }
-/* タブレット縦 */
+
+/* PC　横縮小時 */
+@media screen and (max-width: 1460px) {
+  .searchMain__item img {
+    height: 10vh;
+  }
+
+  .searchSub__wrapper {
+    position: relative;
+    top: 5%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+
+  .searchSub__price {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  .searchSub__mileage {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .searchSub__years {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+}
+
+/* タブレット横 */
 @media screen and (max-width: 1024px) {
   header {
     display: none;
@@ -781,6 +813,7 @@ small {
   }
 }
 
+/* タブレット　縦 */
 @media screen and (max-width: 768px) {
   aside {
     height: 10vh;
