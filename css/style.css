@@ -699,13 +699,14 @@ small {
   }
 
   .company__wrapper {
-    position: absolute;
     width: 80vw;
-    top: 8%;
+    height: 80vh;
+    top: 8vh;
+    background-size: 40% 100%;
   }
 
   .company__main {
-    top: 15vh;
+    top: 8vh;
   }
 
   .company__slogan {
@@ -726,12 +727,13 @@ small {
     height: 88vh;
   }
 
-  .access__heading {
-    top: 8%;
+  .access__wrapper {
+    height: 80vh;
+    top: 8vh;
   }
 
   .access__main {
-    top: 18%;
+    top: 1vh;
     grid-template-rows: 260px 260px;
   }
 
@@ -739,15 +741,19 @@ small {
     height: 88vh;
   }
 
+  .recruitContact__wrapper {
+    position: relative;
+    top: 8vh;
+    height: 80vh;
+  }
+
   .recruitContact__heading {
-    position: absolute;
-    top: 8%;
     font-size: 3rem;
   }
 
   .recruitContact__img {
     position: relative;
-    top: 30%;
+    top: 8vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
