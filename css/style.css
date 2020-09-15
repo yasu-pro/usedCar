@@ -836,8 +836,6 @@ small {
   }
 
   .searchSub__wrapper {
-    position: relative;
-    top: 5%;
     display: flex;
     flex-direction: column;
   }
@@ -851,14 +849,18 @@ small {
     height: 90vh;
   }
 
+  .company__wrapper {
+    background-size: 60% 100%;
+  }
+
   .access {
     height: 90vh;
-    background-size: 500px 80%;
   }
 
   .access__main {
-    top: 25%;
-    grid-template-rows: 260px 260px;
+    top: 8vh;
+    grid-template-rows: 300px 300px;
+    padding: 0;
   }
 
   .tokyo__heading,
@@ -867,11 +869,20 @@ small {
   }
 
   .recruitContact__img {
-    top: 40%;
+    top: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .recruit,
+  .contact {
+    width: 65vw;
+    margin: 0 auto;
   }
 
   .recruitContact__img img {
-    height: 30vh;
+    height: 27vh;
   }
 
   footer {
@@ -887,8 +898,8 @@ small {
   }
 
   .sns a img {
-    width: 21px;
-    height: 21px;
+    width: 30px;
+    height: 30px;
   }
 }
 /* iphone 8/7/6s/6 横 */
