@@ -124,7 +124,7 @@ aside {
   flex-direction: column;
 }
 
-.searchMain__wrapper {
+.searchMaker__wrapper {
   width: 100vw;
   position: relative;
   top: 5%;
@@ -133,13 +133,13 @@ aside {
   flex-direction: column;
 }
 
-.search__ttl {
+.search__title {
   text-align: center;
   font-size: 2rem;
   margin: 1em 0;
 }
 
-.searchMain__list {
+.searchMaker__list {
   background-color: rgba(26, 26, 26, 0.5);
   width: 70vw;
   margin: 0 10vw;
@@ -150,11 +150,11 @@ aside {
   gap: 1rem;
 }
 
-.searchMain__list a {
+.searchMaker__list a {
   border: solid thin #e4e5df;
 }
 
-.searchMain__list a:first-of-type {
+.searchMaker__list a:first-of-type {
   width: 100%;
   height: 100%;
   font-size: 1.7rem;
@@ -164,16 +164,16 @@ aside {
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
-  .searchMain__list a:first-of-type {
+  .searchMaker__list a:first-of-type {
     height: auto;
   }
 }
 
-.searchMain__list a:first-of-type p {
+.searchMaker__list a:first-of-type p {
   margin: auto 0;
 }
 
-.searchMain__item {
+.searchMaker__item {
   font-size: 1.3em;
   height: 100%;
   display: flex;
@@ -181,19 +181,19 @@ aside {
   text-align: center;
 }
 
-.searchMain__item img {
+.searchMaker__item img {
   width: 100%;
   object-fit: cover;
   border-bottom: solid thin #e4e5df;
 }
 
-.searchMain__item p {
+.searchMaker__item p {
   margin: auto 0;
 }
 
-.searchMain__item .benz_2,
-.searchMain__item .vw_2,
-.searchMain__item .lr_2 {
+.searchMaker__item .benz_2,
+.searchMaker__item .vw_2,
+.searchMaker__item .lr_2 {
   display: none;
 }
 
@@ -210,7 +210,7 @@ aside {
   flex-direction: column;
 }
 
-.searchSub__ttl {
+.searchSub__title {
   text-align: center;
   font-size: 2rem;
   margin: 0.5em 0;
@@ -464,13 +464,13 @@ aside {
   }
 }
 
-.recruit,
+/* .recruit,
 .contact {
   text-align: right;
-}
+} */
 
-.recruit__ttl,
-.contact__ttl {
+.recruit__title,
+.contact__title {
   font-size: 1.5rem;
 }
 
@@ -578,7 +578,7 @@ small {
 
 /* PC　横縮小時 */
 @media screen and (max-width: 1460px) {
-  .searchMain__item img {
+  .searchMaker__item img {
     height: 10vh;
   }
 
@@ -656,12 +656,12 @@ small {
     margin-top: 0;
   }
 
-  .searchMain__wrapper {
+  .searchMaker__wrapper {
     top: 3%;
     right: 0;
   }
 
-  .searchMain__list {
+  .searchMaker__list {
     background-color: rgba(26, 26, 26, 0.5);
     width: 88vw;
     margin: 0 3vw;
@@ -672,14 +672,14 @@ small {
     gap: 1rem;
   }
 
-  .searchMain__item img {
+  .searchMaker__item img {
     width: 100%;
     height: 10vh;
     object-fit: cover;
     border-bottom: solid thin #e4e5df;
   }
 
-  .searchMain__item p {
+  .searchMaker__item p {
     font-size: 1.2rem;
   }
 
@@ -712,7 +712,7 @@ small {
     flex-direction: column;
   }
 
-  .searchSub__ttl {
+  .searchSub__title {
     font-size: x-large;
   }
 
@@ -822,15 +822,15 @@ small {
     height: 90vh;
   }
 
-  .searchMain__item .benz_1,
-  .searchMain__item .vw_1,
-  .searchMain__item .lr_1 {
+  .searchMaker__item .benz_1,
+  .searchMaker__item .vw_1,
+  .searchMaker__item .lr_1 {
     display: none;
   }
 
-  .searchMain__item .benz_2,
-  .searchMain__item .vw_2,
-  .searchMain__item .lr_2 {
+  .searchMaker__item .benz_2,
+  .searchMaker__item .vw_2,
+  .searchMaker__item .lr_2 {
     display: inline;
   }
 
@@ -949,29 +949,29 @@ small {
     height: 86vh;
   }
 
-  .search__ttl {
+  .search__title {
     display: none;
   }
 
-  .searchMain__list {
+  .searchMaker__list {
     width: 74vw;
     margin: 5vh 10vw 0 10vw;
     gap: 0.5rem;
   }
 
-  .searchMain__item .lr_1 {
+  .searchMaker__item .lr_1 {
     display: none;
   }
 
-  .searchMain__item .lr_2 {
+  .searchMaker__item .lr_2 {
     display: inline-block;
   }
 
-  .searchMain__list a:first-of-type {
+  .searchMaker__list a:first-of-type {
     font-size: 1rem;
   }
 
-  .searchMain__item p {
+  .searchMaker__item p {
     font-size: 0.8rem;
   }
 
@@ -984,7 +984,7 @@ small {
     gap: 0;
   }
 
-  .searchSub__ttl {
+  .searchSub__title {
     font-size: 1rem;
     margin-top: 0;
   }
@@ -1070,8 +1070,8 @@ small {
     font-size: 1rem;
   }
 
-  .recruit__ttl,
-  .contact__ttl {
+  .recruit__title,
+  .contact__title {
     font-size: 1rem;
   }
 
@@ -1160,34 +1160,34 @@ small {
     height: 91vh;
   }
 
-  .searchMain__wrapper {
+  .searchMaker__wrapper {
     top: 8%;
     right: 0;
   }
 
-  .search__ttl {
+  .search__title {
     display: inline;
     text-align: center;
     font-size: 1rem;
     margin: 0.3em 0;
   }
 
-  .searchMain__list {
+  .searchMaker__list {
     width: 84vw;
     margin: 0 5vw;
     gap: 0.5rem;
   }
 
-  .searchMain__item img {
+  .searchMaker__item img {
     height: 9vh;
   }
-  .searchMain__item .benz_1,
-  .searchMain__item .vw_1 {
+  .searchMaker__item .benz_1,
+  .searchMaker__item .vw_1 {
     display: none;
   }
 
-  .searchMain__item .benz_2,
-  .searchMain__item .vw_2 {
+  .searchMaker__item .benz_2,
+  .searchMaker__item .vw_2 {
     display: inline-block;
   }
 
