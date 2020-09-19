@@ -1517,4 +1517,103 @@ small {
   }
 }
 
+/* iphone 5/SE 縦  Galaxy Fold 縦 */
+@media screen and (max-width: 320px) {
+  aside {
+    height: 10vh;
+  }
+
+  .search {
+    height: 90vh;
+  }
+
+  .search__title {
+    display: none;
+  }
+
+  .searchMaker__item p {
+    font-size: 0.6rem;
+  }
+
+  .mileage,
+  .years {
+    font-size: 0.6rem;
+    gap: 0.3rem;
+  }
+
+  .mileage input,
+  .years input {
+    transform: scale(1);
+  }
+
+  .company {
+    height: 90vh;
+  }
+
+  .company__main {
+    top: 5vh;
+  }
+
+  .company__slogan {
+    font-size: 1.5rem;
+  }
+
+  .company__top {
+    margin-top: 3%;
+    font-size: 1.1rem;
+  }
+
+  .company__link a {
+    margin-top: 3vh;
+  }
+
+  .access {
+    height: 90vh;
+  }
+
+  .access__main {
+    top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .access__wrapper {
+    height: 90vh;
+  }
+
+  .okayama__heading,
+  .tokyo__heading {
+    margin-top: 5vh;
+  }
+
+  .tokyo__img,
+  .okayama__img {
+    height: 15vh;
+  }
+
+  .tokyo__iframe iframe,
+  .okayama__iframe iframe {
+    position: relative;
+    height: 15vh;
+  }
+
+  .breadcrumb__item {
+    font-size: ;
+  }
+
+  .sns a img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .footer__content {
+    width: 94vw;
+    padding: 0 3vw;
+  }
+
+  small {
+    font-size: 0.1rem;
+  }
+}
+
 /* --------------------------- レスポンシブ -----------------------------*/
