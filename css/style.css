@@ -197,7 +197,7 @@ aside {
   display: none;
 }
 
-.searchSub__wrapper {
+.searchDetails__wrapper {
   position: relative;
   top: 10%;
   display: grid;
@@ -205,15 +205,15 @@ aside {
   gap: 1rem;
 }
 
-.searchSub__flex {
+.searchDetails__flex {
   display: flex;
   flex-direction: column;
 }
 
-.searchSub__title {
+.searchDetails__title {
   text-align: center;
   font-size: 2rem;
-  margin: 0.5em 0;
+  margin: 0.5rem 0;
 }
 
 .price select {
@@ -464,11 +464,6 @@ aside {
   }
 }
 
-/* .recruit,
-.contact {
-  text-align: right;
-} */
-
 .recruit__title,
 .contact__title {
   font-size: 1.5rem;
@@ -582,7 +577,7 @@ small {
     height: 10vh;
   }
 
-  .searchSub__wrapper {
+  .searchDetails__wrapper {
     position: relative;
     top: 5%;
     display: grid;
@@ -591,23 +586,23 @@ small {
     gap: 0;
   }
 
-  .searchSub__price {
+  .searchDetails__price {
     grid-column: 1/3;
     grid-row: 1/2;
   }
 
-  .searchSub__mileage {
+  .searchDetails__mileage {
     grid-column: 1/2;
     grid-row: 2/3;
   }
 
-  .searchSub__years {
+  .searchDetails__years {
     grid-column: 2/3;
     grid-row: 2/3;
   }
 }
 
-/* タブレット横 */
+/* タブレット ipad 横 */
 @media screen and (max-width: 1024px) {
   header {
     display: none;
@@ -657,7 +652,6 @@ small {
   }
 
   .searchMaker__wrapper {
-    top: 3%;
     right: 0;
   }
 
@@ -683,36 +677,16 @@ small {
     font-size: 1.2rem;
   }
 
-  .searchSub__wrapper {
+  .searchDetails__wrapper {
     position: relative;
     top: 5%;
     display: grid;
-    grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
     gap: 0;
   }
 
-  .searchSub__price {
-    grid-column: 1/3;
-    grid-row: 1/2;
-  }
-
-  .searchSub__mileage {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-
-  .searchSub__years {
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-
-  .searchSub__flex {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .searchSub__title {
+  .searchDetails__title {
     font-size: x-large;
   }
 
@@ -812,97 +786,8 @@ small {
   }
 }
 
-/* タブレット　縦 */
-@media screen and (max-width: 768px) {
-  aside {
-    height: 10vh;
-  }
-
-  .search {
-    height: 90vh;
-  }
-
-  .searchMaker__item .benz_1,
-  .searchMaker__item .vw_1,
-  .searchMaker__item .lr_1 {
-    display: none;
-  }
-
-  .searchMaker__item .benz_2,
-  .searchMaker__item .vw_2,
-  .searchMaker__item .lr_2 {
-    display: inline;
-  }
-
-  .searchSub__wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .mileage,
-  .years {
-    font-size: 1.2rem;
-  }
-
-  .company {
-    height: 90vh;
-  }
-
-  .company__wrapper {
-    background-size: 60% 100%;
-  }
-
-  .access {
-    height: 90vh;
-  }
-
-  .access__main {
-    top: 8vh;
-    grid-template-rows: 300px 300px;
-    padding: 0;
-  }
-
-  .tokyo__heading,
-  .okayama__heading {
-    font-size: 1.5rem;
-  }
-
-  .recruitContact__img {
-    top: 8vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-
-  .recruit,
-  .contact {
-    width: 65vw;
-    margin: 0 auto;
-  }
-
-  .recruitContact__img img {
-    height: 27vh;
-  }
-
-  footer {
-    margin-bottom: 10vh;
-  }
-
-  .breadcrumb__item {
-    font-size: 1rem;
-  }
-
-  .breadcrumb__item span {
-    font-size: 0.8rem;
-  }
-
-  .sns a img {
-    width: 30px;
-    height: 30px;
-  }
-}
-/* iphone 8/7/6s/6 横 */
-@media screen and (max-width: 667px) {
+/* iphone 8/7/6s/6 横  */
+@media screen and (max-width: 823px) {
   header {
     display: none;
   }
@@ -975,7 +860,19 @@ small {
     font-size: 0.8rem;
   }
 
-  .searchSub__wrapper {
+  .searchMaker__item .benz_1,
+  .searchMaker__item .vw_1,
+  .searchMaker__item .lr_1 {
+    display: none;
+  }
+
+  .searchMaker__item .benz_2,
+  .searchMaker__item .vw_2,
+  .searchMaker__item .lr_2 {
+    display: inline;
+  }
+
+  .searchDetails__wrapper {
     position: relative;
     top: 5%;
     display: grid;
@@ -984,7 +881,7 @@ small {
     gap: 0;
   }
 
-  .searchSub__title {
+  .searchDetails__title {
     font-size: 1rem;
     margin-top: 0;
   }
@@ -1050,7 +947,7 @@ small {
   }
 
   .access__main {
-    width: 70vw;
+    width: 60vw;
     margin: 0 auto;
     top: 2vh;
     grid-template-rows: 120px 120px;
@@ -1150,8 +1047,209 @@ small {
     bottom: 5%;
   }
 }
-/* iphone 8/7/6s/6 縦 */
-@media screen and (max-width: 375px) {
+
+/*タブレット ipad 縦 */
+@media screen and (width: 768px) {
+  aside {
+    height: 10vh;
+  }
+
+  .bottomNav__list a {
+    font-size: 1.2rem;
+  }
+
+  .bottomNav__item img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .search {
+    height: 90vh;
+  }
+  .searchDetails__title {
+    font-size: x-large;
+    margin: 1rem 0;
+  }
+
+  .searchMaker__item p {
+    font-size: 1.2rem;
+  }
+
+  .searchMaker__item .benz_1,
+  .searchMaker__item .vw_1,
+  .searchMaker__item .lr_1 {
+    display: none;
+  }
+
+  .searchMaker__item .benz_2,
+  .searchMaker__item .vw_2,
+  .searchMaker__item .lr_2 {
+    display: inline;
+  }
+
+  .searchDetails__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .price select {
+    font-size: 1rem;
+    width: 15vw;
+    height: 4.5vh;
+  }
+
+  .mileage,
+  .years {
+    font-size: 1.5rem;
+  }
+
+  .company {
+    height: 90vh;
+  }
+
+  .company__wrapper {
+    background-size: 60% 100%;
+  }
+
+  .company__heading {
+    font-size: 3rem;
+  }
+
+  .company__main {
+    top: 7vh;
+  }
+
+  .company__slogan {
+    font-size: 2.5rem;
+  }
+
+  .company__top {
+    display: inline;
+  }
+
+  .company__link a {
+    font-size: 1.3rem;
+  }
+
+  .access {
+    height: 90vh;
+  }
+
+  .access__heading {
+    font-size: 3rem;
+  }
+
+  .access__main {
+    top: 7vh;
+    width: 80vw;
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 300px 300px;
+    padding: 0;
+  }
+
+  .tokyo__heading,
+  .okayama__heading {
+    font-size: 1.5rem;
+  }
+
+  .recruitContact__heading {
+    font-size: 3rem;
+  }
+
+  .recruitContact__img {
+    top: 7vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .recruit,
+  .contact {
+    width: 65vw;
+    margin: 0 auto;
+  }
+
+  .recruitContact__img img {
+    width: 100%;
+    height: 28vh;
+  }
+
+  .recruit__title,
+  .contact__title {
+    font-size: 1.5rem;
+  }
+
+  footer {
+    height: 20vh;
+    margin-bottom: 10vh;
+  }
+
+  .breadcrumb__item {
+    font-size: 1rem;
+  }
+
+  .breadcrumb__item span {
+    font-size: 0.8rem;
+  }
+
+  .sns a img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* iphone 5/SE 横  Galaxy Fold 横 */
+@media screen and (max-width: 653px) {
+  .searchMaker__wrapper {
+    top: 0;
+    height: 86vh;
+  }
+
+  .search__title {
+    display: inline;
+    font-size: 1.5rem;
+  }
+
+  .searchMaker__list {
+    margin: auto 10vw auto 10vw;
+  }
+
+  .searchDetails__wrapper {
+    display: none;
+  }
+
+  .access__main {
+    grid-template-rows: 100px 100px;
+  }
+}
+
+/* iphone 5/SE 横*/
+/* @media screen and (max-width: 568px) {
+  .searchMaker__wrapper {
+    top: 0;
+    height: 86vh;
+  }
+
+  .search__title {
+    display: inline;
+    font-size: 1.5rem;
+  }
+
+  .searchMaker__list {
+    margin: auto 10vw auto 10vw;
+  }
+
+  .searchDetails__wrapper {
+    display: none;
+  }
+
+  .access__main {
+    grid-template-rows: 100px 100px;
+  }
+} */
+
+/* surfaceDuo */
+@media screen and (max-width: 450px) {
   aside {
     height: 9vh;
   }
@@ -1191,14 +1289,14 @@ small {
     display: inline-block;
   }
 
-  .searchSub__wrapper {
+  .searchDetails__wrapper {
     position: relative;
-    top: 12%;
+    top: 0;
     display: flex;
     flex-direction: column;
   }
 
-  .searchSub__flex {
+  .searchDetails__flex {
     margin: 2vh 0;
   }
 
@@ -1244,36 +1342,104 @@ small {
   }
 
   .access__main {
-    left: 0;
-    top: 8vh;
-    height: 70vh;
+    width: 80vw;
+    position: relative;
     display: grid;
-    grid-template-columns: 150px 150px;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 0rem;
+    top: 5vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    gap: 1rem;
     padding: 0;
+    margin: 0;
   }
 
   .tokyo {
     grid-column: 1/2;
     grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tokyo__heading {
+    font-size: 1.2rem;
+    border: solid thin #e4e5df;
+    text-align: center;
+    margin: 0 0 2% 0;
+  }
+
+  .tokyo__img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  .tokyo__img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .tokyo__iframe {
+    position: relative;
     grid-column: 2/3;
-    grid-row: 2/3;
+    grid-row: 1/2;
+  }
+
+  .tokyo__iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 
   .okayama {
-    grid-column: 1/2;
-    grid-row: 3/4;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .okayama__heading {
+    font-size: 1.2rem;
+    border: solid thin #e4e5df;
+    text-align: center;
+    margin: 0 0 2% 0;
+  }
+
+  .okayama__img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  .okayama__img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .okayama__iframe {
-    grid-column: 2/3;
-    grid-row: 4/5;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 2/3;
   }
 
+  .okayama__iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
   .recruitContact {
     height: 91vh;
   }
@@ -1314,4 +1480,41 @@ small {
     padding: 0 0.2rem;
   }
 }
+
+/* iphone 6/7/8　縦 */
+@media screen and (max-width: 375px) {
+  .access__main {
+    left: 0;
+    top: 7vh;
+    height: 70vh;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .tokyo {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .tokyo__iframe {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .okayama {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  .okayama__iframe {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+}
+
 /* --------------------------- レスポンシブ -----------------------------*/
