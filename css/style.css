@@ -104,19 +104,19 @@ aside {
   height: 89vh;
   margin-top: 11vh;
   background: -moz-linear-grad(rgba(47, 2, 5, 0.8), rgba(26, 26, 26, 0.8)),
-    url(../used_car/used_car_1.jpg);
+    url(./used_car/used_car_1.jpg);
 
   background: -webkit-linear-gradient(
       rgba(47, 2, 5, 0.8),
       rgba(26, 26, 26, 0.8)
     ),
-    url(../img/used_car/used_car_1.jpg);
+    url(./img/used_car/used_car_1.jpg);
 
   background: -ms-linear-gradient(rgba(47, 2, 5, 0.8), rgba(26, 26, 26, 0.8)),
-    url(../img/used_car/used_car_1.jpg);
+    url(./img/used_car/used_car_1.jpg);
 
   background: radial-gradient(rgba(47, 2, 5, 0.1), rgba(26, 26, 26, 1)),
-    url(../img/used_car/used_car_1.jpg);
+    url(./img/used_car/used_car_1.jpg);
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
@@ -250,7 +250,7 @@ aside {
   top: 15vh;
   width: 80vw;
   height: 85vh;
-  background-image: url(../img/company/company_1.jpg);
+  background-image: url(./img/company/company_1.jpg);
   background-size: 40% auto;
   background-position: right top;
   background-repeat: no-repeat;
@@ -474,8 +474,8 @@ aside {
 /* -------------------------- cotainer領域終了 -------------------------- */
 /* -------------------------- main領域 -------------------------- */
 
-/* -------------------------- footer領域 -------------------------- */
-footer {
+/* -------------------------- .footer領域 -------------------------- */
+.footer {
   width: 100vw;
   height: 25vh;
   position: relative;
@@ -493,32 +493,32 @@ footer {
   justify-items: center;
 }
 
-.breadcrumb__list {
+.footer__breadcrumb__list {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   justify-items: center;
 }
 
-.breadcrumb__item {
+.footer__breadcrumb__item {
   font-size: 1.2rem;
   color: #e4e5df;
   border-left: solid thin #e4e5df;
 }
 
-.breadcrumb__item:first-of-type {
+.footer__breadcrumb__item:first-of-type {
   border-left: none;
 }
 
-.breadcrumb__item a {
+.footer__breadcrumb__item a {
   padding: 1rem 1rem;
 }
 
-.breadcrumb__item span {
+.footer__breadcrumb__item span {
   font-size: 1rem;
 }
 
-.sns a:nth-child(3) img {
+.footer__sns a:nth-child(3) img {
   background-color: #e4e5df;
   border-radius: 50%;
 }
@@ -528,7 +528,7 @@ small {
   right: 0;
   bottom: 0;
 }
-/* -------------------------- footer領域終了 -------------------------- */
+/* -------------------------- .footer領域終了 -------------------------- */
 
 /* --------------------------- レスポンシブ -----------------------------*/
 /* 画面縦縮小 */
@@ -566,7 +566,7 @@ small {
     opacity: 1;
   }
 
-  footer {
+  .footer {
     height: 286px;
   }
 }
@@ -773,7 +773,7 @@ small {
 
   /* -------------------------- main領域 -------------------------- */
 
-  footer {
+  .footer {
     width: 100vw;
     height: 13vh;
     margin-bottom: 12vh;
@@ -897,7 +897,7 @@ small {
   .contact__title {
     font-size: 2rem;
   }
-  footer {
+  .footer {
     height: 15vh;
     margin-bottom: 10vh;
   }
@@ -908,10 +908,11 @@ small {
     padding: 0 5vw;
   }
 
-  .breadcrumb__item {
+  .footer__breadcrumb__item {
     font-size: 1.5rem;
   }
-  .sns a img {
+
+  .footer__sns a img {
     width: 50px;
     height: 50px;
   }
@@ -1119,7 +1120,7 @@ small {
     height: 35vh;
   }
 
-  footer {
+  .footer {
     width: 100vw;
     height: 30vh;
     margin-bottom: 12vh;
@@ -1127,48 +1128,48 @@ small {
     background-color: rgb(61, 61, 61);
   }
 
-  .breadcrumb__list {
+  .footer__breadcrumb__list {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
   }
 
-  .breadcrumb__item {
+  .footer__breadcrumb__item {
     font-size: 0.8rem;
   }
 
-  .breadcrumb__item span {
+  .footer__breadcrumb__item span {
     font-size: 0.5rem;
   }
 
-  .sns {
+  .footer__sns {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 0.4rem;
   }
 
-  .sns a:first-of-type {
+  .footer__sns a:first-of-type {
     grid-column: 1/2;
     grid-row: 1/2;
   }
 
-  .sns a:nth-of-type(2) {
+  .footer__sns a:nth-of-type(2) {
     grid-column: 2/3;
     grid-row: 1/2;
   }
 
-  .sns a:nth-of-type(3) {
+  .footer__sns a:nth-of-type(3) {
     grid-column: 1/2;
     grid-row: 2/3;
   }
 
-  .sns a:nth-of-type(4) {
+  .footer__sns a:nth-of-type(4) {
     grid-column: 2/3;
     grid-row: 2/3;
   }
 
-  .sns a img {
+  .footer__sns a img {
     width: 25px;
     height: 25px;
   }
@@ -1310,20 +1311,20 @@ small {
     font-size: 1.5rem;
   }
 
-  footer {
+  .footer {
     height: 20vh;
     margin-bottom: 10vh;
   }
 
-  .breadcrumb__item {
+  .footer__breadcrumb__item {
     font-size: 1rem;
   }
 
-  .breadcrumb__item span {
+  .footer__breadcrumb__item span {
     font-size: 0.8rem;
   }
 
-  .sns a img {
+  .footer__sns a img {
     width: 30px;
     height: 30px;
   }
@@ -1593,7 +1594,7 @@ small {
     height: 27vh;
   }
 
-  footer {
+  .footer {
     height: 20vh;
     margin-bottom: 9vh;
   }
@@ -1603,11 +1604,11 @@ small {
     padding: 0 5vw;
   }
 
-  .breadcrumb__item {
+  .footer__breadcrumb__item {
     font-size: 0.7rem;
   }
 
-  .breadcrumb__item a {
+  .footer__breadcrumb__item a {
     padding: 0 0.2rem;
   }
 }
@@ -1728,11 +1729,11 @@ small {
     height: 15vh;
   }
 
-  .breadcrumb__item {
+  .footer__breadcrumb__item {
     font-size: ;
   }
 
-  .sns a img {
+  .footer__sns a img {
     width: 20px;
     height: 20px;
   }
