@@ -143,11 +143,11 @@ aside {
   gap: 1rem;
 }
 
-.searchMaker__list a {
+.searchMaker__item {
   border: solid thin #e4e5df;
 }
 
-.searchMaker__list a:first-of-type {
+.searchMaker__item:first-of-type {
   width: 100%;
   height: 100%;
   font-size: 1.7rem;
@@ -157,12 +157,12 @@ aside {
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
-  .searchMaker__list a:first-of-type {
+  .searchMaker__item:first-of-type {
     height: auto;
   }
 }
 
-.searchMaker__list a:first-of-type p {
+.searchMaker__item:first-of-type p {
   margin: auto 0;
 }
 
@@ -977,7 +977,7 @@ small {
     display: inline-block;
   }
 
-  .searchMaker__list a:first-of-type {
+  .searchMaker__item:first-of-type {
     font-size: 1rem;
   }
 
