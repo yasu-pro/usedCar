@@ -486,28 +486,28 @@ aside {
   justify-items: center;
 }
 
-.footer__breadcrumb__list {
+.breadcrumb__list {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   justify-items: center;
 }
 
-.footer__breadcrumb__item {
+.breadcrumb__item {
   font-size: 1.2rem;
   color: #e4e5df;
   border-left: solid thin #e4e5df;
 }
 
-.footer__breadcrumb__item:first-of-type {
+.breadcrumb__item:first-of-type {
   border-left: none;
 }
 
-.footer__breadcrumb__item a {
+.breadcrumb__item a {
   padding: 1rem 1rem;
 }
 
-.footer__breadcrumb__item span {
+.breadcrumb__item span {
   font-size: 1rem;
 }
 
@@ -901,7 +901,7 @@ small {
     padding: 0 5vw;
   }
 
-  .footer__breadcrumb__item {
+  .breadcrumb__item {
     font-size: 1.5rem;
   }
 
@@ -1121,17 +1121,17 @@ small {
     background-color: rgb(61, 61, 61);
   }
 
-  .footer__breadcrumb__list {
+  .breadcrumb__list {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
   }
 
-  .footer__breadcrumb__item {
+  .breadcrumb__item {
     font-size: 0.8rem;
   }
 
-  .footer__breadcrumb__item span {
+  .breadcrumb__item span {
     font-size: 0.5rem;
   }
 
@@ -1309,11 +1309,11 @@ small {
     margin-bottom: 10vh;
   }
 
-  .footer__breadcrumb__item {
+  .breadcrumb__item {
     font-size: 1rem;
   }
 
-  .footer__breadcrumb__item span {
+  .breadcrumb__item span {
     font-size: 0.8rem;
   }
 
@@ -1597,11 +1597,11 @@ small {
     padding: 0 5vw;
   }
 
-  .footer__breadcrumb__item {
+  .breadcrumb__item {
     font-size: 0.7rem;
   }
 
-  .footer__breadcrumb__item a {
+  .breadcrumb__item a {
     padding: 0 0.2rem;
   }
 }
@@ -1722,7 +1722,7 @@ small {
     height: 15vh;
   }
 
-  .footer__breadcrumb__item {
+  .breadcrumb__item {
     font-size: ;
   }
 
