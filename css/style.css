@@ -475,7 +475,7 @@ aside {
   background-color: rgb(61, 61, 61);
 }
 
-.footer__content {
+.footer__wrapper {
   position: relative;
   top: 50%;
   width: 80vw;
@@ -501,6 +501,10 @@ aside {
 
 .breadcrumb__item:first-of-type {
   border-left: none;
+}
+
+.breadcrumb__item--2 {
+  display: none;
 }
 
 .breadcrumb__item a {
@@ -774,7 +778,7 @@ small {
     background-color: rgb(61, 61, 61);
   }
 
-  .footer__content {
+  .footer__wrapper {
     top: 30%;
   }
 }
@@ -895,7 +899,7 @@ small {
     margin-bottom: 10vh;
   }
 
-  .footer__content {
+  .footer__wrapper {
     width: 90vw;
     margin: 0 auto;
     padding: 0 5vw;
@@ -1592,7 +1596,7 @@ small {
     margin-bottom: 9vh;
   }
 
-  .footer__content {
+  .footer__wrapper {
     width: 90vw;
     padding: 0 5vw;
   }
@@ -1642,7 +1646,7 @@ small {
   }
 }
 
-/* iphone 5/SE 縦  Galaxy Fold 縦 */
+/* iphone 5/SE 縦  */
 @media screen and (max-width: 320px) {
   aside {
     height: 10vh;
@@ -1723,7 +1727,7 @@ small {
   }
 
   .breadcrumb__item {
-    font-size: ;
+    font-size: 0.7rem;
   }
 
   .footer__sns a img {
@@ -1731,13 +1735,48 @@ small {
     height: 20px;
   }
 
-  .footer__content {
-    width: 94vw;
-    padding: 0 3vw;
+  .footer__wrapper {
+    width: 96vw;
+    padding: 0 2vw;
   }
 
   small {
     font-size: 0.1rem;
+  }
+}
+@media screen and (max-width: 280px) {
+  aside {
+    height: 9vh;
+  }
+
+  .breadcrumb__item {
+    font-size: 0.7rem;
+  }
+
+  .breadcrumb__item a:not(:nth-of-type(4)) {
+    position: relative;
+    top: 25%;
+    transform: translateY(-50%);
+  }
+
+  .breadcrumb__item--1 {
+    display: none;
+  }
+
+  .breadcrumb__item--2 {
+    text-align: center;
+    display: flex;
+    position: relative;
+    top: 50%;
+  }
+
+  .footer__sns {
+    gap: 0.2rem;
+  }
+
+  .footer__sns a img {
+    width: 18px;
+    height: 18px;
   }
 }
 
