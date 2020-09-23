@@ -1718,6 +1718,15 @@ small {
     height: 91vh;
   }
 
+  .searchMaker__list {
+    width: 86vw;
+    margin: 0 2vw;
+  }
+
+  .searchMaker__link p {
+    font-size: 0.5rem;
+  }
+
   .company {
     height: 91vh;
   }
