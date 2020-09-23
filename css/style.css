@@ -93,9 +93,6 @@ aside {
 /*--------------------わり -------------------------- */
 /* -------------------------- main領域 -------------------------- */
 .search {
-  width: 100vw;
-  height: 89vh;
-  margin-top: 11vh;
   background: -moz-linear-grad(rgba(47, 2, 5, 0.8), rgba(26, 26, 26, 0.8)),
     url(./used_car/used_car_1.jpg);
 
@@ -143,30 +140,8 @@ aside {
   gap: 1rem;
 }
 
-.searchMaker__item {
+.searchMaker__link {
   border: solid thin #e4e5df;
-}
-
-.searchMaker__item:first-of-type {
-  width: 100%;
-  height: 100%;
-  font-size: 1.7rem;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-}
-
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  .searchMaker__item:first-of-type {
-    height: auto;
-  }
-}
-
-.searchMaker__item:first-of-type p {
-  margin: auto 0;
-}
-
-.searchMaker__item {
   font-size: 1.3em;
   height: 100%;
   display: flex;
@@ -174,19 +149,31 @@ aside {
   text-align: center;
 }
 
-.searchMaker__item img {
+.searchMaker__item:first-of-type {
+  width: 100%;
+  height: 100%;
+  font-size: 1.7rem;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  /* .searchMaker__item:first-of-type {
+    height: auto;
+  } */
+}
+.searchMaker__link img {
   width: 100%;
   object-fit: cover;
+  vertical-align: bottom;
   border-bottom: solid thin #e4e5df;
 }
 
-.searchMaker__item p {
+.searchMaker__txt {
   margin: auto 0;
 }
 
-.searchMaker__item .benz_2,
-.searchMaker__item .vw_2,
-.searchMaker__item .lr_2 {
+.benz_2,
+.vw_2,
+.lr_2 {
   display: none;
 }
 
@@ -570,7 +557,7 @@ small {
 
 /* PC　横縮小時 */
 @media screen and (max-width: 1460px) {
-  .searchMaker__item img {
+  .searchMaker__link img {
     height: 10vh;
   }
 
@@ -663,15 +650,16 @@ small {
     gap: 1rem;
   }
 
-  .searchMaker__item img {
+  .searchMaker__link img {
     width: 100%;
     height: 10vh;
     object-fit: cover;
     border-bottom: solid thin #e4e5df;
   }
 
-  .searchMaker__item p {
+  .searchMaker__link p {
     font-size: 1.2rem;
+    margin: auto 0;
   }
 
   .searchDetails__wrapper {
@@ -973,32 +961,32 @@ small {
     gap: 0.5rem;
   }
 
-  .searchMaker__item .lr_1 {
+  .lr_1 {
     display: none;
   }
 
-  .searchMaker__item .lr_2 {
-    display: inline-block;
+  .lr_2 {
+    display: block;
   }
 
   .searchMaker__item:first-of-type {
     font-size: 1rem;
   }
 
-  .searchMaker__item p {
+  .searchMaker__link p {
     font-size: 0.8rem;
   }
 
-  .searchMaker__item .benz_1,
-  .searchMaker__item .vw_1,
-  .searchMaker__item .lr_1 {
+  .benz_1,
+  .vw_1,
+  .lr_1 {
     display: none;
   }
 
-  .searchMaker__item .benz_2,
-  .searchMaker__item .vw_2,
-  .searchMaker__item .lr_2 {
-    display: inline;
+  .benz_2,
+  .vw_2,
+  .lr_2 {
+    display: block;
   }
 
   .searchDetails__wrapper {
@@ -1200,20 +1188,20 @@ small {
     margin: 1rem 0;
   }
 
-  .searchMaker__item p {
+  .searchMaker__link p {
     font-size: 1.2rem;
   }
 
-  .searchMaker__item .benz_1,
-  .searchMaker__item .vw_1,
-  .searchMaker__item .lr_1 {
+  .benz_1,
+  .vw_1,
+  .lr_1 {
     display: none;
   }
 
-  .searchMaker__item .benz_2,
-  .searchMaker__item .vw_2,
-  .searchMaker__item .lr_2 {
-    display: inline;
+  .benz_2,
+  .vw_2,
+  .lr_2 {
+    display: block;
   }
 
   .searchDetails__wrapper {
@@ -1335,7 +1323,7 @@ small {
   }
 
   .search__title {
-    display: inline;
+    display: block;
     font-size: 1.5rem;
   }
 
@@ -1351,31 +1339,6 @@ small {
     grid-template-rows: 100px 100px;
   }
 }
-
-/* iphone 5/SE 横*/
-/* @media screen and (max-width: 568px) {
-  .searchMaker__wrapper {
-    top: 0;
-    height: 86vh;
-  }
-
-  .search__title {
-    display: inline;
-    font-size: 1.5rem;
-  }
-
-  .searchMaker__list {
-    margin: auto 10vw auto 10vw;
-  }
-
-  .searchDetails__wrapper {
-    display: none;
-  }
-
-  .access__main {
-    grid-template-rows: 100px 100px;
-  }
-} */
 
 /* surfaceDuo */
 @media screen and (max-width: 450px) {
@@ -1393,7 +1356,7 @@ small {
   }
 
   .search__title {
-    display: inline;
+    display: block;
     text-align: center;
     font-size: 1rem;
     margin: 0.3em 0;
@@ -1405,17 +1368,17 @@ small {
     gap: 0.5rem;
   }
 
-  .searchMaker__item img {
+  .searchMaker__link img {
     height: 9vh;
   }
-  .searchMaker__item .benz_1,
-  .searchMaker__item .vw_1 {
+  .benz_1,
+  .vw_1 {
     display: none;
   }
 
-  .searchMaker__item .benz_2,
-  .searchMaker__item .vw_2 {
-    display: inline-block;
+  .benz_2,
+  .vw_2 {
+    display: block;
   }
 
   .searchDetails__wrapper {
@@ -1660,7 +1623,7 @@ small {
     display: none;
   }
 
-  .searchMaker__item p {
+  .searchMaker__link p {
     font-size: 0.6rem;
   }
 
@@ -1744,9 +1707,27 @@ small {
     font-size: 0.1rem;
   }
 }
+
+/* Galaxy Fold */
 @media screen and (max-width: 280px) {
   aside {
     height: 9vh;
+  }
+
+  .search {
+    height: 91vh;
+  }
+
+  .company {
+    height: 91vh;
+  }
+
+  .access {
+    height: 91vh;
+  }
+
+  .recruitContact {
+    height: 91vh;
   }
 
   .breadcrumb__item {
