@@ -56,9 +56,7 @@ a {
 }
 
 .header__heading {
-  display: flex;
-  justify-content: center;
-  justify-items: center;
+  margin: auto 0;
 }
 
 .header__logo {
@@ -93,6 +91,8 @@ aside {
 /*--------------------わり -------------------------- */
 /* -------------------------- main領域 -------------------------- */
 .search {
+  height: 89vh;
+  margin-top: 11vh;
   background: -moz-linear-grad(rgba(47, 2, 5, 0.8), rgba(26, 26, 26, 0.8)),
     url(./used_car/used_car_1.jpg);
 
@@ -690,7 +690,6 @@ small {
 
   .company__wrapper {
     width: 80vw;
-    height: 80vh;
     top: 8vh;
     background-size: 40% 100%;
   }
@@ -718,7 +717,6 @@ small {
   }
 
   .access__wrapper {
-    height: 80vh;
     top: 8vh;
   }
 
@@ -1319,7 +1317,6 @@ small {
 @media screen and (max-width: 653px) {
   .searchMaker__wrapper {
     top: 0;
-    height: 86vh;
   }
 
   .search__title {
@@ -1383,7 +1380,6 @@ small {
 
   .searchDetails__wrapper {
     position: relative;
-    top: 0;
     display: flex;
     flex-direction: column;
   }
@@ -1669,10 +1665,6 @@ small {
     flex-direction: column;
   }
 
-  .access__wrapper {
-    height: 90vh;
-  }
-
   .okayama__heading,
   .tokyo__heading {
     margin-top: 5vh;
@@ -1716,6 +1708,10 @@ small {
 
   .search {
     height: 91vh;
+  }
+
+  .searchDetails__wrapper {
+    height: 83vh;
   }
 
   .searchMaker__list {
