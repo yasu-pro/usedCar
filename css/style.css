@@ -403,7 +403,7 @@ aside {
   font-size: 2rem;
 }
 
-.recruitContact__img {
+.recruitContact__main {
   position: relative;
   top: 5vh;
   display: flex;
@@ -411,22 +411,22 @@ aside {
   justify-content: space-around;
 }
 
-.recruitContact__img img {
+.recruitContact__box img {
   width: 30vw;
   height: 45vh;
+  opacity: 0.6;
+}
+
+.recruitContact__box img:hover {
+  width: 32vw;
+  height: 47vh;
+  transition: 0.2s;
   opacity: 1;
 }
 
-@media screen and (min-width: 1444px) {
-  .recruitContact__img img {
-    opacity: 0.6;
-  }
-
-  .recruitContact__img img:hover {
-    width: 32vw;
-    height: 47vh;
-    transition: 0.2s;
-    opacity: 1;
+@media screen and (max-width: 1024px) {
+  .recruitContact__box img {
+    pointer-events: none;
   }
 }
 
@@ -523,16 +523,9 @@ small {
     height: 986px;
   }
 
-  .recruitContact__img img {
+  .recruitContact__box img {
     width: 529px;
     height: 386px;
-    opacity: 1;
-  }
-
-  .recruitContact__img img:hover {
-    width: 529px;
-    height: 386px;
-    transition: 0.2s;
     opacity: 1;
   }
 
@@ -725,7 +718,7 @@ small {
     font-size: 3rem;
   }
 
-  .recruitContact__img {
+  .recruitContact__main {
     position: relative;
     top: 8vh;
     display: grid;
@@ -734,7 +727,7 @@ small {
     gap: 2rem;
   }
 
-  .recruitContact__img img {
+  .recruitContact__box img {
     width: 100%;
     height: 40vh;
     opacity: 1;
@@ -850,13 +843,13 @@ small {
     font-size: 4rem;
   }
 
-  .recruitContact__img {
+  .recruitContact__main {
     top: 5vh;
     display: flex;
     flex-direction: column;
   }
 
-  .recruitContact__img img {
+  .recruitContact__box img {
     width: 100%;
     height: 30vh;
     opacity: 1;
@@ -1068,7 +1061,7 @@ small {
     font-size: 1rem;
   }
 
-  .recruitContact__img {
+  .recruitContact__main {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -1079,7 +1072,7 @@ small {
     width: auto;
   }
 
-  .recruitContact__img img {
+  .recruitContact__box img {
     width: 35vw;
     height: 35vh;
   }
@@ -1246,7 +1239,7 @@ small {
     font-size: 3rem;
   }
 
-  .recruitContact__img {
+  .recruitContact__main {
     top: 7vh;
     display: flex;
     flex-direction: column;
@@ -1259,7 +1252,7 @@ small {
     margin: 0 auto;
   }
 
-  .recruitContact__img img {
+  .recruitContact__box img {
     width: 100%;
     height: 28vh;
   }
@@ -1503,17 +1496,12 @@ small {
     height: 91vh;
   }
 
-  .recruitContact__img {
+  .recruitContact__main {
     display: grid;
     grid-template-columns: 1fr;
   }
 
-  .recruitContact__img img {
-    width: 100%;
-    height: 27vh;
-  }
-
-  .recruitContact__img img:hover {
+  .recruitContact__box img {
     width: 100%;
     height: 27vh;
   }
