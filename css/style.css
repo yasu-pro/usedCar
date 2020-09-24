@@ -146,11 +146,6 @@ aside {
   font-size: 1.7rem;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  /* .searchMaker__item:first-of-type {
-    height: auto;
-  } */
-}
 .searchMaker__link img {
   width: 100%;
   object-fit: cover;
