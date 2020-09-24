@@ -55,16 +55,9 @@ a {
   padding: 2vh 10vw;
 }
 
-.header__heading {
+.header__wrapper {
+  display: inline-block;
   margin: auto 0;
-}
-
-.header__logo {
-  margin: auto 0;
-}
-
-.header__logo a {
-  font-size: 2.5rem;
 }
 
 .gnav {
@@ -94,19 +87,19 @@ aside {
   height: 89vh;
   margin-top: 11vh;
   background: -moz-linear-grad(rgba(47, 2, 5, 0.8), rgba(26, 26, 26, 0.8)),
-    url(./used_car/used_car_1.jpg);
+    url(../img/used_car/used_car_1.jpg);
 
   background: -webkit-linear-gradient(
       rgba(47, 2, 5, 0.8),
       rgba(26, 26, 26, 0.8)
     ),
-    url(./img/used_car/used_car_1.jpg);
+    url(../img/used_car/used_car_1.jpg);
 
   background: -ms-linear-gradient(rgba(47, 2, 5, 0.8), rgba(26, 26, 26, 0.8)),
-    url(./img/used_car/used_car_1.jpg);
+    url(../img/used_car/used_car_1.jpg);
 
   background: radial-gradient(rgba(47, 2, 5, 0.1), rgba(26, 26, 26, 1)),
-    url(./img/used_car/used_car_1.jpg);
+    url(../img/used_car/used_car_1.jpg);
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
@@ -150,8 +143,6 @@ aside {
 }
 
 .searchMaker__item:first-of-type {
-  width: 100%;
-  height: 100%;
   font-size: 1.7rem;
 }
 
@@ -229,8 +220,7 @@ aside {
   position: relative;
   top: 15vh;
   width: 80vw;
-  height: 85vh;
-  background-image: url(./img/company/company_1.jpg);
+  background-image: url(../img/company/company_1.jpg);
   background-size: 40% auto;
   background-position: right top;
   background-repeat: no-repeat;
@@ -246,8 +236,6 @@ aside {
   top: 5vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  justify-items: center;
 }
 
 .company__slogan {
@@ -289,7 +277,6 @@ aside {
 }
 
 .access__wrapper {
-  height: 85vh;
   position: relative;
   top: 15vh;
 }
@@ -406,7 +393,6 @@ aside {
 .recruitContact__wrapper {
   position: relative;
   top: 15vh;
-  height: 85vh;
 }
 
 .recruitContact__heading {
@@ -470,14 +456,14 @@ aside {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  justify-items: center;
+}
+
+.footer__breadcrumb {
+  margin: auto 0;
 }
 
 .breadcrumb__list {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  justify-items: center;
 }
 
 .breadcrumb__item {
@@ -495,7 +481,7 @@ aside {
 }
 
 .breadcrumb__item a {
-  padding: 1rem 1rem;
+  padding: 0 1rem 0 1rem;
 }
 
 .breadcrumb__item span {
@@ -588,7 +574,7 @@ small {
 
 /* タブレット ipad 横 */
 @media screen and (max-width: 1024px) {
-  header {
+  .header {
     display: none;
   }
 
@@ -903,10 +889,6 @@ small {
 
 /* iphone 8/7/6s/6 横  */
 @media screen and (max-width: 823px) {
-  header {
-    display: none;
-  }
-
   aside {
     width: 100%;
     height: 14vh;
@@ -1036,7 +1018,6 @@ small {
   }
 
   .company__slogan {
-    display: inline-block;
     font-size: 2rem;
   }
 
@@ -1109,12 +1090,6 @@ small {
     margin-bottom: 12vh;
     position: relative;
     background-color: rgb(61, 61, 61);
-  }
-
-  .breadcrumb__list {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
   }
 
   .breadcrumb__item {
@@ -1353,8 +1328,6 @@ small {
   }
 
   .search__title {
-    display: block;
-    text-align: center;
     font-size: 1rem;
     margin: 0.3em 0;
   }
@@ -1362,7 +1335,6 @@ small {
   .searchMaker__list {
     width: 84vw;
     margin: 0 5vw;
-    gap: 0.5rem;
   }
 
   .searchMaker__link img {
@@ -1379,7 +1351,6 @@ small {
   }
 
   .searchDetails__wrapper {
-    position: relative;
     display: flex;
     flex-direction: column;
   }
@@ -1533,11 +1504,8 @@ small {
   }
 
   .recruitContact__img {
-    top: 8vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 2rem;
   }
 
   .recruitContact__img img {
@@ -1575,13 +1543,8 @@ small {
     left: 0;
     top: 7vh;
     height: 70vh;
-    width: 80vw;
-    display: grid;
-    grid-template-columns: 150px 150px;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 0rem;
-    margin: 0;
-    padding: 0;
   }
 
   .tokyo {
