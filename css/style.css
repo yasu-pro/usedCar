@@ -41,7 +41,6 @@ a {
 
 /*------ 全体終わり ------*/
 
-/*------ header ------- */
 .header {
   width: 80vw;
   height: 7vh;
@@ -81,7 +80,6 @@ a {
 aside {
   display: none;
 }
-/*------ header終わり ------ */
 
 .search {
   height: 89vh;
