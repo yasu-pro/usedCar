@@ -377,7 +377,7 @@ aside {
   height: 100vh;
 }
 
-.recruitContact__wrapper {
+.recruitContact__inner {
   position: relative;
   top: 15vh;
 }
@@ -432,7 +432,7 @@ aside {
   background-color: rgb(61, 61, 61);
 }
 
-.footer__box {
+.footer__inner {
   position: relative;
   top: 50%;
   width: 80vw;
@@ -691,7 +691,7 @@ small {
     height: 88vh;
   }
 
-  .recruitContact__wrapper {
+  .recruitContact__inner {
     position: relative;
     top: 8vh;
     height: 80vh;
@@ -724,7 +724,7 @@ small {
     background-color: rgb(61, 61, 61);
   }
 
-  .footer__box {
+  .footer__inner {
     top: 30%;
   }
 }
@@ -845,7 +845,7 @@ small {
     margin-bottom: 10vh;
   }
 
-  .footer__box {
+  .footer__inner {
     width: 90vw;
     margin: 0 auto;
     padding: 0 5vw;
@@ -1492,7 +1492,7 @@ small {
     margin-bottom: 9vh;
   }
 
-  .footer__box {
+  .footer__inner {
     width: 90vw;
     padding: 0 5vw;
   }
@@ -1622,7 +1622,7 @@ small {
     height: 20px;
   }
 
-  .footer__box {
+  .footer__inner {
     width: 96vw;
     padding: 0 2vw;
   }
