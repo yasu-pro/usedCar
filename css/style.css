@@ -266,7 +266,7 @@ aside {
   height: 100vh;
 }
 
-.access__wrapper {
+.access__inner {
   position: relative;
   top: 15vh;
 }
@@ -678,7 +678,7 @@ small {
     height: 88vh;
   }
 
-  .access__wrapper {
+  .access__inner {
     top: 8vh;
   }
 
