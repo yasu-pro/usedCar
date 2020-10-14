@@ -105,7 +105,7 @@ aside {
   flex-direction: column;
 }
 
-.searchMaker__wrapper {
+.searchMaker {
   width: 100vw;
   position: relative;
   top: 5%;
@@ -597,7 +597,7 @@ small {
     margin-top: 0;
   }
 
-  .searchMaker__wrapper {
+  .searchMaker {
     right: 0;
   }
 
@@ -1264,7 +1264,7 @@ small {
 
 /* iphone 5/SE 横  Galaxy Fold 横 */
 @media screen and (max-width: 653px) {
-  .searchMaker__wrapper {
+  .searchMaker {
     top: 0;
   }
 
@@ -1296,7 +1296,7 @@ small {
     height: 91vh;
   }
 
-  .searchMaker__wrapper {
+  .searchMaker {
     top: 8%;
     right: 0;
   }
