@@ -133,11 +133,14 @@ aside {
 
 .searchMaker__link {
   border: solid thin #e4e5df;
-  font-size: 1.3em;
   height: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+.searchMaker__item {
+  font-size: 1.3em;
 }
 
 .searchMaker__item:first-of-type {
