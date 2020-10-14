@@ -114,7 +114,7 @@ aside {
   flex-direction: column;
 }
 
-.search__title {
+.searchMaker__title {
   text-align: center;
   font-size: 2rem;
   margin: 1em 0;
@@ -161,7 +161,7 @@ aside {
   display: none;
 }
 
-.searchDetails__wrapper {
+.searchDetails {
   position: relative;
   top: 10%;
   display: grid;
@@ -524,7 +524,7 @@ small {
     height: 10vh;
   }
 
-  .searchDetails__wrapper {
+  .searchDetails {
     position: relative;
     top: 5%;
     display: grid;
@@ -624,7 +624,7 @@ small {
     margin: auto 0;
   }
 
-  .searchDetails__wrapper {
+  .searchDetails {
     position: relative;
     top: 5%;
     display: grid;
@@ -749,11 +749,11 @@ small {
     height: 90vh;
   }
 
-  .search__title {
+  .searchMaker__title {
     font-size: 2.5rem;
   }
 
-  .searchDetails__wrapper {
+  .searchDetails {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -905,7 +905,7 @@ small {
     height: 86vh;
   }
 
-  .search__title {
+  .searchMaker__title {
     display: none;
   }
 
@@ -943,7 +943,7 @@ small {
     display: block;
   }
 
-  .searchDetails__wrapper {
+  .searchDetails {
     position: relative;
     top: 5%;
     display: grid;
@@ -1151,7 +1151,7 @@ small {
     display: block;
   }
 
-  .searchDetails__wrapper {
+  .searchDetails {
     display: flex;
     flex-direction: column;
   }
@@ -1268,7 +1268,7 @@ small {
     top: 0;
   }
 
-  .search__title {
+  .searchMaker__title {
     display: block;
     font-size: 1.5rem;
   }
@@ -1277,7 +1277,7 @@ small {
     margin: auto 10vw auto 10vw;
   }
 
-  .searchDetails__wrapper {
+  .searchDetails {
     display: none;
   }
 
@@ -1301,7 +1301,7 @@ small {
     right: 0;
   }
 
-  .search__title {
+  .searchMaker__title {
     font-size: 1rem;
     margin: 0.3em 0;
   }
@@ -1324,7 +1324,7 @@ small {
     display: block;
   }
 
-  .searchDetails__wrapper {
+  .searchDetails {
     display: flex;
     flex-direction: column;
   }
@@ -1547,7 +1547,7 @@ small {
     height: 90vh;
   }
 
-  .search__title {
+  .searchMaker__title {
     display: none;
   }
 
@@ -1642,7 +1642,7 @@ small {
     height: 91vh;
   }
 
-  .searchDetails__wrapper {
+  .searchDetails {
     height: 83vh;
   }
 
