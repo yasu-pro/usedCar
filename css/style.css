@@ -441,7 +441,7 @@ aside {
   width: 80vw;
   padding: 0 10vw;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   justify-content: space-between;
 }
 
