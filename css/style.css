@@ -436,8 +436,7 @@ aside {
 }
 
 .footer__inner {
-  position: relative;
-  top: 50%;
+  height: 100%;
   width: 80vw;
   padding: 0 10vw;
   display: flex;
