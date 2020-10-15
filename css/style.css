@@ -600,19 +600,10 @@ small {
     margin-top: 0;
   }
 
-  .searchMaker {
-    right: 0;
-  }
-
   .searchMaker__list {
-    background-color: rgba(26, 26, 26, 0.5);
     width: 88vw;
     margin: 0 3vw;
     padding: 2vh 3vw;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 1rem;
   }
 
   .searchMaker__link img {
@@ -628,12 +619,7 @@ small {
   }
 
   .searchDetails {
-    position: relative;
-    top: 5%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.5fr 0.5fr;
-    gap: 0;
   }
 
   .searchDetails__title {
@@ -649,10 +635,6 @@ small {
     height: 88vh;
   }
 
-  .company__heading {
-    font-size: 3rem;
-  }
-
   .company__inner {
     width: 80vw;
     top: 8vh;
@@ -664,7 +646,6 @@ small {
   }
 
   .company__slogan {
-    display: inline-block;
     font-size: 2.5rem;
   }
 
@@ -695,17 +676,11 @@ small {
   }
 
   .recruitContact__inner {
-    position: relative;
     top: 8vh;
     height: 80vh;
   }
 
-  .recruitContact__heading {
-    font-size: 3rem;
-  }
-
   .recruitContact__main {
-    position: relative;
     top: 8vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -720,11 +695,8 @@ small {
   }
 
   .footer {
-    width: 100vw;
     height: 13vh;
     margin-bottom: 12vh;
-    position: relative;
-    background-color: rgb(61, 61, 61);
   }
 
   .footer__inner {
@@ -982,7 +954,6 @@ small {
   }
 
   .company__inner {
-    width: 80vw;
     top: 8%;
   }
 
@@ -1225,9 +1196,7 @@ small {
 
   .recruitContact__main {
     top: 7vh;
-    display: flex;
     flex-direction: column;
-    justify-content: space-around;
   }
 
   .recruit,
@@ -1290,7 +1259,7 @@ small {
 }
 
 /* surfaceDuo */
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 540px) {
   aside {
     height: 9vh;
   }
@@ -1337,7 +1306,6 @@ small {
   }
 
   .price select {
-    font-size: 0.5rem;
     width: 20vw;
     height: 4vh;
   }
@@ -1370,7 +1338,6 @@ small {
 
   .company__link a {
     margin-top: 5vh;
-    font-size: 0.8rem;
   }
 
   .access {
@@ -1379,103 +1346,28 @@ small {
 
   .access__main {
     width: 80vw;
-    position: relative;
-    display: grid;
     top: 5vh;
-    grid-template-columns: 1fr 1fr;
     grid-template-rows: 200px 200px;
     gap: 1rem;
     padding: 0;
     margin: 0;
   }
 
-  .tokyo {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    display: flex;
-    flex-direction: column;
-  }
-
   .tokyo__heading {
     font-size: 1.2rem;
-    border: solid thin #e4e5df;
-    text-align: center;
-    margin: 0 0 2% 0;
-  }
-
-  .tokyo__img {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-  }
-
-  .tokyo__img img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .tokyo__iframe {
-    position: relative;
-    grid-column: 2/3;
-    grid-row: 1/2;
   }
 
   .tokyo__iframe iframe {
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-  }
-
-  .okayama {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    display: flex;
-    flex-direction: column;
   }
 
   .okayama__heading {
     font-size: 1.2rem;
-    border: solid thin #e4e5df;
-    text-align: center;
-    margin: 0 0 2% 0;
   }
 
-  .okayama__img {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-  }
-
-  .okayama__img img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .okayama__iframe {
-    position: relative;
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-
-  .okayama__iframe iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
   .recruitContact {
     height: 91vh;
   }
