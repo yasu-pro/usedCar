@@ -287,21 +287,27 @@ aside {
 }
 
 .tokyo {
+  height: 100%;
   grid-column: 1/2;
   grid-row: 1/2;
   display: flex;
   flex-direction: column;
 }
 
-.tokyo__heading {
-  font-size: 2rem;
+.tokyo__headingBox {
+  height: 20%;
   border: solid thin #e4e5df;
   text-align: center;
-  margin: 0 0 2% 0;
+}
+
+.tokyo__heading {
+  margin: auto 0;
+  font-size: 2rem;
 }
 
 .tokyo__img {
-  height: 100%;
+  height: 78%;
+  margin: 2% 0 0 0;
 }
 
 .tokyo__img img {
@@ -309,7 +315,6 @@ aside {
 }
 
 .tokyo__iframe {
-  position: relative;
   grid-column: 2/3;
   grid-row: 1/2;
 }
@@ -320,21 +325,26 @@ aside {
 }
 
 .okayama {
+  height: 100%;
   grid-column: 2/3;
   grid-row: 2/3;
   display: flex;
   flex-direction: column;
 }
 
-.okayama__heading {
-  font-size: 2rem;
+.okayama__headingBox {
+  height: 20%;
   border: solid thin #e4e5df;
   text-align: center;
-  margin: 0 0 2% 0;
+}
+
+.okayama__heading {
+  font-size: 2rem;
 }
 
 .okayama__img {
-  height: 100%;
+  height: 78%;
+  margin: 2% 0 0 0;
 }
 
 .okayama__img img {
@@ -342,7 +352,6 @@ aside {
 }
 
 .okayama__iframe {
-  position: relative;
   grid-column: 1/2;
   grid-row: 2/3;
 }
@@ -407,6 +416,7 @@ aside {
 .footer {
   width: 100vw;
   height: 25vh;
+  position: relative;
   background-color: rgb(61, 61, 61);
 }
 
@@ -639,7 +649,7 @@ small {
   }
 
   .access__inner {
-    top: 8vh;
+    top: 0;
   }
 
   .access__main {
@@ -972,7 +982,7 @@ small {
 
   .tokyo__heading,
   .okayama__heading {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
   .recruitContact__heading {
