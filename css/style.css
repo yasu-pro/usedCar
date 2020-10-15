@@ -279,9 +279,7 @@ aside {
 }
 
 .access__main {
-  position: relative;
   display: grid;
-  top: 5vh;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 360px 360px;
   gap: 1rem;
@@ -303,19 +301,11 @@ aside {
 }
 
 .tokyo__img {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
   height: 100%;
-  margin: 0;
 }
 
 .tokyo__img img {
-  position: absolute;
-  width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 .tokyo__iframe {
@@ -325,9 +315,6 @@ aside {
 }
 
 .tokyo__iframe iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
 }
@@ -347,19 +334,11 @@ aside {
 }
 
 .okayama__img {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
   height: 100%;
-  margin: 0;
 }
 
 .okayama__img img {
-  position: absolute;
-  width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 .okayama__iframe {
@@ -369,9 +348,6 @@ aside {
 }
 
 .okayama__iframe iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
 }
@@ -436,11 +412,10 @@ aside {
 }
 
 .footer__inner {
-  height: 90%;
+  height: 80%;
   width: 80vw;
   padding: 0 10vw;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -699,10 +674,6 @@ small {
   .footer {
     height: 13vh;
     margin-bottom: 12vh;
-  }
-
-  .footer__inner {
-    top: 30%;
   }
 }
 
@@ -1419,7 +1390,6 @@ small {
   }
 
   .tokyo__iframe {
-    grid-column: 2/3;
     grid-row: 2/3;
   }
 
