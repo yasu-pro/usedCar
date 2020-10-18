@@ -284,6 +284,10 @@ aside {
   padding: 0 10vw;
 }
 
+.heading {
+  font-size: 2rem;
+}
+
 .tokyo {
   height: 100%;
   grid-column: 1/2;
@@ -296,11 +300,6 @@ aside {
   height: 20%;
   border: solid thin #e4e5df;
   text-align: center;
-}
-
-.tokyo__heading {
-  margin: auto 0;
-  font-size: 2rem;
 }
 
 .tokyo__img {
@@ -334,10 +333,6 @@ aside {
   height: 20%;
   border: solid thin #e4e5df;
   text-align: center;
-}
-
-.okayama__heading {
-  font-size: 2rem;
 }
 
 .okayama__img {
@@ -855,8 +850,7 @@ small {
     gap: 0.5rem;
   }
 
-  .tokyo__heading,
-  .okayama__heading {
+  .heading {
     font-size: 0.7rem;
   }
 
@@ -1032,8 +1026,7 @@ small {
     padding: 0;
   }
 
-  .tokyo__heading,
-  .okayama__heading {
+  .heading {
     font-size: 1.5rem;
   }
 
@@ -1177,7 +1170,7 @@ small {
     margin: 0;
   }
 
-  .tokyo__heading {
+  .heading {
     font-size: 1.2rem;
   }
 
@@ -1186,10 +1179,6 @@ small {
     left: 0;
     width: 100%;
     height: 100%;
-  }
-
-  .okayama__heading {
-    font-size: 1.2rem;
   }
 
   .recruitContact__main {
