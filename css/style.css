@@ -43,10 +43,8 @@ a {
 
 .header {
   width: 80vw;
-  height: 7vh;
   background-color: rgb(61, 61, 61);
   position: sticky;
-  top: 0;
   display: flex;
   justify-content: space-between;
   justify-items: center;
@@ -82,8 +80,6 @@ aside {
 }
 
 .search {
-  height: 89vh;
-  margin-top: 11vh;
   background: -moz-linear-grad(rgba(47, 2, 5, 0.8), rgba(26, 26, 26, 0.8)),
     url(../img/used_car/used_car_1.jpg);
 
@@ -180,7 +176,6 @@ aside {
 }
 
 .price select {
-  height: 4vh;
   width: 10vw;
 }
 
@@ -205,7 +200,6 @@ aside {
 
 /*------ container ------*/
 .company {
-  height: 100vh;
 }
 
 .company__inner {
@@ -258,7 +252,6 @@ aside {
 }
 
 .access {
-  height: 100vh;
 }
 
 .access__inner {
@@ -352,7 +345,6 @@ aside {
 }
 
 .recruitContact {
-  height: 100vh;
 }
 
 .recruitContact__inner {
@@ -405,7 +397,6 @@ aside {
 }
 
 .footer__inner {
-  height: 80%;
   width: 80vw;
   padding: 0 10vw;
   display: flex;
@@ -458,48 +449,12 @@ small {
 /* ------ footer領域終了 ------ */
 
 /* --------------------------- レスポンシブ -----------------------------*/
-/* 画面縦縮小 */
-/* @media screen and (max-height: 875px) {
-  .header {
-    height: 111px;
-  }
-
-  .search {
-    height: 877px;
-  }
-
-  .company {
-    height: 986px;
-  }
-
-  .access {
-    height: 986px;
-  }
-
-  .recruitContact {
-    height: 986px;
-  }
-
-  .recruitContact__box img {
-    width: 529px;
-    height: 386px;
-    opacity: 1;
-  }
-
-  .footer {
-    height: 286px;
-  }
-} */
-
 /* PC　横縮小時 */
 @media screen and (max-width: 1460px) {
   .searchMaker__link img {
-    height: 10vh;
   }
 
   .searchDetails {
-    position: relative;
-    top: 5%;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -566,7 +521,6 @@ small {
 
   .search {
     width: 100vw;
-    height: 88vh;
     margin-top: 0;
   }
 
@@ -578,7 +532,6 @@ small {
 
   .searchMaker__link img {
     width: 100%;
-    height: 10vh;
     object-fit: cover;
     border-bottom: solid thin #e4e5df;
   }
@@ -602,7 +555,6 @@ small {
   }
 
   .company {
-    height: 88vh;
   }
 
   .company__inner {
@@ -629,29 +581,22 @@ small {
   }
 
   .access {
-    height: 88vh;
   }
 
   .access__inner {
-    top: 0;
   }
 
   .access__main {
-    top: 1vh;
     grid-template-rows: 260px 260px;
   }
 
   .recruitContact {
-    height: 88vh;
   }
 
   .recruitContact__inner {
-    top: 8vh;
-    height: 80vh;
   }
 
   .recruitContact__main {
-    top: 8vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -665,7 +610,6 @@ small {
   }
 
   .footer {
-    height: 13vh;
     margin-bottom: 12vh;
   }
 }
@@ -687,7 +631,6 @@ small {
   }
 
   .search {
-    height: 90vh;
   }
 
   .searchMaker__title {
@@ -722,7 +665,6 @@ small {
   }
 
   .company {
-    height: 90vh;
   }
 
   .company__heading {
@@ -742,9 +684,6 @@ small {
   .company__link a {
     font-size: 1.8rem;
   }
-  .access {
-    height: 90vh;
-  }
 
   .access__heading {
     font-size: 4rem;
@@ -757,16 +696,11 @@ small {
     margin: 8vh auto 0 auto;
   }
 
-  .recruitContact {
-    height: 90vh;
-  }
-
   .recruitContact__heading {
     font-size: 4rem;
   }
 
   .recruitContact__main {
-    top: 5vh;
     display: flex;
     flex-direction: column;
   }
@@ -782,8 +716,6 @@ small {
     font-size: 2rem;
   }
   .footer {
-    height: 15vh;
-    margin-bottom: 10vh;
   }
 
   .footer__inner {
@@ -843,7 +775,6 @@ small {
   }
 
   .search {
-    height: 86vh;
   }
 
   .searchMaker__title {
@@ -916,7 +847,6 @@ small {
   }
 
   .company {
-    height: 86vh;
   }
 
   .company__inner {
@@ -949,7 +879,6 @@ small {
   }
 
   .access {
-    height: 86vh;
   }
 
   .access__heading {
@@ -958,8 +887,6 @@ small {
 
   .access__main {
     width: 60vw;
-    margin: 0 auto;
-    top: 2vh;
     grid-template-rows: 120px 120px;
     gap: 0.5rem;
   }
@@ -1000,7 +927,6 @@ small {
 
   .footer {
     width: 100vw;
-    height: 30vh;
     margin-bottom: 12vh;
     position: relative;
     background-color: rgb(61, 61, 61);
@@ -1068,7 +994,6 @@ small {
   }
 
   .search {
-    height: 90vh;
   }
   .searchDetails__title {
     font-size: x-large;
@@ -1108,7 +1033,6 @@ small {
   }
 
   .company {
-    height: 90vh;
   }
 
   .company__inner {
@@ -1136,7 +1060,6 @@ small {
   }
 
   .access {
-    height: 90vh;
   }
 
   .access__heading {
@@ -1144,7 +1067,6 @@ small {
   }
 
   .access__main {
-    top: 7vh;
     width: 80vw;
     grid-template-rows: 300px 300px;
     grid-template-columns: 300px 300px;
@@ -1161,7 +1083,6 @@ small {
   }
 
   .recruitContact__main {
-    top: 7vh;
     flex-direction: column;
   }
 
@@ -1182,7 +1103,6 @@ small {
   }
 
   .footer {
-    height: 20vh;
     margin-bottom: 10vh;
   }
 
@@ -1203,7 +1123,6 @@ small {
 /* iphone 5/SE 横  Galaxy Fold 横 */
 @media screen and (max-width: 653px) {
   .searchMaker {
-    top: 0;
   }
 
   .searchMaker__title {
@@ -1231,12 +1150,9 @@ small {
   }
 
   .search {
-    height: 91vh;
   }
 
   .searchMaker {
-    top: 8%;
-    right: 0;
   }
 
   .searchMaker__title {
@@ -1283,7 +1199,6 @@ small {
   }
 
   .company {
-    height: 91vh;
   }
 
   .company__inner {
@@ -1307,7 +1222,6 @@ small {
   }
 
   .access {
-    height: 91vh;
   }
 
   .access__main {
@@ -1335,7 +1249,6 @@ small {
   }
 
   .recruitContact {
-    height: 91vh;
   }
 
   .recruitContact__main {
@@ -1349,7 +1262,6 @@ small {
   }
 
   .footer {
-    height: 20vh;
     margin-bottom: 9vh;
   }
 
@@ -1370,9 +1282,6 @@ small {
 /* iphone 6/7/8　縦 */
 @media screen and (max-width: 375px) {
   .access__main {
-    left: 0;
-    top: 7vh;
-    height: 70vh;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 0rem;
   }
@@ -1404,7 +1313,6 @@ small {
   }
 
   .search {
-    height: 90vh;
   }
 
   .searchMaker__title {
@@ -1427,11 +1335,9 @@ small {
   }
 
   .company {
-    height: 90vh;
   }
 
   .company__main {
-    top: 5vh;
   }
 
   .company__slogan {
@@ -1448,11 +1354,9 @@ small {
   }
 
   .access {
-    height: 90vh;
   }
 
   .access__main {
-    top: 0;
     display: flex;
     flex-direction: column;
   }
@@ -1469,7 +1373,6 @@ small {
 
   .tokyo__iframe iframe,
   .okayama__iframe iframe {
-    position: relative;
     height: 15vh;
   }
 
@@ -1498,14 +1401,6 @@ small {
     height: 9vh;
   }
 
-  .search {
-    height: 91vh;
-  }
-
-  .searchDetails {
-    height: 83vh;
-  }
-
   .searchMaker__list {
     width: 86vw;
     margin: 0 2vw;
@@ -1515,26 +1410,8 @@ small {
     font-size: 0.5rem;
   }
 
-  .company {
-    height: 91vh;
-  }
-
-  .access {
-    height: 91vh;
-  }
-
-  .recruitContact {
-    height: 91vh;
-  }
-
   .breadcrumb__item {
     font-size: 0.7rem;
-  }
-
-  .breadcrumb__item a:not(:nth-of-type(4)) {
-    position: relative;
-    top: 25%;
-    transform: translateY(-50%);
   }
 
   .breadcrumb__item--1 {
@@ -1544,8 +1421,6 @@ small {
   .breadcrumb__item--2 {
     text-align: center;
     display: flex;
-    position: relative;
-    top: 50%;
   }
 
   .footer__sns {
