@@ -45,7 +45,7 @@ a {
   width: 80vw;
   height: 7vh;
   background-color: rgb(61, 61, 61);
-  position: fixed;
+  position: sticky;
   top: 0;
   display: flex;
   justify-content: space-between;
@@ -107,8 +107,6 @@ aside {
 
 .searchMaker {
   width: 100vw;
-  position: relative;
-  top: 5%;
   right: 0;
   display: flex;
   flex-direction: column;
@@ -165,8 +163,6 @@ aside {
 }
 
 .searchDetails {
-  position: relative;
-  top: 10%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
@@ -213,8 +209,6 @@ aside {
 }
 
 .company__inner {
-  position: relative;
-  top: 15vh;
   width: 80vw;
   background-image: url(../img/company/company_1.jpg);
   background-size: 40% auto;
@@ -228,8 +222,6 @@ aside {
 
 .company__main {
   width: 80vw;
-  position: relative;
-  top: 5vh;
   display: flex;
   flex-direction: column;
 }
@@ -270,8 +262,6 @@ aside {
 }
 
 .access__inner {
-  position: relative;
-  top: 15vh;
 }
 
 .access__heading {
@@ -366,8 +356,6 @@ aside {
 }
 
 .recruitContact__inner {
-  position: relative;
-  top: 15vh;
 }
 
 .recruitContact__heading {
@@ -379,8 +367,6 @@ aside {
 }
 
 .recruitContact__main {
-  position: relative;
-  top: 5vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -415,8 +401,6 @@ aside {
 /* ------ footer領域 ------ */
 .footer {
   width: 100vw;
-  height: 25vh;
-  position: relative;
   background-color: rgb(61, 61, 61);
 }
 
@@ -475,7 +459,7 @@ small {
 
 /* --------------------------- レスポンシブ -----------------------------*/
 /* 画面縦縮小 */
-@media screen and (max-height: 875px) {
+/* @media screen and (max-height: 875px) {
   .header {
     height: 111px;
   }
@@ -505,7 +489,7 @@ small {
   .footer {
     height: 286px;
   }
-}
+} */
 
 /* PC　横縮小時 */
 @media screen and (max-width: 1460px) {
