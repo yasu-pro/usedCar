@@ -48,13 +48,13 @@
       <div class="gnav">
         <nav>
           <ul class="gnav__item">
-            <li class="gnav__item"><a href="#search">検索</a></li>
-            <li class="gnav__item"><a href="#company">会社概要</a></li>
-            <li class="gnav__item"><a href="#access">アクセス</a></li>
-            <li class="gnav__item">
+            <li class="gnav__items"><a href="#search">検索</a></li>
+            <li class="gnav__items"><a href="#company">会社概要</a></li>
+            <li class="gnav__items"><a href="#access">アクセス</a></li>
+            <li class="gnav__items">
               <a href="#recruitContact">採用<span>&</span>お問い合わせ</a>
             </li>
-            <li class="gnav__item"><a href="#footer__sns">sns</a></li>
+            <li class="gnav__items"><a href="#footer__sns">sns</a></li>
           </ul>
         </nav>
       </div>
@@ -226,10 +226,10 @@
           </ul>
         </div>
 
-        <div class="searchDetail">
-          <div class="searchDetail__flex searchDetail__price">
+        <div class="searchDetail grid flex">
+          <div class="searchDetail price">
             <h3 class="searchDetail__title">価格から探す</h3>
-            <div class="price">
+            <div class="price__box">
               <select name="low_price">
                 <option value="200">200万</option>
                 <option value="250">250万</option>
@@ -272,9 +272,9 @@
               </select>
             </div>
           </div>
-          <div class="searchDetail__flex searchDetail__mileage">
+          <div class="searchDetail mileage">
             <h3 class="searchDetail__title">走行距離から探す</h3>
-            <div class="mileage">
+            <div class="mileage__box">
               <div class="mileage__radio">
                 <input id="mileage_1" type="radio" name="mile" value="1" />
                 <label for="mileage_1">1万km以下</label>
@@ -302,9 +302,9 @@
             </div>
           </div>
 
-          <div class="searchDetail__flex searchDetail__years">
+          <div class="searchDetail year">
             <h3 class="searchDetail__title">経過年数から探す</h3>
-            <div class="years">
+            <div class="years__box">
               <div class="years__radio">
                 <input id="years_1" type="radio" name="year" value="1" />
                 <label for="years_1">1年落ち以下</label>
