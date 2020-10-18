@@ -32,6 +32,13 @@ footer {
   margin-top: 120px;
 }
 
+.company__heading,
+.access__heading,
+.recruitContact__heading {
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+
 li {
   list-style: none;
   border-bottom: none;
@@ -232,10 +239,6 @@ aside {
   width: 80vw;
 }
 
-.company__heading {
-  font-size: 3rem;
-}
-
 .company__main {
   width: 80vw;
   display: flex;
@@ -271,16 +274,6 @@ aside {
     font-size: 1.8rem;
     transition: 0.2s;
   }
-}
-
-.access {
-}
-
-.access__inner {
-}
-
-.access__heading {
-  font-size: 3rem;
 }
 
 .access__main {
@@ -364,16 +357,6 @@ aside {
 .okayama__iframe iframe {
   width: 100%;
   height: 100%;
-}
-
-.recruitContact {
-}
-
-.recruitContact__inner {
-}
-
-.recruitContact__heading {
-  font-size: 3rem;
 }
 
 .recruitContact__heading span {
@@ -526,6 +509,7 @@ small {
   }
 
   .searchMaker__link img {
+    height: 10vh;
     width: 100%;
     object-fit: cover;
     border-bottom: solid thin #e4e5df;
@@ -547,9 +531,6 @@ small {
   .price select {
     width: 15vw;
     height: 4vh;
-  }
-
-  .company {
   }
 
   .company__inner {
@@ -575,20 +556,8 @@ small {
     font-size: 1.2rem;
   }
 
-  .access {
-  }
-
-  .access__inner {
-  }
-
   .access__main {
     grid-template-rows: 260px 260px;
-  }
-
-  .recruitContact {
-  }
-
-  .recruitContact__inner {
   }
 
   .recruitContact__main {
@@ -605,7 +574,18 @@ small {
   }
 
   .footer {
-    margin-bottom: 12vh;
+    height: 150px;
+    margin-bottom: 10vh;
+  }
+
+  @media screen and (max-width: 720px) {
+    .footer {
+      margin-bottom: 12vh;
+    }
+  }
+
+  .footer__inner {
+    height: 80%;
   }
 }
 
@@ -623,9 +603,6 @@ small {
   .bottomNav__item img {
     width: 60px;
     height: 60px;
-  }
-
-  .search {
   }
 
   .searchMaker__title {
@@ -657,9 +634,6 @@ small {
   .mileage__radio input,
   .years__radio input {
     transform: scale(2);
-  }
-
-  .company {
   }
 
   .company__heading {
@@ -710,8 +684,6 @@ small {
   .contact__title {
     font-size: 2rem;
   }
-  .footer {
-  }
 
   .footer__inner {
     width: 90vw;
@@ -733,7 +705,7 @@ small {
 @media screen and (max-width: 823px) {
   aside {
     width: 100%;
-    height: 14vh;
+    height: 12vh;
     display: block;
     position: fixed;
     bottom: 0;
@@ -769,11 +741,14 @@ small {
     margin: 0 auto 0.5vh auto;
   }
 
-  .search {
-  }
-
   .searchMaker__title {
     display: none;
+  }
+
+  @media screen and (width: 768px) {
+    .searchMaker__title {
+      display: block;
+    }
   }
 
   .searchMaker__list {
@@ -841,9 +816,6 @@ small {
     transform: scale(1.2);
   }
 
-  .company {
-  }
-
   .company__inner {
     top: 8%;
   }
@@ -871,9 +843,6 @@ small {
   .company__link a {
     margin-top: 10vh;
     font-size: 0.8rem;
-  }
-
-  .access {
   }
 
   .access__heading {
@@ -921,9 +890,8 @@ small {
   }
 
   .footer {
+    height: 120px;
     width: 100vw;
-    margin-bottom: 12vh;
-    position: relative;
     background-color: rgb(61, 61, 61);
   }
 
@@ -988,11 +956,13 @@ small {
     height: 45px;
   }
 
-  .search {
-  }
   .searchDetails__title {
     font-size: x-large;
     margin: 1rem 0;
+  }
+
+  .searchMaker__list {
+    margin: 0 10vw;
   }
 
   .searchMaker__link p {
@@ -1027,9 +997,6 @@ small {
     font-size: 1.5rem;
   }
 
-  .company {
-  }
-
   .company__inner {
     background-size: 60% 100%;
   }
@@ -1052,9 +1019,6 @@ small {
 
   .company__link a {
     font-size: 1.3rem;
-  }
-
-  .access {
   }
 
   .access__heading {
@@ -1117,24 +1081,17 @@ small {
 
 /* iphone 5/SE 横  Galaxy Fold 横 */
 @media screen and (max-width: 653px) {
-  .searchMaker {
+  aside {
+    height: 16vh;
   }
-
-  .searchMaker__title {
-    display: block;
-    font-size: 1.5rem;
+  .mileage,
+  .years {
+    font-size: 0.7rem;
+    gap: 0.2rem;
   }
-
-  .searchMaker__list {
-    margin: auto 10vw auto 10vw;
-  }
-
-  .searchDetails {
-    display: none;
-  }
-
-  .access__main {
-    grid-template-rows: 100px 100px;
+  .footer {
+    height: 150px;
+    margin-bottom: 16vh;
   }
 }
 
@@ -1144,17 +1101,15 @@ small {
     height: 9vh;
   }
 
-  .search {
-  }
-
   .searchMaker {
+    display: block;
   }
 
   .searchMaker__title {
+    display: block;
     font-size: 1rem;
-    margin: 0.3em 0;
+    margin-top: 50px;
   }
-
   .searchMaker__list {
     width: 84vw;
     margin: 0 5vw;
@@ -1193,9 +1148,6 @@ small {
     row-gap: 1.8vh;
   }
 
-  .company {
-  }
-
   .company__inner {
     background-size: 80% 100%;
     background-position: right center;
@@ -1214,9 +1166,6 @@ small {
 
   .company__link a {
     margin-top: 5vh;
-  }
-
-  .access {
   }
 
   .access__main {
@@ -1241,9 +1190,6 @@ small {
 
   .okayama__heading {
     font-size: 1.2rem;
-  }
-
-  .recruitContact {
   }
 
   .recruitContact__main {
@@ -1307,13 +1253,6 @@ small {
     height: 10vh;
   }
 
-  .search {
-  }
-
-  .searchMaker__title {
-    display: none;
-  }
-
   .searchMaker__link p {
     font-size: 0.6rem;
   }
@@ -1329,12 +1268,6 @@ small {
     transform: scale(1);
   }
 
-  .company {
-  }
-
-  .company__main {
-  }
-
   .company__slogan {
     font-size: 1.5rem;
   }
@@ -1348,17 +1281,9 @@ small {
     margin-top: 3vh;
   }
 
-  .access {
-  }
-
   .access__main {
     display: flex;
     flex-direction: column;
-  }
-
-  .okayama__heading,
-  .tokyo__heading {
-    margin-top: 5vh;
   }
 
   .tokyo__img,
