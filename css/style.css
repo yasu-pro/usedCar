@@ -25,6 +25,20 @@ body {
   margin: 0 10vw;
 }
 
+.company,
+.access,
+.recruitContact,
+footer {
+  margin-top: 120px;
+}
+
+.company__heading,
+.access__heading,
+.recruitContact__heading {
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+
 li {
   list-style: none;
   border-bottom: none;
@@ -41,13 +55,10 @@ a {
 
 /*------ 全体終わり ------*/
 
-/*--------------------------- header -------------------------- */
 .header {
   width: 80vw;
-  height: 7vh;
   background-color: rgb(61, 61, 61);
-  position: fixed;
-  top: 0;
+  position: sticky;
   display: flex;
   justify-content: space-between;
   justify-items: center;
@@ -55,18 +66,9 @@ a {
   padding: 2vh 10vw;
 }
 
-.header__heading {
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-}
-
-.header__logo {
+.header__inner {
+  display: inline-block;
   margin: auto 0;
-}
-
-.header__logo a {
-  font-size: 2.5rem;
 }
 
 .gnav {
@@ -74,38 +76,26 @@ a {
   margin: auto 0;
 }
 
-.gnav__list {
-  display: flex;
-  justify-content: space-around;
-  justify-items: center;
-  margin: auto 0;
-}
-
-.gnav__item {
+.gnav__items {
   font-size: 1.2rem;
   display: inline-block;
 }
 
-.gnav__item a {
+.gnav__items a {
   padding: 0.2vh 1vw;
 }
 
-.gnav__item span {
+.gnav__items span {
   font-size: 1rem;
 }
 
 aside {
   display: none;
 }
-/*--------------------わり -------------------------- */
-/* -------------------------- main領域 -------------------------- */
+
 .search {
-  width: 100vw;
-  height: 89vh;
-  margin-top: 11vh;
-  position: relative;
   background: -moz-linear-grad(rgba(47, 2, 5, 0.8), rgba(26, 26, 26, 0.8)),
-    url(../used_car/used_car_1.jpg);
+    url(../img/used_car/used_car_1.jpg);
 
   background: -webkit-linear-gradient(
       rgba(47, 2, 5, 0.8),
@@ -125,22 +115,19 @@ aside {
   flex-direction: column;
 }
 
-.searchMain__wrapper {
+.searchMaker {
   width: 100vw;
-  position: relative;
-  top: 5%;
-  right: 0;
   display: flex;
   flex-direction: column;
 }
 
-.search__ttl {
+.searchMaker__title {
   text-align: center;
   font-size: 2rem;
   margin: 1em 0;
 }
 
-.searchMain__list {
+.searchMaker__item {
   background-color: rgba(26, 26, 26, 0.5);
   width: 70vw;
   margin: 0 10vw;
@@ -151,83 +138,83 @@ aside {
   gap: 1rem;
 }
 
-.searchMain__list a {
+.searchMaker__link {
   border: solid thin #e4e5df;
-}
-
-.searchMain__list a:first-of-type {
-  width: 100%;
-  height: 100%;
-  font-size: 1.7rem;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-}
-
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  .searchMain__list a:first-of-type {
-    height: auto;
-  }
-}
-
-.searchMain__list a:first-of-type span {
-  margin: auto 0;
-}
-
-.searchMain__item {
-  font-size: 1.3em;
   height: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
-.searchMain__item img {
+.searchMaker__items {
+  font-size: 1.3em;
+}
+
+.searchMaker__items:first-of-type {
+  font-size: 1.7rem;
+}
+
+.searchMaker__link img {
   width: 100%;
   object-fit: cover;
+  vertical-align: bottom;
   border-bottom: solid thin #e4e5df;
 }
 
-.searchMain__item span {
+.searchMaker__txt {
   margin: auto 0;
 }
 
-.searchMain__item #benz_2,
-.searchMain__item #vw_2,
-.searchMain__item #lr_2 {
+.benz_2,
+.vw_2,
+.lr_2 {
   display: none;
 }
 
-.searchSub__wrapper {
-  position: relative;
-  top: 10%;
+.searchDetail.grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
 }
 
-.searchSub__flex {
+.searchDetail.price {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+
+.searchDetail.mileage {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.searchDetail.year {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.searchDetail {
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
 }
 
-.searchSub__ttl {
+.searchDetail__title {
   text-align: center;
   font-size: 2rem;
-  margin: 0.5em 0;
+  margin: 0.5rem 0;
 }
 
-.price select {
-  height: 4vh;
+.price__box select {
   width: 10vw;
 }
 
-.price {
+.price__box {
   text-align: center;
 }
 
-.mileage,
-.years {
+.mileage__box,
+.years__box {
   font-size: 1.2rem;
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -237,38 +224,26 @@ aside {
 }
 
 .mileage__radio input,
-.years_radio input {
+.years__radio input {
   transform: scale(1.5);
 }
 
-/* ------ cotainer領域(company) ------ */
+/*------ container ------*/
 .company {
-  height: 100vh;
-  position: relative;
   background-image: url(../img/company/company_1.jpg);
   background-size: 40% auto;
   background-position: right center;
   background-repeat: no-repeat;
 }
 
-.company__content {
-  position: absolute;
+.company__inner {
   width: 80vw;
-  top: 15vh;
-}
-
-.company__heading {
-  font-size: 3rem;
 }
 
 .company__main {
   width: 80vw;
-  position: absolute;
-  margin: 3% 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  justify-items: center;
 }
 
 .company__slogan {
@@ -302,277 +277,182 @@ aside {
   }
 }
 
-/* ------ cotainer領域(company 終了) ------ */
-
-/* ------ cotainer領域(access) ------ */
-.access {
-  height: 100vh;
-  position: relative;
-}
-
-.access__heading {
-  position: absolute;
-  top: 15vh;
-  font-size: 3rem;
-}
-
 .access__main {
-  position: relative;
-  top: 23vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 365px 365px;
+  grid-template-rows: 360px 360px;
   gap: 1rem;
   padding: 0 10vw;
 }
 
+.heading {
+  font-size: 2rem;
+}
+
 .tokyo {
+  height: 100%;
   grid-column: 1/2;
   grid-row: 1/2;
   display: flex;
   flex-direction: column;
 }
 
-.tokyo__heading {
-  font-size: 2rem;
+.tokyo__headingBox {
+  height: 20%;
   border: solid thin #e4e5df;
   text-align: center;
-  margin: 0 0 2% 0;
 }
 
 .tokyo__img {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
+  height: 78%;
+  margin: 2% 0 0 0;
 }
 
 .tokyo__img img {
-  position: absolute;
-  width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 .tokyo__iframe {
-  position: relative;
   grid-column: 2/3;
   grid-row: 1/2;
 }
 
 .tokyo__iframe iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
 }
 
 .okayama {
+  height: 100%;
   grid-column: 2/3;
   grid-row: 2/3;
   display: flex;
   flex-direction: column;
 }
 
-.okayama__heading {
-  font-size: 2rem;
+.okayama__headingBox {
+  height: 20%;
   border: solid thin #e4e5df;
   text-align: center;
-  margin: 0 0 2% 0;
 }
 
 .okayama__img {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
+  height: 78%;
+  margin: 2% 0 0 0;
 }
 
 .okayama__img img {
-  position: absolute;
-  width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 .okayama__iframe {
-  position: relative;
   grid-column: 1/2;
   grid-row: 2/3;
 }
 
 .okayama__iframe iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-}
-
-/* ------ cotainer領域(access 終了) ------ */
-
-/* ------ cotainer領域(recruit_contact) ------ */
-.recruitContact {
-  height: 100vh;
-  position: relative;
-}
-
-.recruitContact__heading {
-  position: absolute;
-  top: 15vh;
-  font-size: 3rem;
 }
 
 .recruitContact__heading span {
   font-size: 2rem;
 }
 
-.recruitContact__img {
-  position: relative;
-  top: 35vh;
+.recruitContact__main {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-.recruitContact__img img {
+.recruitContact__box img {
   width: 30vw;
   height: 45vh;
+  opacity: 0.6;
+}
+
+.recruitContact__box img:hover {
+  width: 32vw;
+  height: 47vh;
+  transition: 0.2s;
   opacity: 1;
 }
 
-@media screen and (min-width: 1444px) {
-  .recruitContact__img img {
-    opacity: 0.6;
-  }
-
-  .recruitContact__img img:hover {
-    width: 32vw;
-    height: 47vh;
-    transition: 0.2s;
-    opacity: 1;
+@media screen and (max-width: 1024px) {
+  .recruitContact__box img {
+    pointer-events: none;
   }
 }
 
-.recruit,
-.contact {
-  text-align: right;
-}
-
-.recruit__ttl,
-.contact__ttl {
+.recruit__title,
+.contact__title {
   font-size: 1.5rem;
 }
 
-/* ------ cotainer領域(recruit_contact 終了) ------ */
+/* ------ container 終了 ------ */
 
-/* -------------------------- cotainer領域終了 -------------------------- */
-/* -------------------------- main領域 -------------------------- */
-
-/* -------------------------- footer領域 -------------------------- */
-footer {
+/* ------ footer領域 ------ */
+.footer {
+  height: 240px;
   width: 100vw;
-  height: 25vh;
-  position: relative;
   background-color: rgb(61, 61, 61);
 }
 
-.footer__content {
-  position: absolute;
-  top: 50%;
-  width: 80vw;
+.footer__inner {
+  height: 90%;
   padding: 0 10vw;
   display: flex;
-  flex-direction: row-reverse;
   justify-content: space-between;
-  justify-items: center;
 }
 
-.breadcrumb__list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  justify-items: center;
+.footer__sns {
+  margin: auto 0;
+}
+
+.breadcrumb {
+  margin: auto 0;
 }
 
 .breadcrumb__item {
+  display: flex;
+}
+
+.breadcrumb__items {
   font-size: 1.2rem;
   color: #e4e5df;
   border-left: solid thin #e4e5df;
 }
 
-.breadcrumb__item:first-of-type {
+.breadcrumb__items:first-of-type {
   border-left: none;
 }
 
-.breadcrumb__item a {
-  padding: 1rem 1rem;
+.display--none {
+  display: none;
 }
 
-.breadcrumb__item span {
+.breadcrumb__items a {
+  padding: 0 1rem 0 1rem;
+}
+
+.breadcrumb__items span {
   font-size: 1rem;
 }
 
-.sns a:nth-child(3) img {
+.footer__sns a:nth-child(3) img {
   background-color: #e4e5df;
   border-radius: 50%;
 }
 
 small {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  display: block;
+  text-align: right;
 }
-/* -------------------------- footer領域終了 -------------------------- */
+/* ------ footer領域終了 ------ */
 
 /* --------------------------- レスポンシブ -----------------------------*/
-/* 画面縦縮小 */
-@media screen and (max-height: 875px) {
+@media screen and (max-width: 1024px) {
   .header {
-    height: 111px;
-  }
-
-  .search {
-    height: 877px;
-  }
-
-  .company {
-    height: 986px;
-  }
-
-  .access {
-    height: 986px;
-  }
-
-  .recruitContact {
-    height: 986px;
-  }
-
-  .recruitContact__img img {
-    width: 529px;
-    height: 386px;
-    opacity: 1;
-  }
-
-  .recruitContact__img img:hover {
-    width: 529px;
-    height: 386px;
-    transition: 0.2s;
-    opacity: 1;
-  }
-
-  footer {
-    height: 286px;
-  }
-}
-/* タブレット縦 */
-@media screen and (max-width: 1460px) {
-  header {
     display: none;
   }
 
@@ -587,124 +467,73 @@ small {
     z-index: 500;
   }
 
-  .bottomNav__list {
+  .bottomNav__item {
     display: flex;
     text-align: center;
   }
 
-  .bottomNav__list a {
+  .bottomNav__item a {
     flex: 1;
     font-size: 1.2rem;
     padding: 1vh 0;
   }
 
-  .bottomNav__item {
+  .bottomNav__items {
     display: flex;
     flex-direction: column;
   }
 
-  .bottomNav__list a:nth-of-type(2) .bottomNav__item {
+  .bottomNav__item a:nth-of-type(2) .bottomNav__items {
     border-left: solid thin #e4e5df;
     border-right: solid thin #e4e5df;
   }
 
-  .bottomNav__item img {
+  .bottomNav__items img {
     margin: 0 auto 0.5vh auto;
   }
 
-  /* -------------------------- main領域 -------------------------- */
   .search {
     width: 100vw;
-    height: 88vh;
     margin-top: 0;
   }
 
-  .searchMain__wrapper {
-    top: 3%;
-    right: 0;
-  }
-
-  .searchMain__list {
-    background-color: rgba(26, 26, 26, 0.5);
+  .searchMaker__item {
     width: 88vw;
     margin: 0 3vw;
     padding: 2vh 3vw;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 1rem;
   }
 
-  .searchMain__item img {
-    width: 100%;
+  .searchMaker__link img {
     height: 10vh;
+    width: 100%;
     object-fit: cover;
     border-bottom: solid thin #e4e5df;
   }
 
-  .searchMain__item span {
+  .searchMaker__link p {
     font-size: 1.2rem;
+    margin: auto 0;
   }
 
-  .searchSub__wrapper {
-    position: relative;
-    top: 5%;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    gap: 0;
+  .searchDetail.grid {
+    grid-template-rows: 0.5fr 0.5fr;
   }
 
-  .searchSub__price {
-    grid-column: 1/3;
-    grid-row: 1/2;
-  }
-
-  .searchSub__mileage {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-
-  .searchSub__years {
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-
-  .searchSub__flex {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .searchSub__ttl {
+  .searchDetail__title {
     font-size: x-large;
   }
 
-  .price select {
+  .price__box select {
     width: 15vw;
     height: 4vh;
   }
 
-  .company {
-    height: 88vh;
-    background-size: 500px 80%;
-  }
-
-  .company__heading {
-    font-size: 3rem;
-  }
-
-  .company__content {
-    position: absolute;
+  .company__inner {
     width: 80vw;
-    top: 8%;
-  }
-
-  .company__main {
-    top: 15vh;
+    background-size: 40% 100%;
   }
 
   .company__slogan {
-    display: inline-block;
     font-size: 2.5rem;
   }
 
@@ -717,145 +546,154 @@ small {
     font-size: 1.2rem;
   }
 
-  .access {
-    height: 88vh;
-  }
-
-  .access__heading {
-    top: 8%;
-  }
-
   .access__main {
-    top: 18%;
     grid-template-rows: 260px 260px;
   }
 
-  .recruitContact {
-    height: 88vh;
-  }
-
-  .recruitContact__heading {
-    position: absolute;
-    top: 8%;
-    font-size: 3rem;
-  }
-
-  .recruitContact__img {
-    position: relative;
-    top: 30%;
+  .recruitContact__main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 2rem;
   }
 
-  .recruitContact__img img {
+  .recruitContact__box img {
     width: 100%;
     height: 40vh;
     opacity: 1;
   }
 
-  /* -------------------------- main領域 -------------------------- */
-
-  footer {
-    width: 100vw;
-    height: 13vh;
-    margin-bottom: 12vh;
-    position: relative;
-    background-color: rgb(61, 61, 61);
+  .footer {
+    height: 150px;
+    margin-bottom: 10vh;
   }
 
-  .footer__content {
-    top: 30%;
+  @media screen and (max-width: 720px) {
+    .footer {
+      margin-bottom: 12vh;
+    }
+  }
+
+  .footer__inner {
+    height: 80%;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (width: 1024px) and (height: 1366px) {
   aside {
     height: 10vh;
   }
 
-  .search {
-    height: 90vh;
+  .bottomNav__item a {
+    flex: 1;
+    font-size: 1.8rem;
   }
 
-  .searchMain__item #benz_1,
-  .searchMain__item #vw_1,
-  .searchMain__item #lr_1 {
-    display: none;
+  .bottomNav__items img {
+    width: 60px;
+    height: 60px;
   }
 
-  .searchMain__item #benz_2,
-  .searchMain__item #vw_2,
-  .searchMain__item #lr_2 {
-    display: inline-block;
+  .searchMaker__title {
+    font-size: 2.5rem;
   }
 
-  .searchSub__wrapper {
-    position: relative;
-    top: 5%;
+  .searchDetail.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .searchDetail__title {
+    font-size: 2.5rem;
+    margin-top: 3vh;
+  }
+
+  .price__box select {
+    width: 20vw;
+    height: 4vh;
+    font-size: 1.2rem;
+  }
+
+  .mileage__box,
+  .years__box {
+    font-size: 1.8rem;
+  }
+
+  .mileage__radio input,
+  .years__radio input {
+    transform: scale(2);
+  }
+
+  .company__heading {
+    font-size: 4rem;
+  }
+
+  .company__slogan {
+    font-size: 3.5rem;
+  }
+
+  .company__top {
+    margin-top: 5vh;
+    font-size: 2.5rem;
+    line-height: 4rem;
+  }
+
+  .company__link a {
+    font-size: 1.8rem;
+  }
+
+  .access__heading {
+    font-size: 4rem;
+  }
+
+  .access__main {
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 400px 400px;
+    padding: 0;
+    margin: 8vh auto 0 auto;
+  }
+
+  .recruitContact__heading {
+    font-size: 4rem;
+  }
+
+  .recruitContact__main {
     display: flex;
     flex-direction: column;
   }
 
-  .mileage,
-  .years {
-    font-size: 1.2rem;
+  .recruitContact__box img {
+    width: 100%;
+    height: 30vh;
+    opacity: 1;
   }
 
-  .company {
-    height: 90vh;
+  .recruit__title,
+  .contact__title {
+    font-size: 2rem;
   }
 
-  .access {
-    height: 90vh;
-    background-size: 500px 80%;
+  .footer__inner {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 0 5vw;
   }
 
-  .access__main {
-    top: 25%;
-    grid-template-rows: 260px 260px;
-  }
-
-  .tokyo__heading,
-  .okayama__heading {
+  .breadcrumb__items {
     font-size: 1.5rem;
   }
 
-  .recruitContact__img {
-    top: 40%;
-  }
-
-  .recruitContact__img img {
-    height: 30vh;
-  }
-
-  footer {
-    margin-bottom: 10vh;
-  }
-
-  .breadcrumb__item {
-    font-size: 1rem;
-  }
-
-  .breadcrumb__item span {
-    font-size: 0.8rem;
-  }
-
-  .sns a img {
-    width: 21px;
-    height: 21px;
+  .footer__sns a img {
+    width: 50px;
+    height: 50px;
   }
 }
-/* iphone 8/7/6s/6 横 */
-@media screen and (max-width: 667px) {
-  header {
-    display: none;
-  }
 
+@media screen and (max-width: 823px) {
   aside {
     width: 100%;
-    height: 14vh;
+    height: 12vh;
     display: block;
     position: fixed;
     bottom: 0;
@@ -864,85 +702,91 @@ small {
     z-index: 500;
   }
 
-  .bottomNav__list {
+  .bottomNav__item {
     display: flex;
     text-align: center;
   }
 
-  .bottomNav__list a {
+  .bottomNav__item a {
     flex: 1;
     font-size: 0.8rem;
     padding: 1vh 0;
   }
 
-  .bottomNav__item {
+  .bottomNav__items {
     display: flex;
     flex-direction: column;
   }
 
-  .bottomNav__list a:nth-of-type(2) .bottomNav__item {
+  .bottomNav__item a:nth-of-type(2) .bottomNav__items {
     border-left: solid thin #e4e5df;
     border-right: solid thin #e4e5df;
   }
 
-  .bottomNav__item img {
+  .bottomNav__items img {
     width: 25px;
     height: 25px;
     margin: 0 auto 0.5vh auto;
   }
 
-  .search {
-    height: 86vh;
+  .searchMaker__title {
+    font-size: 1rem;
   }
 
-  .search__ttl {
-    display: none;
-  }
-
-  .searchMain__list {
+  .searchMaker__item {
     width: 74vw;
     margin: 5vh 10vw 0 10vw;
     gap: 0.5rem;
   }
 
-  .searchMain__item #lr_1 {
+  .lr_1 {
     display: none;
   }
 
-  .searchMain__item #lr_2 {
-    display: inline-block;
+  .lr_2 {
+    display: block;
   }
 
-  .searchMain__list a:first-of-type {
+  .searchMaker__items:first-of-type {
     font-size: 1rem;
   }
 
-  .searchMain__item span {
+  .searchMaker__link p {
     font-size: 0.8rem;
   }
 
-  .searchSub__wrapper {
-    position: relative;
-    top: 5%;
+  .benz_1,
+  .vw_1,
+  .lr_1 {
+    display: none;
+  }
+
+  .benz_2,
+  .vw_2,
+  .lr_2 {
+    display: block;
+  }
+
+  .searchDetail.grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.5fr 0.5fr;
     gap: 0;
   }
 
-  .searchSub__ttl {
+  .searchDetail__title {
     font-size: 1rem;
     margin-top: 0;
   }
 
-  .price select {
+  .price__box select {
     font-size: 0.5rem;
     width: 10vw;
     height: 4.5vh;
   }
 
-  .mileage,
-  .years {
+  .mileage__box,
+  .years__box {
     font-size: 0.8rem;
     gap: 0.3rem;
   }
@@ -952,27 +796,11 @@ small {
     transform: scale(1.2);
   }
 
-  .company {
-    height: 86vh;
-    background-size: 250px 80%;
-  }
-
-  .company__content {
-    position: absolute;
-    width: 80vw;
-    top: 8%;
-  }
-
   .company__heading {
     font-size: 1.5rem;
   }
 
-  .company__main {
-    top: 18vh;
-  }
-
   .company__slogan {
-    display: inline-block;
     font-size: 2rem;
   }
 
@@ -989,24 +817,18 @@ small {
     font-size: 0.8rem;
   }
 
-  .access {
-    height: 86vh;
-  }
-
   .access__heading {
-    top: 8%;
     font-size: 1.5rem;
   }
 
   .access__main {
-    top: 18%;
+    width: 60vw;
     grid-template-rows: 120px 120px;
     gap: 0.5rem;
   }
 
-  .tokyo__heading,
-  .okayama__heading {
-    font-size: 0.8rem;
+  .heading {
+    font-size: 0.7rem;
   }
 
   .recruitContact__heading {
@@ -1017,59 +839,69 @@ small {
     font-size: 1rem;
   }
 
-  .recruit__ttl,
-  .contact__ttl {
+  .recruit__title,
+  .contact__title {
     font-size: 1rem;
   }
 
-  .recruitContact__img img {
-    height: 40vh;
+  .recruitContact__main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
-  footer {
+  .recruit,
+  .contact {
+    width: auto;
+  }
+
+  .recruitContact__box img {
+    width: 35vw;
+    height: 35vh;
+  }
+
+  .footer {
+    height: 120px;
     width: 100vw;
-    height: 30vh;
-    margin-bottom: 12vh;
-    position: relative;
     background-color: rgb(61, 61, 61);
   }
 
-  .breadcrumb__item {
+  .breadcrumb__items {
     font-size: 0.8rem;
   }
 
-  .breadcrumb__item span {
+  .breadcrumb__items span {
     font-size: 0.5rem;
   }
 
-  .sns {
+  .footer__sns {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 0.4rem;
   }
 
-  .sns a:first-of-type {
+  .footer__sns a:first-of-type {
     grid-column: 1/2;
     grid-row: 1/2;
   }
 
-  .sns a:nth-of-type(2) {
+  .footer__sns a:nth-of-type(2) {
     grid-column: 2/3;
     grid-row: 1/2;
   }
 
-  .sns a:nth-of-type(3) {
+  .footer__sns a:nth-of-type(3) {
     grid-column: 1/2;
     grid-row: 2/3;
   }
 
-  .sns a:nth-of-type(4) {
+  .footer__sns a:nth-of-type(4) {
     grid-column: 2/3;
     grid-row: 2/3;
   }
 
-  .sns a img {
+  .footer__sns a img {
     width: 25px;
     height: 25px;
   }
@@ -1079,76 +911,206 @@ small {
     bottom: 5%;
   }
 }
-/* iphone 8/7/6s/6 縦 */
-@media screen and (max-width: 375px) {
+
+@media screen and (width: 768px) {
   aside {
-    height: 9vh;
+    height: 10vh;
   }
 
-  .search {
-    height: 91vh;
+  .bottomNav__item a {
+    font-size: 1.2rem;
   }
 
-  .searchMain__wrapper {
-    top: 8%;
-    right: 0;
+  .bottomNav__items img {
+    width: 45px;
+    height: 45px;
   }
 
-  .search__ttl {
-    display: inline;
-    text-align: center;
-    font-size: 1rem;
-    margin: 0.3em 0;
+  .searchDetail__title {
+    font-size: x-large;
+    margin: 1rem 0;
   }
 
-  .searchMain__list {
-    width: 84vw;
-    margin: 0 5vw;
-    gap: 0.5rem;
+  .searchMaker__item {
+    margin: 0 10vw;
   }
 
-  .searchMain__item img {
-    height: 9vh;
+  .searchMaker__link p {
+    font-size: 1.2rem;
   }
-  .searchMain__item #benz_1,
-  .searchMain__item #vw_1 {
+
+  .benz_1,
+  .vw_1,
+  .lr_1 {
     display: none;
   }
 
-  .searchMain__item #benz_2,
-  .searchMain__item #vw_2 {
-    display: inline-block;
+  .benz_2,
+  .vw_2,
+  .lr_2 {
+    display: block;
   }
 
-  .searchSub__wrapper {
-    position: relative;
-    top: 12%;
+  .searchDetail.flex {
     display: flex;
     flex-direction: column;
   }
 
-  .searchSub__flex {
+  .price__box select {
+    font-size: 1rem;
+    width: 15vw;
+    height: 4.5vh;
+  }
+
+  .mileage__box,
+  .years__box {
+    font-size: 1.5rem;
+  }
+
+  .company__inner {
+    background-size: 60% 100%;
+  }
+
+  .company__heading {
+    font-size: 3rem;
+  }
+
+  .company__slogan {
+    font-size: 2.5rem;
+  }
+
+  .company__top {
+    display: inline;
+  }
+
+  .company__link a {
+    font-size: 1.3rem;
+  }
+
+  .access__heading {
+    font-size: 3rem;
+  }
+
+  .access__main {
+    width: 80vw;
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 300px 300px;
+    padding: 0;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .recruitContact__heading {
+    font-size: 3rem;
+  }
+
+  .recruitContact__main {
+    flex-direction: column;
+  }
+
+  .recruit,
+  .contact {
+    width: 65vw;
+    margin: 0 auto;
+  }
+
+  .recruitContact__box img {
+    width: 100%;
+    height: 28vh;
+  }
+
+  .recruit__title,
+  .contact__title {
+    font-size: 1.5rem;
+  }
+
+  .footer {
+    margin-bottom: 10vh;
+  }
+
+  .breadcrumb__items {
+    font-size: 1rem;
+  }
+
+  .breadcrumb__items span {
+    font-size: 0.8rem;
+  }
+
+  .footer__sns a img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 653px) {
+  aside {
+    height: 16vh;
+  }
+  .mileage__box,
+  .years__box {
+    font-size: 0.7rem;
+    gap: 0.2rem;
+  }
+  .footer {
+    height: 150px;
+    margin-bottom: 16vh;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  aside {
+    height: 9vh;
+  }
+
+  .searchMaker {
+    display: block;
+  }
+
+  .searchMaker__title {
+    display: block;
+    font-size: 1rem;
+    margin-top: 50px;
+  }
+  .searchMaker__item {
+    width: 84vw;
+    margin: 0 5vw;
+  }
+
+  .searchMaker__link img {
+    height: 9vh;
+  }
+  .benz_1,
+  .vw_1 {
+    display: none;
+  }
+
+  .benz_2,
+  .vw_2 {
+    display: block;
+  }
+
+  .searchDetail.flex {
+    display: flex;
+    flex-direction: column;
     margin: 2vh 0;
   }
 
-  .price select {
-    font-size: 0.5rem;
+  .price__box select {
     width: 20vw;
     height: 4vh;
   }
 
-  .mileage,
-  .years {
+  .mileage__box,
+  .years__box {
     column-gap: 4vw;
     row-gap: 1.8vh;
   }
 
-  .company {
-    height: 91vh;
-  }
-
-  .company__main {
-    top: 13vh;
+  .company__inner {
+    background-size: 80% 100%;
+    background-position: right center;
   }
 
   .company__top {
@@ -1160,22 +1122,57 @@ small {
 
   .company__link a {
     margin-top: 5vh;
-    font-size: 0.8rem;
-  }
-
-  .access {
-    height: 91vh;
   }
 
   .access__main {
-    left: 0;
-    top: 20vh;
-    height: 70vh;
+    width: 80vw;
+    grid-template-rows: 200px 200px;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .heading {
+    font-size: 1.2rem;
+  }
+
+  .tokyo__iframe iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  .recruitContact__main {
     display: grid;
-    grid-template-columns: 150px 150px;
+    grid-template-columns: 1fr;
+  }
+
+  .recruitContact__box img {
+    width: 100%;
+    height: 27vh;
+  }
+
+  .footer {
+    margin-bottom: 9vh;
+  }
+
+  .footer__inner {
+    width: 90vw;
+    padding: 0 5vw;
+  }
+
+  .breadcrumb__items {
+    font-size: 0.7rem;
+  }
+
+  .breadcrumb__items a {
+    padding: 0 0.2rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .access__main {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 0rem;
-    padding: 0;
   }
 
   .tokyo {
@@ -1184,7 +1181,6 @@ small {
   }
 
   .tokyo__iframe {
-    grid-column: 2/3;
     grid-row: 2/3;
   }
 
@@ -1197,48 +1193,110 @@ small {
     grid-column: 2/3;
     grid-row: 4/5;
   }
+}
 
-  .recruitContact {
-    height: 91vh;
+@media screen and (max-width: 320px) {
+  aside {
+    height: 10vh;
   }
 
-  .recruitContact__img {
-    top: 15%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 2rem;
+  .searchMaker__link p {
+    font-size: 0.6rem;
   }
 
-  .recruitContact__img img {
-    height: 30vh;
+  .mileage__box,
+  .years__box {
+    font-size: 0.6rem;
+    gap: 0.3rem;
   }
 
-  .recruitContact__img img:hover {
-    width: 100%;
-    height: 30vh;
+  .mileage__box input,
+  .years__box input {
+    transform: scale(1);
   }
 
-  footer {
-    height: 20vh;
-    margin-bottom: 9vh;
+  .company__slogan {
+    font-size: 1.5rem;
   }
 
-  .footer__content {
-    width: 90vw;
-    padding: 0 5vw;
+  .company__top {
+    margin-top: 3%;
+    font-size: 1.1rem;
   }
 
-  .breadcrumb__list {
-    margin: 15px 0;
+  .company__link a {
+    margin-top: 3vh;
   }
 
-  .breadcrumb__item {
+  .access__main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tokyo__img,
+  .okayama__img {
+    height: 15vh;
+  }
+
+  .tokyo__iframe iframe,
+  .okayama__iframe iframe {
+    height: 15vh;
+  }
+
+  .breadcrumb__items {
     font-size: 0.7rem;
   }
 
-  .breadcrumb__item a {
-    padding: 0 0.2rem;
+  .footer__sns a img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .footer__inner {
+    width: 96vw;
+    padding: 0 2vw;
+  }
+
+  small {
+    font-size: 0.1rem;
   }
 }
+
+@media screen and (max-width: 280px) {
+  aside {
+    height: 9vh;
+  }
+
+  .searchMaker__item {
+    width: 86vw;
+    margin: 0 2vw;
+  }
+
+  .searchMaker__link p {
+    font-size: 0.5rem;
+  }
+
+  .breadcrumb__items {
+    font-size: 0.7rem;
+  }
+
+  .display--block {
+    display: none;
+  }
+
+  .display--none {
+    text-align: center;
+    display: flex;
+  }
+
+  .footer__sns {
+    gap: 0.2rem;
+  }
+
+  .footer__sns a img {
+    width: 18px;
+    height: 18px;
+  }
+}
+
 /* --------------------------- レスポンシブ -----------------------------*/

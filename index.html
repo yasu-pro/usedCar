@@ -33,34 +33,38 @@
     />
   </head>
   <body>
-    <header>
-      <div class="header">
-        <div class="header__heading">
-          <h1 class="header__logo">
-            <a href="#"><i>NEEDsTY</i></a>
-          </h1>
-        </div>
-        <div class="gnav">
-          <nav>
-            <ul class="gnav__list">
-              <li class="gnav__item"><a href="#search">検索</a></li>
-              <li class="gnav__item"><a href="#company">会社概要</a></li>
-              <li class="gnav__item"><a href="#access">アクセス</a></li>
-              <li class="gnav__item">
-                <a href="#recruitContact">採用<span>&</span>お問い合わせ</a>
-              </li>
-              <li class="gnav__item"><a href="#sns">sns</a></li>
-            </ul>
-          </nav>
-        </div>
+    <header class="header">
+      <div class="header__inner">
+        <h1 class="header__heading">
+          <a href="/"
+            ><img
+              src="./img/header_logo/header_logo.jpg"
+              width="250px"
+              height="70px"
+              alt="会社ロゴ"
+          /></a>
+        </h1>
+      </div>
+      <div class="gnav">
+        <nav>
+          <ul class="gnav__item">
+            <li class="gnav__items"><a href="#search">検索</a></li>
+            <li class="gnav__items"><a href="#company">会社概要</a></li>
+            <li class="gnav__items"><a href="#access">アクセス</a></li>
+            <li class="gnav__items">
+              <a href="#recruitContact">採用<span>&</span>お問い合わせ</a>
+            </li>
+            <li class="gnav__items"><a href="#footer__sns">sns</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
 
     <aside>
       <div class="bottomNav">
-        <ul class="bottomNav__list">
+        <ul class="bottomNav__item">
           <a href="#">
-            <li class="bottomNav__item">
+            <li class="bottomNav__items">
               <img
                 src="./img/bottom_nav/search_img.png"
                 alt="虫眼鏡アイコン"
@@ -70,7 +74,7 @@
             </li>
           </a>
           <a href="#">
-            <li class="bottomNav__item">
+            <li class="bottomNav__items">
               <img
                 src="./img/bottom_nav/tel_img.png"
                 alt="電話アイコン"
@@ -80,7 +84,7 @@
             </li>
           </a>
           <a href="#">
-            <li class="bottomNav__item">
+            <li class="bottomNav__items">
               <img
                 src="./img/bottom_nav/mail_img.png"
                 alt="メールアイコン"
@@ -95,109 +99,137 @@
 
     <main>
       <div class="search" id="search">
-        <div class="searchMain__wrapper">
-          <h3 class="search__ttl">メーカーから探す</h3>
-          <ul class="searchMain__list">
-            <a href="#"><span>全て</span></a>
-            <a href="#"
-              ><li class="searchMain__item">
+        <div class="searchMaker">
+          <h3 class="searchMaker__title search__title">メーカーから探す</h3>
+          <ul class="searchMaker__item">
+            <li class="searchMaker__items">
+              <a class="searchMaker__link" href="#">
+                <div class="searchMaker__txt">
+                  <p>全て</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="searchMaker__items">
+              <a class="searchMaker__link" href="#">
                 <img
                   src="./img/logo/benz.jpg"
                   alt="ベンツロゴ"
                   width="150px"
                   height="150px"
-                /><span id="benz_1">メルセデス・ベンツ</span>
-                <span id="benz_2">ベンツ</span>
-              </li></a
-            >
-            <a href="#"
-              ><li class="searchMain__item">
+                />
+                <p class="benz_1">メルセデス・ベンツ</p>
+                <p class="benz_2">ベンツ</p>
+              </a>
+            </li>
+
+            <li class="searchMaker__items">
+              <a class="searchMaker__link" href="#">
                 <img
                   src="./img/logo/bmw.jpg"
                   alt="bmwロゴ"
                   width="150px"
                   height="150px"
-                /><span>BMW</span>
-              </li></a
-            >
-            <a href="#"
-              ><li class="searchMain__item">
+                />
+                <p>BMW</p>
+              </a>
+            </li>
+
+            <li class="searchMaker__items">
+              <a class="searchMaker__link" href="#">
                 <img
                   src="./img/logo/vw.jpg"
                   alt="フォルクスワーゲンロゴ"
                   width="150px"
                   height="150px"
-                /><span id="vw_1">フォルクスワーゲン</span>
-                <span id="vw_2">VW</span>
-              </li></a
-            >
-            <a href="#"
-              ><li class="searchMain__item">
+                />
+                <p class="vw_1">フォルクスワーゲン</p>
+                <p class="vw_2">VW</p>
+              </a>
+            </li>
+
+            <li class="searchMaker__items">
+              <a class="searchMaker__link" href="#">
                 <img
                   src="./img/logo/audi.jpg"
                   alt="アウディロゴ"
                   width="150px"
                   height="150px"
-                /><span>アウディ</span>
-              </li></a
-            >
-            <a href="#"
-              ><li class="searchMain__item">
+                />
+                <p>アウディ</p>
+              </a>
+            </li>
+
+            <li class="searchMaker__items">
+              <a class="searchMaker__link" href="#">
                 <img
                   src="./img/logo/mini.jpg"
                   alt="ミニロゴ"
                   width="150px"
                   height="150px"
-                /><span>ミニ</span>
-              </li></a
-            >
-            <a href="#"
-              ><li class="searchMain__item">
+                />
+                <p>ミニ</p>
+              </a>
+            </li>
+
+            <li class="searchMaker__items">
+              <a class="searchMaker__link" href="#">
                 <img
                   src="./img/logo/porshe.jpg"
                   alt="ポルシェロゴ"
                   width="150px"
                   height="150px"
-                /><span>ポルシェ</span>
-              </li></a
-            >
-            <a href="#"
-              ><li class="searchMain__item">
+                />
+                <p>ポルシェ</p>
+              </a>
+            </li>
+
+            <li class="searchMaker__items">
+              <a class="searchMaker__link" href="#">
                 <img
                   src="./img/logo/volvo.jpg"
                   alt="ボルボロゴ"
                   width="150px"
                   height="150px"
-                /><span>ボルボ</span>
-              </li></a
-            >
-            <a href="#"
-              ><li class="searchMain__item">
+                />
+                <p>ボルボ</p>
+              </a>
+            </li>
+
+            <li class="searchMaker__items">
+              <a class="searchMaker__link" href="#">
                 <img
                   src="./img/logo/peugeot.jpg"
                   alt="プジョーロゴ"
                   width="150px"
                   height="150px"
-                /><span>プジョー</span>
-              </li></a
-            >
-            <a href="#"
-              ><li class="searchMain__item">
+                />
+                <p>プジョー</p>
+              </a>
+            </li>
+
+            <li class="searchMaker__items">
+              <a class="searchMaker__link" href="#">
                 <img
                   src="./img/logo/land-rover.jpg"
                   alt="ランドローバーロゴ"
                   width="150px"
                   height="150px"
-                /><span id="lr_1">ランドローバー</span>
-                <span id="lr_2">ランド<br />ローバー</span>
-              </li></a
-            >
+                />
+                <p class="lr_1">ランドローバー</p>
+                <div class="lr_2">
+                  <p>ランド</p>
+                  <p>ローバー</p>
+                </div>
+              </a>
+            </li>
           </ul>
         </div>
-        <div class="searchSub__wrapper">
-          <div class="searchSub__flex searchSub__price">
-            <h3 class="searchSub__ttl">価格から探す</h3>
-            <div class="price">
+
+        <div class="searchDetail grid flex">
+          <div class="searchDetail price">
+            <h3 class="searchDetail__title">価格から探す</h3>
+            <div class="price__box">
               <select name="low_price">
                 <option value="200">200万</option>
                 <option value="250">250万</option>
@@ -240,9 +272,9 @@
               </select>
             </div>
           </div>
-          <div class="searchSub__flex searchSub__mileage">
-            <h3 class="searchSub__ttl">走行距離から探す</h3>
-            <div class="mileage">
+          <div class="searchDetail mileage">
+            <h3 class="searchDetail__title">走行距離から探す</h3>
+            <div class="mileage__box">
               <div class="mileage__radio">
                 <input id="mileage_1" type="radio" name="mile" value="1" />
                 <label for="mileage_1">1万km以下</label>
@@ -270,30 +302,30 @@
             </div>
           </div>
 
-          <div class="searchSub__flex searchSub__years">
-            <h3 class="searchSub__ttl">経過年数から探す</h3>
-            <div class="years">
-              <div class="years__raido">
+          <div class="searchDetail year">
+            <h3 class="searchDetail__title">経過年数から探す</h3>
+            <div class="years__box">
+              <div class="years__radio">
                 <input id="years_1" type="radio" name="year" value="1" />
                 <label for="years_1">1年落ち以下</label>
               </div>
-              <div class="years__raido">
+              <div class="years__radio">
                 <input id="years_2" type="radio" name="year" value="1~3" />
                 <label for="years_2">1~3年落ち</label>
               </div>
-              <div class="years__raido">
+              <div class="years__radio">
                 <input id="years_3" type="radio" name="year" value="4~5" />
                 <label for="years_3">4~5年落ち以下</label>
               </div>
-              <div class="years__raido">
+              <div class="years__radio">
                 <input id="years_4" type="radio" name="year" value="6~8" />
                 <label for="years_4">6~8年落ち以下</label>
               </div>
-              <div class="years__raido">
+              <div class="years__radio">
                 <input id="years_5" type="radio" name="year" value="9~12" />
                 <label for="years_5">9~12年落ち以下</label>
               </div>
-              <div class="years__raido">
+              <div class="years__radio">
                 <input id="years_6" type="radio" name="year" value="13" />
                 <label for="years_6">13年落ち以上</label>
               </div>
@@ -303,15 +335,24 @@
       </div>
       <div class="container">
         <div class="company" id="company">
-          <div class="company__content">
+          <div class="company__inner">
             <h2 class="company__heading">会社概要</h2>
             <div class="company__main">
-              <p class="company__slogan">
-                <b>The meaning of<br />Needs <span>&</span> Safty</b>
-              </p>
-              <p class="company__top">
-                会社の由来にもなっている<br />NeedsとSafty<br />中古車であろうと<br />お客様のニーズと安全を一番に考えている会社です。<br />NEEDsTYの良さをご覧ください…
-              </p>
+              <div class="company__slogan">
+                <p>
+                  <b>The meaning of</b>
+                </p>
+                <p>
+                  <b>Needs <span>&</span> Safty</b>
+                </p>
+              </div>
+              <div class="company__top">
+                <p>会社の由来にもなっている</p>
+                <p>NeedsとSafty</p>
+                <p>中古車であろうと</p>
+                <p>お客様のニーズと安全を一番に考えている会社です。</p>
+                <p>NEEDsTYの良さをご覧ください…</p>
+              </div>
               <p class="company__link">
                 <a href="#">Read more <span>→</span></a>
               </p>
@@ -320,106 +361,98 @@
         </div>
 
         <div class="access" id="access">
-          <h2 class="access__heading">アクセス</h2>
-          <div class="access__main">
-            <div class="tokyo">
-              <h3 class="tokyo__heading">Tokyo office</h3>
-              <div class="tokyo__img">
-                <img
-                  src="./img//access/access_Tokyo.jpg"
-                  alt="東京ビル画像"
-                  width="100%"
-                  height="300"
-                />
+          <div class="access__inner">
+            <h2 class="access__heading">アクセス</h2>
+            <div class="access__main">
+              <div class="tokyo">
+                <div class="tokyo__headingBox">
+                  <h3 class="tokyo__heading heading">Tokyo office</h3>
+                </div>
+                <div class="tokyo__img">
+                  <img
+                    src="./img/access/access_Tokyo.jpg"
+                    alt="東京ビル画像"
+                    width="100%"
+                    height="300"
+                  />
+                </div>
               </div>
-            </div>
-            <div class="tokyo__iframe">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8278533985717!2d139.76493611568276!3d35.68124053757805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1597827749766!5m2!1sja!2sjp"
-                width="400"
-                height="300"
-                frameborder="0"
-                style="border: 0"
-                aria-hidden="false"
-                tabindex="0"
-              ></iframe>
-            </div>
-            <div class="okayama">
-              <h3 class="okayama__heading">Okayama office</h3>
-              <div class="okayama__img">
-                <img
-                  src="./img//access/access_Okayama.jpg"
-                  alt="倉敷美観地区"
-                  width="100%"
+              <div class="tokyo__iframe">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8278533985717!2d139.76493611568276!3d35.68124053757805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1597827749766!5m2!1sja!2sjp"
+                  width="400"
                   height="300"
-                />
+                  frameborder="0"
+                  style="border: 0"
+                  aria-hidden="false"
+                  tabindex="0"
+                ></iframe>
               </div>
-            </div>
-            <div class="okayama__iframe">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.5476342887655!2d133.91554481566507!3d34.666125592576094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3554064c3de389d3%3A0xa2d703aa2239cf57!2z5bKh5bGx6aeF!5e0!3m2!1sja!2sjp!4v1597756512941!5m2!1sja!2sjp"
-                width="400"
-                height="300"
-                frameborder="0"
-                style="border: 0"
-                aria-hidden="false"
-                tabindex="0"
-              ></iframe>
+              <div class="okayama">
+                <div class="okayama__headingBox">
+                  <h3 class="okayama__heading heading">Okayama office</h3>
+                </div>
+                <div class="okayama__img">
+                  <img
+                    src="./img/access/access_Okayama.jpg"
+                    alt="倉敷美観地区"
+                    width="100%"
+                    height="300"
+                  />
+                </div>
+              </div>
+              <div class="okayama__iframe">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.5476342887655!2d133.91554481566507!3d34.666125592576094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3554064c3de389d3%3A0xa2d703aa2239cf57!2z5bKh5bGx6aeF!5e0!3m2!1sja!2sjp!4v1597756512941!5m2!1sja!2sjp"
+                  width="400"
+                  height="300"
+                  frameborder="0"
+                  style="border: 0"
+                  aria-hidden="false"
+                  tabindex="0"
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="recruitContact" id="recruitContact">
-          <h2 class="recruitContact__heading">
-            採用<span>&</span>お問い合わせ
-          </h2>
-          <div class="recruitContact__img">
-            <a href="#"
-              ><div class="recruit">
-                <img
-                  src="./img//recruit/recruit_1.jpg"
-                  alt="採用画像"
-                  width="500"
-                  height="380px"
-                />
-                <p class="recruit__ttl">採用情報</p>
-              </div></a
-            >
-            <a href="#"
-              ><div class="contact">
-                <img
-                  src="./img//contact/contact_1.jpg"
-                  alt="問合せ画像"
-                  width="500px"
-                  height="380px"
-                />
-                <p class="contact__ttl">お問い合わせ</p>
-              </div></a
-            >
+          <div class="recruitContact__inner">
+            <h2 class="recruitContact__heading">
+              採用<span>&</span>お問い合わせ
+            </h2>
+            <div class="recruitContact__main">
+              <a href="#"
+                ><div class="recruit recruitContact__box">
+                  <img
+                    src="./img/recruit/recruit_1.jpg"
+                    alt="採用画像"
+                    width="500"
+                    height="380px"
+                  />
+                  <p class="recruit__title">採用情報</p>
+                </div></a
+              >
+              <a href="#"
+                ><div class="contact recruitContact__box">
+                  <img
+                    src="./img/contact/contact_1.jpg"
+                    alt="問合せ画像"
+                    width="500px"
+                    height="380px"
+                  />
+                  <p class="contact__title">お問い合わせ</p>
+                </div></a
+              >
+            </div>
           </div>
         </div>
       </div>
     </main>
 
-    <footer>
-      <div class="footer__content">
-        <div class="breadcrumb">
-          <ul class="breadcrumb__list">
-            <li class="breadcrumb__item"><a href="#search">検索</a></li>
-            <li class="breadcrumb__item">
-              <a href="#company">会社概要</a>
-            </li>
-            <li class="breadcrumb__item">
-              <a href="#access">アクセス</a>
-            </li>
-            <li class="breadcrumb__item">
-              <a href="#recruitContact">採用<span>&</span>お問い合わせ</a>
-            </li>
-            <li class="breadcrumb__item"><a href="#footer__content">sns</a></li>
-          </ul>
-        </div>
-
-        <div class="sns" id="sns">
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__sns" id="footer__sns">
           <a href="#"
             ><img
               src="./img/sns/twitter_logo.png"
@@ -449,10 +482,37 @@
               height="40"
           /></a>
         </div>
+
+        <div class="breadcrumb">
+          <ul class="breadcrumb__item">
+            <li class="breadcrumb__items">
+              <a href="#search">検索</a>
+            </li>
+            <li class="breadcrumb__items">
+              <a href="#company">会社概要</a>
+            </li>
+            <li class="breadcrumb__items">
+              <a href="#access">アクセス</a>
+            </li>
+            <li class="breadcrumb__items">
+              <div class="display--block">
+                <a href="#recruitContact">採用<span>&</span>お問い合わせ</a>
+              </div>
+              <div class="display--none">
+                <a href="#recruitContact"
+                  ><p>採用 <span>&</span></p>
+                  <p>お問い合わせ</p>
+                </a>
+              </div>
+            </li>
+            <li class="breadcrumb__items">
+              <a href="#footer__content">sns</a>
+            </li>
+          </ul>
+        </div>
       </div>
       <small
-        >Copyright ＆copy; 2010-2020 NEEDsTY Co.,Ltd. All Rights
-        Reserved.</small
+        >Copyright ＆copy; 2020 NEEDsTY Co.,Ltd. All Rights Reserved.</small
       >
     </footer>
   </body>
