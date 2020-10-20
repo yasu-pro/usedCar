@@ -1,0 +1,51 @@
+
+フォルダ移動
+cd /Applications/MAMP/Library/bin/ 
+
+mysqlへアクセス
+./mysql -u root -p →　コマンドプロンプトに"mysql>"になればアクセス完了
+
+MAMPのmySQLにあるデータベースにアクセス
+SHOW DATABASES;
+
+パスを通す(URL:https://webkaru.net/mysql/mamp-command-line/)→Mscは別設定が必要なので今回はしない
+
+-----データベースの作成-----
+usedcarのデータベースを作成する
+CREATE DATABASE usedcar CHARACTER SET utf8;
+
+usedcarが作成されたか確認
+SHOW DATABASES;
+
+データベースからusedcarを指定する→Database changedが出ればOK
+USE usedcar;
+
+-----テーブルの作成-----
+テーブル(usedcarInfo)を作成
+CREATE TABLE usedcarInfo(car_img VARCHAR(50),car_num INT,maker VARCHAR(20),price INT,mileage INT,year INT,PRIMARY KEY(car_num))ENGINE = InnoDB;
+
+テーブルが作られたか確認
+SHOW TABLES;
+
+-----テーブルの中身を作成-----
+INSERT INTO usedcarInfo VALUES('img/for_sale/audi-1.jpg',0,'audi',1000,1,1);
+INSERT INTO usedcarInfo VALUES('img/for_sale/audi-2.jpg',1,'audi',500,2,2);
+INSERT INTO usedcarInfo VALUES('img/for_sale/benz-1.jpg',2,'benz',400,2.5,3);
+INSERT INTO usedcarInfo VALUES('img/for_sale/benz-2.jpg',3,'benz',300,3,4);
+INSERT INTO usedcarInfo VALUES('img/for_sale/bmw-1.jpg',4,'bmw',200,4,5);
+INSERT INTO usedcarInfo VALUES('img/for_sale/bmw-2.jpg',5,'bmw',100,5,6);
+INSERT INTO usedcarInfo VALUES('img/for_sale/lr-1.jpg',6,'lr',900,6,7);
+INSERT INTO usedcarInfo VALUES('img/for_sale/lr-2.jpg',7,'lr',800,7,8);
+INSERT INTO usedcarInfo VALUES('img/for_sale/mini-1.jpg',8,'mini',700,8,9);
+INSERT INTO usedcarInfo VALUES('img/for_sale/mini-2.jpg',9,'mini',600,9,10);
+INSERT INTO usedcarInfo VALUES('img/for_sale/peugeot-1.jpg',10,'peugeot',250,10,11);
+INSERT INTO usedcarInfo VALUES('img/for_sale/peugeot-2.jpg',11,'peugeot',350,11,12);
+INSERT INTO usedcarInfo VALUES('img/for_sale/porsche-1.jpg',12,'porsche',850,12,13);
+INSERT INTO usedcarInfo VALUES('img/for_sale/porsche-2.jpg',13,'porsche',450,13,14);
+INSERT INTO usedcarInfo VALUES('img/for_sale/volvo-1.jpg',14,'volvo',550,14,15);
+INSERT INTO usedcarInfo VALUES('img/for_sale/volvo-2.jpg',15,'volvo',650,15,16);
+INSERT INTO usedcarInfo VALUES('img/for_sale/vw-1.jpg',16,'vw',750,16,17);
+INSERT INTO usedcarInfo VALUES('img/for_sale/vw-2.jpg',17,'vw',950,17,18);
+
+フィールドとして何が作られているか確認
+SELECT * FROM usedcarInfo;
