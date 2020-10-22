@@ -13,6 +13,8 @@
             //PDO::constructでRDBMSに接続
             $pdo = new PDO(DBInfo::DSN,DBInfo::USER,DBInfo::PASSWORD);
             echo('接続しました<br/>');
+
+    
         } catch (PDOException $e) {
             $code = $e->getcode();
             $message = $e->getMessage();
@@ -27,14 +29,13 @@
         else{
             echo('読み込めませんでした');
         }
-
         switch ($id) {
             case "all":
-                echo('goodmorning');
+                echo('all');
                 break;
 
                 case "benz":
-                echo('goodmorning');
+                echo('benz');
                 break;
 
                 case "bmw":
@@ -73,6 +74,7 @@
                 ehcho('眠い');
                 break;
         }
+
     ?>
 </body>
 </html>
