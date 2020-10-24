@@ -211,6 +211,9 @@ aside {
 
 .price__box {
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .mileage__box,
