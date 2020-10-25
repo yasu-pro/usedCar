@@ -16,10 +16,12 @@
 
     if(isset($_GET['id'])==true ||
         isset($_GET['low_price'])==true ||
-         isset($_GET['upper_price'])==true){
+         isset($_GET['upper_price'])==true||
+          isset($_GET['mile'])==true){
         $id = $_GET['id'];
         $low_price = $_GET['low_price'];
         $upper_price = $_GET['upper_price'];
+        $mile = $_GET['mile'];
     }
 
     try {
@@ -199,7 +201,7 @@
 
         //価格から探す
         if ($low_price < $upper_price) {
-            $sql = "SELECT * FROM usedcarInfo WHERE price BETWEEN $low_price AND $upper_price ORDER BY price ASC";
+            $sql = "SELECT * FROM usedcarInfo WHERE price BETWEEN '" . $low_price . "' AND '" . $upper_price . "' ORDER BY price";
             //参照系SQLを発行
             $statement = $pdo -> query($sql);
             //データの取得
@@ -213,7 +215,7 @@
             }
             
         }elseif ($low_price == $upper_price) {
-            $sql = "SELECT * FROM usedcarInfo WHERE price = $low_price ORDER BY price ASC";
+            $sql = "SELECT * FROM usedcarInfo WHERE price = '" . $low_price . "' ORDER BY price";
             //参照系SQLを発行
             $statement = $pdo -> query($sql);
             //データの取得
@@ -242,7 +244,87 @@
         // }
 
         //走行距離から探す
-        
+        if ($mile == "1") {
+            $sql = "SELECT * FROM usedcarInfo WHERE mileage <= 1 ORDER BY mileage ASC";
+            //参照系SQLを発行
+            $statement = $pdo -> query($sql);
+            //データの取得
+            while ($row = $statement -> fetch()) {
+                echo($row[0]);
+                echo($row[1]);
+                echo($row[2]);
+                echo("/{$row[3]}/");
+                echo($row[4]);
+                echo("{$row[5]}<br/>");
+            }
+
+        }elseif($mile == "1~3") {
+            $sql = "SELECT * FROM usedcarInfo WHERE mileage >= 1 AND mileage <=3 ORDER BY mileage ASC";
+            //参照系SQLを発行
+            $statement = $pdo -> query($sql);
+            //データの取得
+            while ($row = $statement -> fetch()) {
+                echo($row[0]);
+                echo($row[1]);
+                echo($row[2]);
+                echo("/{$row[3]}/");
+                echo($row[4]);
+                echo("{$row[5]}<br/>");
+            }
+        }elseif($mile == "3~5") {
+            $sql = "SELECT * FROM usedcarInfo WHERE mileage >= 3 AND mileage <=5 ORDER BY mileage ASC";
+            //参照系SQLを発行
+            $statement = $pdo -> query($sql);
+            //データの取得
+            while ($row = $statement -> fetch()) {
+                echo($row[0]);
+                echo($row[1]);
+                echo($row[2]);
+                echo("/{$row[3]}/");
+                echo($row[4]);
+                echo("{$row[5]}<br/>");
+            }
+        }elseif($mile == "5~10") {
+            $sql = "SELECT * FROM usedcarInfo WHERE mileage >= 5 AND mileage <=10 ORDER BY mileage ASC";
+            //参照系SQLを発行
+            $statement = $pdo -> query($sql);
+            //データの取得
+            while ($row = $statement -> fetch()) {
+                echo($row[0]);
+                echo($row[1]);
+                echo($row[2]);
+                echo("/{$row[3]}/");
+                echo($row[4]);
+                echo("{$row[5]}<br/>");
+            }
+        }elseif($mile == "10~15") {
+            $sql = "SELECT * FROM usedcarInfo WHERE mileage >= 10 AND mileage <=15 ORDER BY mileage ASC";
+            //参照系SQLを発行
+            $statement = $pdo -> query($sql);
+            //データの取得
+            while ($row = $statement -> fetch()) {
+                echo($row[0]);
+                echo($row[1]);
+                echo($row[2]);
+                echo("/{$row[3]}/");
+                echo($row[4]);
+                echo("{$row[5]}<br/>");
+            }
+        }elseif($mile == "15") {
+            $sql = "SELECT * FROM usedcarInfo WHERE mileage >= 15 ORDER BY mileage ASC";
+
+            //参照系SQLを発行
+            $statement = $pdo -> query($sql);
+            //データの取得
+            while ($row = $statement -> fetch()) {
+                echo($row[0]);
+                echo($row[1]);
+                echo($row[2]);
+                echo("/{$row[3]}/");
+                echo($row[4]);
+                echo("{$row[5]}<br/>");
+            }
+        }
         $pdo = null;
         echo("切断しました<br/>");
 

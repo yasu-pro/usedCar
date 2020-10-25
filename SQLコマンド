@@ -3,7 +3,7 @@
 cd /Applications/MAMP/Library/bin/ 
 
 mysqlへアクセス
-./mysql -u root -p →　コマンドプロンプトに"mysql>"になればアクセス完了
+ →　コマンドプロンプトに"mysql>"になればアクセス完了
 
 MAMPのmySQLにあるデータベースにアクセス
 SHOW DATABASES;
