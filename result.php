@@ -1,19 +1,4 @@
 <?php
-    // if(isset($_GET['id'])==true){
-    //     $id = $_GET['id'];
-    // }
-
-    // if (isset($_GET['low_price'])==true) {
-    //     $low_price = $_GET['low_price'];
-    // }
-
-    // if (isset($_GET['upper_price'])==true) {
-    //     $upper_price = $_GET['upper_price'];
-    // }
-    // else{
-    //     echo('読み込めませんでした');
-    // }
-
     if(isset($_GET['id'])==true ||
         isset($_GET['low_price'])==true ||
          isset($_GET['upper_price'])==true||
@@ -230,20 +215,6 @@
                 echo("{$row[5]}<br/>");
             }
         }
-        // elseif($upper_price == "infinite") {
-        //     $sql = "SELECT * FROM usedcarInfo WHERE price >= $upper_price";
-        //     //参照系SQLを発行
-        //     $statement = $pdo -> query($sql);
-        //     //データの取得
-        //     while ($row = $statement -> fetch()) {
-        //         echo($row[0]);
-        //         echo($row[1]);
-        //         echo($row[2]);
-        //         echo("/{$row[3]}/");
-        //         echo($row[4]);
-        //         echo("{$row[5]}<br/>");
-        //     }
-        // }
 
         //走行距離から探す
         if ($mile == "1") {
@@ -433,8 +404,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>検索結果 ページ</title>
 </head>
+<!-- 0:pass 1:number 2:maker 3:price 4:mileage 5:year -->
 <body>
 <?php
+
     ?>
 </body>
 </html>
