@@ -17,11 +17,13 @@
     if(isset($_GET['id'])==true ||
         isset($_GET['low_price'])==true ||
          isset($_GET['upper_price'])==true||
-          isset($_GET['mile'])==true){
+          isset($_GET['mile'])==true ||
+          isset($_GET['year'])==true){
         $id = $_GET['id'];
         $low_price = $_GET['low_price'];
         $upper_price = $_GET['upper_price'];
         $mile = $_GET['mile'];
+        $year = $_GET['year'];
     }
 
     try {
@@ -324,6 +326,89 @@
                 echo($row[4]);
                 echo("{$row[5]}<br/>");
             }
+        }
+            //経過年数から探す
+        if ($year == "1") {
+            $sql = "SELECT * FROM usedcarInfo WHERE year <= 1 ORDER BY year ASC";
+            //参照系SQLを発行
+            $statement = $pdo -> query($sql);
+            //データの取得
+            while ($row = $statement -> fetch()) {
+                echo($row[0]);
+                echo($row[1]);
+                echo($row[2]);
+                echo("/{$row[3]}/");
+                echo($row[4]);
+                echo("{$row[5]}<br/>");
+            }
+
+        }elseif($year == "1~3") {
+            $sql = "SELECT * FROM usedcarInfo WHERE year >= 1 AND year <= 3 ORDER BY year ASC";
+            //参照系SQLを発行
+            $statement = $pdo -> query($sql);
+            //データの取得
+            while ($row = $statement -> fetch()) {
+                echo($row[0]);
+                echo($row[1]);
+                echo($row[2]);
+                echo("/{$row[3]}/");
+                echo($row[4]);
+                echo("{$row[5]}<br/>");
+            }
+        }elseif($year == "4~5") {
+            $sql = "SELECT * FROM usedcarInfo WHERE year >= 4 AND year <= 5 ORDER BY year ASC";
+            //参照系SQLを発行
+            $statement = $pdo -> query($sql);
+            //データの取得
+            while ($row = $statement -> fetch()) {
+                echo($row[0]);
+                echo($row[1]);
+                echo($row[2]);
+                echo("/{$row[3]}/");
+                echo($row[4]);
+                echo("{$row[5]}<br/>");
+            }
+        }elseif($year == "6~8") {
+            $sql = "SELECT * FROM usedcarInfo WHERE year >= 6 AND year <= 8 ORDER BY year ASC";
+            //参照系SQLを発行
+            $statement = $pdo -> query($sql);
+            //データの取得
+            while ($row = $statement -> fetch()) {
+                echo($row[0]);
+                echo($row[1]);
+                echo($row[2]);
+                echo("/{$row[3]}/");
+                echo($row[4]);
+                echo("{$row[5]}<br/>");
+            }
+        }elseif($year == "9~12") {
+            $sql = "SELECT * FROM usedcarInfo WHERE year >= 9 AND year <= 12 ORDER BY year ASC";
+            //参照系SQLを発行
+            $statement = $pdo -> query($sql);
+            //データの取得
+            while ($row = $statement -> fetch()) {
+                echo($row[0]);
+                echo($row[1]);
+                echo($row[2]);
+                echo("/{$row[3]}/");
+                echo($row[4]);
+                echo("{$row[5]}<br/>");
+            }
+        }elseif($year == "13") {
+            $sql = "SELECT * FROM usedcarInfo WHERE year >= 13 ORDER BY year ASC";
+
+            //参照系SQLを発行
+            $statement = $pdo -> query($sql);
+            //データの取得
+            while ($row = $statement -> fetch()) {
+                echo($row[0]);
+                echo($row[1]);
+                echo($row[2]);
+                echo("/{$row[3]}/");
+                echo($row[4]);
+                echo("{$row[5]}<br/>");
+            }
+
         }
         $pdo = null;
         echo("切断しました<br/>");
