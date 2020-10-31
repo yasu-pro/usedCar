@@ -1,0 +1,91 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body {
+  text-align: center;
+}
+
+.resultDate {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  width: 80%;
+  margin: 0 10%;
+}
+
+.imgBox {
+  background-color: gainsboro;
+  display: flex;
+  justify-content: center;
+}
+
+.imgBox img {
+  width: 250px;
+  height: 400px;
+  object-fit: contain;
+}
+
+.carInfo {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+#popUp {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  background-color: rgba(38, 38, 38, 0.9);
+}
+
+.display_block {
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.display_none {
+  animation: fadeOut 1s;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.popUp_area {
+  padding-top: 150px;
+}
+
+#popUp_img {
+  width: 400px;
+  height: auto;
+  border: oldlace solid 5px;
+}
+
+#popUp_close {
+  display: block;
+  margin: 20px auto 0 auto;
+}

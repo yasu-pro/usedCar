@@ -17,7 +17,8 @@
         //PDO::constructでRDBMSに接続
         $pdo = new PDO(DBInfo::DSN,DBInfo::USER,DBInfo::PASSWORD);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        echo('接続しました<br/>');
+
+        $not_img = true;
 
         //メーカーから探す
         if(isset($id)==true){
@@ -35,7 +36,7 @@
                 $statement -> bindValue(1,$id);
                 $statement -> execute();
             }else {
-                echo('車がありません');
+                $not_img = false;
             }
         }
 
@@ -49,7 +50,7 @@
                 $statement -> bindValue(2,$upper_price); 
                 $statement -> execute();
             }else{
-                echo("車がありません");
+                $not_img = false;
             }
         }
         //走行距離から探す
@@ -85,7 +86,7 @@
                         $statement -> bindValue(2,15);
                     break;
                     default:
-                        echo("車がありません");
+                       $not_img = false;
                     break;
                 }
                 $statement -> execute();
@@ -111,27 +112,26 @@
                         $statement -> bindValue(1,1);
                         $statement -> bindValue(2,3);
                     break;
-                    case "3~5":
-                        $statement -> bindValue(1,3);
+                    case "4~5":
+                        $statement -> bindValue(1,4);
                         $statement -> bindValue(2,5);
                     break;
-                    case "5~10":
-                        $statement -> bindValue(1,5);
-                        $statement -> bindValue(2,10);
+                    case "6~8":
+                        $statement -> bindValue(1,6);
+                        $statement -> bindValue(2,8);
                     break;
-                    case "10~15":
-                        $statement -> bindValue(1,10);
-                        $statement -> bindValue(2,15);
+                    case "9~12":
+                        $statement -> bindValue(1,9);
+                        $statement -> bindValue(2,12);
                     break;
                     default:
-                        echo("車がありません");
+                       $not_img = false;
                     break;
                 }
                 $statement -> execute();
             }
         }
         $pdo = null;
-        echo("切断しました<br/>");
 
 
 
@@ -151,24 +151,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/result.css">
     <title>検索結果 ページ</title>
 </head>
 <!-- 0:pass 1:number 2:maker 3:price 4:mileage 5:year -->
 <body>
     <div class="result">
+        <h1>検索結果</h1>
+        <p>※画像をクリックすると拡大できます</p>
 <?php
-    echo("<div>");
-            //データの取得
+        if($not_img === false) {
+            echo('車がありません');
+        }
+
+    echo("<div class='resultDate'>");
+                $i = 0;
+                //データの取得
             while ($row = $statement -> fetch()) {
-                echo("<img src=./{$row[0]} alt={$row[2]}>");
-                echo("{$row[1]}/");
-                echo("{$row[2]}/");
-                echo("{$row[3]}/");
-                echo("{$row[4]}/");
-                echo("{$row[5]}<br/>");
+                echo("<div class='imgBoxes'>");
+                    echo('<div class=imgBox>');
+                        echo("<img id=$row[2]$i src=./{$row[0]} alt=$row[2]>");
+                    echo('</div>');
+                    echo("<div class=carInfo>");
+                        echo("<p>車種：$row[2]</p>");
+                        echo("<p>価格：$row[3]</p>");
+                        echo("<p>走行距離：$row[4]</p>");
+                        echo("<p>経過年数：$row[5]</p>");
+                    echo("</div>");
+                echo("</div>");
+                $i++;
             }
     echo("</div>");
+
 ?>
+    <div class="display_none" id="popUp">
+        <div class="popUp_area">
+            <img id="popUp_img">
+            <button id="popUp_close">閉じる</button>
+        </div>
     </div>
+
+    </div>
+    <script src="./fadeInOut.js"></script>
 </body>
 </html>
