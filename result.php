@@ -174,9 +174,9 @@
                     echo('</div>');
                     echo("<div class=carInfo>");
                         echo("<p>車種：$row[2]</p>");
-                        echo("<p>価格：$row[3]</p>");
-                        echo("<p>走行距離：$row[4]</p>");
-                        echo("<p>経過年数：$row[5]</p>");
+                        echo("<p>価格：$row[3]万円</p>");
+                        echo("<p>走行距離：$row[4]万km</p>");
+                        echo("<p>経過年数：$row[5]年落ち</p>");
                     echo("</div>");
                 echo("</div>");
                 $i++;
